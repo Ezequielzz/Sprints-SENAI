@@ -1,19 +1,49 @@
 .header{
     background-color: #3ac9c5;
     height: 15vh;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .style-a{
     text-decoration: none;
+    color: #ffffff;
 }
-#logo {
-    display: flex;
-    align-items: center;
-}
+
 #logo img{
     height: 100px;
-    width: 12%;
+    margin-right: 100px;
+    position: relative;
 }
+
+.pesquisas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+input:focus, textarea:focus, select:focus{
+    outline: 0;
+}
+#barra-pesquisa{
+    width: 400px;
+    border-radius: 4px;
+    border: solid 0.5px #808080;
+    padding-right: 30px;
+}
+.botao-pesquisa{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('/PetGriffe/src/assets/image/lupa.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
 .navegacao-pai{
     display: flex;
     justify-content: center;
@@ -30,10 +60,20 @@
 }
 #cadastro-login{
    list-style: none;
+   display: flex;
+}
+#cadastro-login li{
+    padding: 5px ;
+}
+#carrinho-compras img{
+    height: 50px;
 }
 .navegacao{
     display: flex;
     justify-content: center;
+    position: fixed;
+    margin-top: 140px;
+    margin-right: 50px;
 }
 .navegacao ul{
     list-style: none;
@@ -47,7 +87,6 @@ align-items: center;
 }
 .navegacao li a{
     text-decoration: none;
-    color: #000000;
     padding: 5px 20px;
 }
 .navegacao li + li {
