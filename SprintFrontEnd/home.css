@@ -53,6 +53,18 @@ body {
     margin: 0 5px;
 }
 
+.link:hover {
+    transition: 0.30s;
+    color: #FCB212;
+}
+
+.linke {
+    font-family: 'Bevan', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
 .divBusca{
     display: flex;
     justify-content: center;
@@ -63,8 +75,8 @@ body {
 }
 
 .carrinhoIcon {
-    height: 63px; 
-    width: 75px;
+    height: 55px; 
+    width: 65px;
 }
 
 .link2 {
@@ -74,6 +86,11 @@ body {
     color: rgb(255, 255, 255);
     margin: 0 35px;
     margin-bottom: 30px;
+}
+
+.link2:hover {
+    transition: 0.30s;
+    color: #FCB212;
 }
 
 input:focus, textarea:focus, select:focus {
