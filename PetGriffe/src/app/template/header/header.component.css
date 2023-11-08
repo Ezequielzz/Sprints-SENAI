@@ -5,6 +5,31 @@
     justify-content: center;
     align-items: center;
 }
+/*estilos para o botão do menu hamburguer*/
+.menu-icone{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+/*estilos para a navegação responsiva*/
+.navegacao-responsivo.active{
+    display: block;
+    animation: slideDown 0.3s ease;/*animação de deslizamento*/
+}
+
+/*definindo a animação de deslizamaneto*/
+@keyframes slideDown{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+transform: translateY(0);
+    }
+}
+/*estilos para a lista da navegação responsiva quando visível*/
+.navegacao-responsivo.show{
+    display: block;
+}
 .style-a{
     text-decoration: none;
     color: #ffffff;
@@ -15,6 +40,7 @@
 #logo img{
     height: 100px;
 }
+/*removendo o focus da input*/
 textarea:focus, select:focus, input:focus{
     outline: 0;
 }
@@ -93,6 +119,12 @@ align-items: center;
     margin-left: 10px;
 }
 @media screen and (max-width:1300px) {
+    #menu-hamburguer{
+        display: block;
+    }
+    .navegacao-responsivo.show{
+        display: block;
+    }
     #logo img{
         height: 100px;
         margin-top: -10px;
