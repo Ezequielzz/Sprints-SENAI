@@ -1,16 +1,15 @@
 body {
     margin: 0;
     top: 0;
-    background-color: #a473730e;
 }
 
 /*estilização para o rodapé*/
 footer {
-    background-color:rgb(252, 210, 54);
+    background-color:rgba(0, 0, 0, 0.515);
     width: 100%;
     bottom: 0;
     position: fixed;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     align-items: center;
 }
@@ -34,7 +33,7 @@ footer {
     .estilizacao-a {
         color: #ffffff;
         text-decoration: none;
-        font-size: 6pt;
+        font-size: 8pt;
         transition: 0.5s;
         padding-left: 10px;
 
@@ -136,7 +135,7 @@ ul {
 
 @media screen and (max-width:560px) {
     .estilizacao-a {
-        font-size: 6pt;
+        font-size: 8pt;
         display: flex;
         flex-direction: column;
     }
