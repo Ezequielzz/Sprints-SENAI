@@ -6,7 +6,8 @@ const CadstroUsuario = bancoDados.sequelize.define("cadastroUsuario", {
         type: bancoDados.Sequelize.STRING
     },
     email: {
-        type: bancoDados.Sequelize.STRING
+        type: bancoDados.Sequelize.STRING,
+        uninque: true //garante que os valores de 'email sejam únicos
     },
     senha:{
         type: bancoDados.Sequelize.STRING
@@ -28,5 +29,5 @@ export default CadstroUsuario;
 try {
     await CadstroUsuario.sync({force: true});//<- deve ser usado apenas uma vez, caso você ja tenha usado, e usar novamente,ele forçará a crição de outra tabela, assim perdendo todos os dados contidos nela
 } catch (error) {
-    console.error(error)
+    console.error(error);
 }
