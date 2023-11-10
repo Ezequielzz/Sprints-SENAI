@@ -1,6 +1,7 @@
 import Sequelize from "sequelize";
 //conectando com o banco de dados
 
+//conectando com o banco de dados(banco, usuário, senha,  {host(onde será hospedado)}, dialect(dizendo qual é o banco de dados))
 const sequelize = new Sequelize("PetGriffeDB", "administrador", "pgdatabase", {
   host: "localhost",
   dialect: "mysql",
