@@ -15,7 +15,7 @@ router.post("/cadastro", async (req, res) => {
     bcrypt.hash(senha, 10, async (err, hash) => {
         if (err) {
             console.error(err);
-            res.status(500).json({ error: "Erro ao criar usuário" });
+            res.status(500).json({ error: "Erro ao criar usuário." });
         } else {
             //Cria o usuário com a senha já hasheada
 
