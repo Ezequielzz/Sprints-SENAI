@@ -36,7 +36,7 @@ Estoque.addHook("beforeCreate", (estoque, options/*usados para informações adi
 export default Estoque;
 
 try {
-     await Estoque.sync({ force: true });//criará a tabela
+     await Estoque.sync();//criará a tabela
 } catch (error) {
 console.error(error);
 }

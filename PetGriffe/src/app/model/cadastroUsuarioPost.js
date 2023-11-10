@@ -27,7 +27,7 @@ const CadstroUsuario = bancoDados.sequelize.define("cadastroUsuario", {
 export default CadstroUsuario;
 
 try {
-    await CadstroUsuario.sync({force: true});//<- deve ser usado apenas uma vez, caso você ja tenha usado, e usar novamente,ele forçará a crição de outra tabela, assim perdendo todos os dados contidos nela
+    await CadstroUsuario.sync();//<- deve ser usado apenas uma vez, caso você ja tenha usado, e usar novamente,ele forçará a crição de outra tabela, assim perdendo todos os dados contidos nela
 } catch (error) {
     console.error(error);
 }

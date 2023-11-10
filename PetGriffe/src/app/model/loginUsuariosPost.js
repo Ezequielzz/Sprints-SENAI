@@ -14,7 +14,7 @@ export default LoginUsuario;
 //super usuario terá acesso a tudo
 
 try {
-    await LoginUsuario.sync({ force: true });
+    await LoginUsuario.sync();
 } catch (error) {
     console.error(error);
 }
