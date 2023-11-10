@@ -6,29 +6,48 @@
     align-items: center;
 }
 /*estilos para o botão do menu hamburguer*/
-.menu-icone{
-    display: none;
-    font-size: 24px;
+.menu-hamburguer{
+    display: block;
+    font-size: 15px;
     cursor: pointer;
+    width: 30%;
+    position: initial;
+}
+.menu-hamburguer ul{
+    list-style: none;
+}
+.navegacao-responsiva{
+    display: none;
+}
+#linha1, #linha2, #linha3{
+    width: 25px;
+    border: solid 4px #ffffff;
+    border-radius: 3px;
 }
 /*estilos para a navegação responsiva*/
-.navegacao-responsivo.active{
+.navegacao-responsiva.toggle{
     display: block;
-    animation: slideDown 0.3s ease;/*animação de deslizamento*/
+    animation: slideDown 0.3s ease-in-out;/*animação de deslizamento*/
+    background-color: #286967;
+    border-radius: 3px;
 }
 
 /*definindo a animação de deslizamaneto*/
 @keyframes slideDown{
     0%{
-        transform: translateY(-100%);
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: rotateX(100deg);
     }
     100%{
-transform: translateY(0);
+transform: translateX(0);
     }
 }
 /*estilos para a lista da navegação responsiva quando visível*/
-.navegacao-responsivo.show{
+.navegacao-responsiva.show{
     display: block;
+
 }
 .style-a{
     text-decoration: none;

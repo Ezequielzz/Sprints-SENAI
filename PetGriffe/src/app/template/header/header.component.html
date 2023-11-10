@@ -5,7 +5,7 @@
         <div class="pesquisas">
             <input type="text" placeholder="Buscar..." id="barra-pesquisa" name="barraPesquisa">
             <span id="buscar-botao" class="botao-pesquisa"></span>
-          </div>          
+        </div>
         <div class="autenticacao-usuario">
             <ul id="cadastro-login">
                 <li id="cadastro"><a href="#" class="style-a">Login</a></li>
@@ -22,13 +22,16 @@
         <li><a href="#" class="style-a">Família Griffe</a></li>
     </ul>
     <!-- configurando o menu-hamburguer -->
-    <button id="menu-hamburguer" class="menu-icone">&#9776;</button>
-    <ul class="navegacao-responsivo" id="menu-responsivo">
-        <li><a href="#" class="style-a">Serviços pet</a></li>
-        <li><a href="#" class="style-a">Gatos</a></li>
-        <li><a href="#" class="style-a">Cachorros</a></li>
-        <li><a href="#" class="style-a">Pássaros</a></li>
-        <li><a href="#" class="style-a">Família Griffe</a></li>
-    </ul>
+    <div class="menu-hamburguer" (click)="toggleMenu()">
+        <hr id="linha1">
+        <hr id="linha2">
+        <hr id="linha3">
+        <ul class="navegacao-responsiva" [ngClass]="{'toggle': isMenuOpen}">
+            <li><a href="#" class="style-a">Serviços pet</a></li>
+            <li><a href="#" class="style-a">Gatos</a></li>
+            <li><a href="#" class="style-a">Cachorros</a></li>
+            <li><a href="#" class="style-a">Pássaros</a></li>
+            <li><a href="#" class="style-a">Família Griffe</a></li>
+        </ul>
+    </div>
 </header>
-<script src="assets/javascript/menuHamburguer.js"></script>
