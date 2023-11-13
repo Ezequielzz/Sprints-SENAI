@@ -15,38 +15,65 @@
 
 <body>
     <!----------------- NavBar ------------------>
-
-    <!--- Nav Superior --->
-    <header class="navbar">
-        <a href=""><img class="navIcon" src="img/petgriffeIcon2.png" alt="icon"></a>
-        <div class="divBusca">
-            <input class="txtBusca" type="text" placeholder="Buscar..." size="30">
-            <img class="lupaBusca" src="img/lupa.png" id="btnBusca" alt="Buscar">
+    <div class="row">
+        <div class="col-1">
+            <div class="navIcon">
+                <a href="">
+                    <img src="img/petgriffeIcon2.png" alt="Icone Petgriffe">
+                </a>
+            </div>
+            <div class="barraBusca">
+                <input type="text" placeholder="Buscar..." class="barra">
+                <img src="img/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;">
+            </div>
+            <div class="navegacao">
+                <a href="" class="navegar">Login</a>
+                <p class="pnavegar">e</p>
+                <a href="cadastro.html" class="navegar">Cadastro</a>
+                <div class="carrinhoIcon">
+                    <a href="">
+                        <img src="img/carrinhoIcon.png" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
-        <nav class="nav">
-            <div class="linkMenu">
-                <a href="login.html" class="link">Login</a>
-                <p class="linke">e</p>
-                <a href="cadastro.html" class="link">Cadastro</a>
+        <div class="col-2">
+            <div class="navegacao2">
+                <a href="" class="navegar2">Serviço Pet</a>
+                <a href="" class="navegar2">Gatos</a>
+                <a href="" class="navegar2">Cachorros</a>
+                <a href="" class="navegar2">Pássaros</a>
+                <a href="" class="navegar2">Família Griffe</a>
             </div>
-            <div class="carrinho">
-                <a href=""><img class="carrinhoIcon" src="img/carrinhoIcon.png" alt="iconCarrinho"></a>
-            </div>
-        </nav> 
-    </header>
+        </div>
+    </div>
 
-    <!--- Nav Inferior --->
-    <header class="subnav">
-        <nav class="nav2">
-            <div class="linkMenu2">
-                <a href="" class="link2">Serviço Pet</a>
-                <a href="" class="link2">Gatos</a>
-                <a href="" class="link2">Cachorros</a>
-                <a href="" class="link2">Pássaros</a>
-                <a href="" class="link2">Família Griffe</a>
+    <!------------------------------------------->
+
+    <div class="carrossel">
+        <div class="imagens">
+            <input type="button" name="botaoSlide" id="botaoBack">
+            <input type="button" name="botaoSlide" id="botaoNext">
+
+            <div class="imagem first">
+                <img src="img/imgCadastro.png" alt="Imagem 1">
             </div>
-        </nav> 
-    </header>
+            <div class="imagem">
+                <img src="img/CarrosselTopVendas.png" alt="Imagem 2">
+            </div>
+            <div class="imagem">
+                <img src="img/CarrosselTopVendas.png" alt="Imagem 3">
+            </div>
+            <div class="autoNav">
+                <div class="btn1"></div>
+                <div class="btn2"></div>
+            </div>
+        </div>
+        <div class="manualNav">
+            <label for="botaoBack" class="manual-btn">❮</label>
+            <label for="botaoNext" class="manual-btn">❯</label>
+        </div>
+    </div>
     <!------------------------------------------->
 
 
