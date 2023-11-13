@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  isMenuOpen: boolean = false; // Variável para rastrear o estado do menu
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
 }

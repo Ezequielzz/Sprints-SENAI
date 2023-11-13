@@ -1,5 +1,21 @@
 <header class="header">
+<!-- configurando o menu-hamburguer -->
+<div class="menu-hamburguer">
+<input type="checkbox" class="menu-faketrigger">
 
+    <div class="menu-linhas">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="navegacao-responsiva" >
+        <li><a href="#" class="style-a">Serviços pet</a></li>
+        <li><a href="#" class="style-a">Gatos</a></li>
+        <li><a href="#" class="style-a">Cachorros</a></li>
+        <li><a href="#" class="style-a">Pássaros</a></li>
+        <li><a href="#" class="style-a">Família Griffe</a></li>
+    </ul>
+</div>
     <a href="#" id="logo"><img src="assets/image/logo.png" alt="Imagem logo do site PetGriffe"></a>
     <div class="navegacao-pai">
         <div class="pesquisas">
@@ -11,7 +27,6 @@
                 <li id="cadastro"><a href="#" class="style-a">Login</a></li>
                 <li id="login"><a href="#" class="style-a">Cadastro</a></li>
             </ul>
-            <a href="#" class="style-a" id="carrinho-compras"><img src="assets/image/carrinho-compras.png" alt=""></a>
         </div>
     </div>
     <ul class="navegacao">
@@ -21,17 +36,5 @@
         <li><a href="#" class="style-a">Pássaros</a></li>
         <li><a href="#" class="style-a">Família Griffe</a></li>
     </ul>
-    <!-- configurando o menu-hamburguer -->
-    <div class="menu-hamburguer" (click)="toggleMenu()">
-        <hr id="linha1">
-        <hr id="linha2">
-        <hr id="linha3">
-        <ul class="navegacao-responsiva" [ngClass]="{'toggle': isMenuOpen}">
-            <li><a href="#" class="style-a">Serviços pet</a></li>
-            <li><a href="#" class="style-a">Gatos</a></li>
-            <li><a href="#" class="style-a">Cachorros</a></li>
-            <li><a href="#" class="style-a">Pássaros</a></li>
-            <li><a href="#" class="style-a">Família Griffe</a></li>
-        </ul>
-    </div>
+    <a href="#" class="style-a" id="carrinho-compras"><img src="assets/image/carrinho-compras.png" alt=""></a>
 </header>
