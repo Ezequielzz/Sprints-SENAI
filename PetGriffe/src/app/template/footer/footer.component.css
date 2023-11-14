@@ -12,6 +12,7 @@ footer {
     height: 30vh;
     display: flex;
     align-items: center;
+    z-index: 997;
 }
 
 @media screen and (max-width:1029px) {

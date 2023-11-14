@@ -3,9 +3,11 @@
   margin: 0;
   list-style: none;
 }
-::selection{
-    background-color: rgb(168, 153, 58);
+
+::selection {
+  background-color: rgb(168, 153, 58);
 }
+
 .header {
   background-color: #3ac9c5;
   height: 15vh;
@@ -22,6 +24,7 @@
 #logo img {
   height: 100px;
 }
+
 #carrinho-compras img {
   height: 60px;
 }
@@ -109,7 +112,7 @@ input:focus {
   padding: 5px 20px;
 }
 
-.navegacao li + li {
+.navegacao li+li {
   margin-left: 10px;
 }
 
@@ -118,12 +121,13 @@ input:focus {
     margin-left: 30px;
     margin-top: -35px;
   }
+
   .menu-faketrigger {
     position: absolute;
     width: 50px;
-    height: 100px;
+    height: 60px;
     z-index: 1000;
-    margin-top: -25px;
+    margin-top: -8px;
     opacity: 0;
     cursor: pointer;
   }
@@ -144,24 +148,22 @@ input:focus {
     border-radius: 4px;
     transition: all ease-in 0.3s;
   }
-  .menu-faketrigger:checked ~ html {
-    backdrop-filter: #666464;
-  }
-  .menu-faketrigger:checked ~ .menu-linhas span {
+
+  .menu-faketrigger:checked~.menu-linhas span {
     background-color: #232323;
   }
 
-  .menu-faketrigger:checked ~ .menu-linhas span:nth-child(1) {
+  .menu-faketrigger:checked~.menu-linhas span:nth-child(1) {
     transform-origin: 0% 0%;
     transform: rotate(45deg) scaleX(1.25);
     /*scaleX para aumentar o tamanho após a rotação*/
   }
 
-  .menu-faketrigger:checked ~ .menu-linhas span:nth-child(2) {
+  .menu-faketrigger:checked~.menu-linhas span:nth-child(2) {
     opacity: 0;
   }
 
-  .menu-faketrigger:checked ~ .menu-linhas span:nth-child(3) {
+  .menu-faketrigger:checked~.menu-linhas span:nth-child(3) {
     transform-origin: 0% 100%;
     transform: rotate(-45deg) scaleX(1.25);
   }
@@ -182,9 +184,10 @@ input:focus {
     margin-left: -300px;
     /*ficar fora da tela*/
     transition: all 0.3s ease-in-out;
+    border-bottom-right-radius: 3px;
   }
 
-  .menu-faketrigger:checked ~ ul {
+  .menu-faketrigger:checked~ul {
     margin-left: 0;
     /*aperece novamente*/
   }
@@ -205,9 +208,11 @@ input:focus {
 
   .navegacao,
   .autenticacao-usuario,
-  .navegacao-pai, #barra-pesquisa {
-display: none;
-}
+  .navegacao-pai,
+  #barra-pesquisa {
+    display: none;
+  }
+
   .header {
     display: flex;
     justify-content: center;
@@ -230,5 +235,24 @@ display: none;
   .navegacao-pai {
     display: flex;
     align-items: center;
+  }
+
+  @media screen and (max-height:700px) {
+    .menu-hamburguer ul {
+      width: 220px;
+      height: calc(100vh - 90px);
+      /*com o calc remove a barra de rolagem*/
+      padding-top: 100px;
+      margin-left: -220px;
+      /*ficar fora da tela*/
+    }
+
+    .menu-hamburguer ul li {
+      padding: 14px 50px;
+    }
+
+    .menu-hamburguer ul li a {
+      font-size: 17px;
+    }
   }
 }
