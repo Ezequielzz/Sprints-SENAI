@@ -168,24 +168,24 @@ input:focus {
     transform: rotate(-45deg) scaleX(1.25);
   }
 
-  .menu-hamburguer ul {
-    position: absolute;
-    z-index: 998;
-    left: 0;
-    /*encosta na esquerda*/
-    top: 0;
-    /*encosta em cima*/
-    width: 300px;
-    height: calc(100vh - 160px);
-    /*com o calc remove a barra de rolagem*/
-    padding-top: 160px;
-    /*vai gerar barra de rolagem*/
-    background-color: #ededed;
-    margin-left: -300px;
-    /*ficar fora da tela*/
-    transition: all 0.3s ease-in-out;
-    border-bottom-right-radius: 3px;
-  }
+    .menu-hamburguer ul {
+        position: absolute;
+        z-index: 998;
+        left: 0;
+        /*encosta na esquerda*/
+        top: 0;
+        /*encosta em cima*/
+        width: 300px;
+        height: calc(100vh - 160px);
+        /*com o calc remove a barra de rolagem*/
+        padding-top: 160px;
+        /*vai gerar barra de rolagem*/
+        background-color: #ededed;
+        margin-left: -300px;
+        /*ficar fora da tela*/
+        transition: all 0.3s ease-in-out;
+        border-bottom-right-radius: 3px;
+    }
 
   .menu-faketrigger:checked~ul {
     margin-left: 0;

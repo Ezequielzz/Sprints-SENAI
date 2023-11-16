@@ -1,6 +1,6 @@
 import express from "express";
 import jwt from "jsonwebtoken";
-import LoginUsuario from "../model/loginUsuariosPost";
+import LoginUsuario from "../model/tabelaLoginUsuariosPost";
 import { router, chaveSecreta, bcrypt } from "./cadastroUsuario";
 //ordem padrão requisição e resposta, pode ser outros nomes 
 router.post("/login", async (req, res) => {

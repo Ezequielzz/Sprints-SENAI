@@ -1,5 +1,5 @@
 import bancoDados from "./conexaoBancoDados";
-import CadastroAdministradorSite from "../model/cadastroAdministradorSite";
+import CadastroAdministradorSite from "../model/tabelaCadastroAdministradorSite";
 import { router, chaveSecreta, bcrypt } from "./cadastroUsuario";
 
 router.post("/administrador", async (req, res) => {

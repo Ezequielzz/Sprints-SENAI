@@ -1,4 +1,8 @@
 {
+  "type": "module",
+  "script": {
+    "start": "nodemon conexaoBandoDados.js"
+  },
   "name": "pet-griffe",
   "version": "0.0.0",
   "scripts": {

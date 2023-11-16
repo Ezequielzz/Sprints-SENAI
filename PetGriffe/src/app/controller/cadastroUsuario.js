@@ -1,7 +1,7 @@
 import express from "express";
 import bancoDados from "../model/conexaoBancoDados";
 import bcrypt, { hash } from "bcrypt"//usado para criar a hash das senhas
-import cadastroUsuarioPost from "../model/cadastroUsuarioPost"
+import cadastroUsuarioPost from "../model/tabelaCadastroUsuarioPost"
 import crypto from "crypto";
 
 const chaveSecreta = crypto.randomBytes(32).toString("hex");//gera uma chave de 32 bytes e converte em hexadecimal
