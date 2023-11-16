@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 
+/* -----------------------  NAVBAR ----------------------- */
+
 .col-1 {
     display: flex;
     justify-content: space-between;
@@ -90,19 +92,21 @@ body {
     border-top-right-radius: 19px;
 }
 
+/* -----------------------  XXXXXX ----------------------- */
 
+/* ----------------------- CARROSSEL ----------------------- */
 
 .carrossel {
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 1010px;
+    height: 500px;
     overflow: hidden;
 }
 
 .imagens {
     display: flex;
     width: 400%;
-    height: 400px;
+    height: 500px;
 }
 
 .imagens input {
@@ -112,37 +116,125 @@ body {
 .imagem {
     width: 25%;
     position: relative;
+    transition: 1s;
 }
 
 .imagem img {
-    width: 800px;
+    width: 1010px;
+    height: auto;
 }
 
 .manualNav {
     position: absolute;
-    width: 800px;
-    margin-top: -200px;
+    width: 1010px;
+    margin-top: -40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .manual-btn {
     border: 2px solid #ffffff;
     padding: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
 }
 
 .manual-btn:hover{
     background: #ffffff;
 }
 
-#botaoBack:active ~ .first {
+#radio1:checked ~ .first {
     margin-left: 0;
 }
 
-#botaoNext:active ~ .first {
+#radio2:checked ~ .first {
     margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.autoNav div {
+    border: 2px solid #3ac9c5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.autoNav {
+    position: absolute;
+    width: 1010px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.autoNav div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~.autoNav .auto-btn1 {
+    background: #fff;
+}
+
+#radio2:checked ~.autoNav .auto-btn2 {
+    background: #fff;
+}
+
+#radio3:checked ~.autoNav .auto-btn3 {
+    background: #fff;
+}
+
+#radio4:checked ~.autoNav .auto-btn4 {
+    background: #fff;
+}
+
+
+.botoes {
+    position: absolute;
+    width: 1010px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.botoes img {
+    width: 30px;
+    height: 30px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CARDS ----------------------- */
+
+.card {
+    width: 265px;
+    height: 370px;
+    border: solid 2px #FCB212;
+
+}
+
+.card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImg img {
+    width: 265px;
+    height: 270px;
 }
 
 
@@ -151,7 +243,8 @@ body {
 
 
 
-.container{
+
+/* .container{
     width: 1000px;
     position: relative;
     display: flex;
@@ -161,6 +254,7 @@ body {
 .container .card{
     position: relative;
     cursor: pointer;
+    height: 200px;
 }
 
 .container .card .face{
@@ -254,18 +348,6 @@ body {
 .container .card .face.face2 .content a:hover{
     background: #333;
     color: #fff;
-}
+} */
 
 
-
-
-
-footer, aFooter{
-    display: flex;
-    justify-content: space-around;
-    background-color: #000000;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 6vh;
-}

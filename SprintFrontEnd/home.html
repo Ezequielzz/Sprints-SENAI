@@ -52,86 +52,107 @@
 
     <div class="carrossel">
         <div class="imagens">
-            <input type="button" name="botaoSlide" id="botaoBack">
-            <input type="button" name="botaoSlide" id="botaoNext">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
 
             <div class="imagem first">
-                <img src="img/imgCadastro.png" alt="Imagem 1">
+                <img src="img/CarrosselSaúde.png" alt="Imagem 1 Carrosel">
             </div>
             <div class="imagem">
-                <img src="img/CarrosselTopVendas.png" alt="Imagem 2">
+                <img src="img/CarrosselTopVendas.png" alt="Imagem 2 Carrosel">
             </div>
             <div class="imagem">
-                <img src="img/CarrosselTopVendas.png" alt="Imagem 3">
+                <img src="img/CarrosselBanho&Tosa.png" alt="Imagem 3 Carrosel">
             </div>
+            <div class="imagem">
+                <img src="img/imgCadastro.png" alt="Imagem 4 Carrosel">
+            </div>
+
+            <div class="botoes">
+                <div class="anterior" onclick="mudarImagem(-1)"><img src="img/setaCarrossel2.png" alt="Seta Voltar"></div>
+                <div class="proximo" onclick="mudarImagem(1)"><img src="img/setaCarrossel1.png" alt="Seta Avançar"></div>
+            </div>
+
             <div class="autoNav">
-                <div class="btn1"></div>
-                <div class="btn2"></div>
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
+
         </div>
+
         <div class="manualNav">
-            <label for="botaoBack" class="manual-btn">❮</label>
-            <label for="botaoNext" class="manual-btn">❯</label>
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
         </div>
+
     </div>
     <!------------------------------------------->
 
-
-    <div class="container">
-        <div class="card">
-            <div class="face face1">
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
-                        provident at.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
+    <div class="card">
+        <div class="cardImg">
+            <img src="img/categoriaCachorro.png" alt="Categoria Cachorro">
         </div>
-        <div class="card">
-            <div class="face face1">
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
-                        provident at.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
-                        provident at.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
+        <div class="cardBody">
+            <div class="cardTitulo"></div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="card">
+            <div class="face face1">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
+                        provident at.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
+                        provident at.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis
+                        provident at.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
     
     
-    <footer>
-        <a href="" class="aFooter"> Contato: petgriffe@gmail.com</a>
-        <a href="" class="aFooter"></a>>Política de Privacidade</a>
-        <a href="" class="aFooter"></a>Política de Frete</a>
-        <a href="" class="aFooter"></a>>Política de Reembolso</a>
-        <a href="" class="aFooter"></a>>Termos de Serviço</a>
-        <a href="" class="aFooter"></a>>Vagas</a>
-        <div class="informacoes">
-            <p>© 2021, TESTE Ltd, Todos os direitos reservados.</p>
-        </div>
-        <hr>
-        <div class="redes-sociais">
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-        </div>
-        <img src="" alt="Logo site">
-    </footer>
+    
 </body>
+
+<script src="home.js"></script>
 
 </html>
