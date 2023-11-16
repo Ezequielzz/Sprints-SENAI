@@ -3,3 +3,6 @@ curriculo em angular
 petgriffe
 java JDBC
 oracle academy
+mariadb 
+mangodb
+mysql
