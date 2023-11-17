@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: center;
     background: #3ac9c5;
+    margin-bottom: 25px;
 }
 
 .navIcon img {
@@ -99,14 +100,15 @@ body {
 .carrossel {
     margin: 0 auto;
     width: 1010px;
-    height: 500px;
-    overflow: hidden;
+    height: 530px;
+    overflow: hidden; 
+    border-radius: 10px;
 }
 
 .imagens {
     display: flex;
     width: 400%;
-    height: 500px;
+    height: 530px;
 }
 
 .imagens input {
@@ -175,7 +177,7 @@ body {
 .autoNav {
     position: absolute;
     width: 1010px;
-    margin-top: 460px;
+    margin-top: 490px;
     display: flex;
     justify-content: center;
 }
@@ -219,25 +221,55 @@ body {
 
 /* ----------------------- CARDS ----------------------- */
 
-.card {
-    width: 265px;
-    height: 370px;
-    border: solid 2px #FCB212;
-
+.categorias {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
 }
 
-.card .cardImg {
+.cardC:not(:last-child) {
+    margin-right: 30px;
+}
+
+.cardC {
+    width: 245px;
+    height: 340px;
+    border: solid 2px #FCB212;
+    background-color: #01bbb9;
+    border-radius: 10px;
+}
+
+.cardC {
+    transition: all 0.45s ease-in;
+    transition: all 0.35s ease-out;
+}
+
+.cardC:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cardC .cardCImg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cardImg img {
-    width: 265px;
-    height: 270px;
+.cardC .cardCImg img {
+    width: 100%;
+    height: 265px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
 }
 
-
+.cardCBody h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Bevan', serif;
+    font-size: 20px;
+}
 
 
 
