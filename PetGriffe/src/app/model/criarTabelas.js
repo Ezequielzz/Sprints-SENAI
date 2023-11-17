@@ -1,4 +1,4 @@
-import tabelaLoginUsuarioPost from "./tabelaLoginUsuariosPost.js";
+import tabelaLoginUsuariosPost from "./tabelaLoginUsuariosPost.js"
 import tabelaCadastroUsuarioPost from "./tabelaCadastroUsuarioPost.js";
 import tabelaGerenciamentoEstoque from "./tabelaGerenciamentoEstoque.js";
 import tabelaCadastroAdministradorSite from "./tabelaCadastroAdministradorSite.js";
@@ -9,7 +9,7 @@ export default async function criarTabelas(){
 
 try {
     await Promise.all([
-         tabelaLoginUsuarioPost.sync().then(()=>console.log("Tabela LoginUsuarioPost criada com sucesso.")),
+         tabelaLoginUsuariosPost.sync().then(()=>console.log("Tabela LoginUsuarioPost criada com sucesso.")),
          tabelaCadastroUsuarioPost.sync().then(()=>console.log("Tabela CadastroUsusarioPost criada com sucesso.")),
          tabelaGerenciamentoEstoque.sync().then(()=>console.log("Tabela GerenciamentoEstoque criada com suesso")),
          tabelaCadastroAdministradorSite.sync().then(()=>console.log("Tabela CadastroAdministradorSite criada com sucesso."))

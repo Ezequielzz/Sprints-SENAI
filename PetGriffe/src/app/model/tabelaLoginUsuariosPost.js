@@ -23,4 +23,4 @@ try {
 //Chama a função assíncrona para sincronizar a tabela
 sincronizarTabela();
 
-export default LoginUsuario;
+export default LoginUsuario ;
