@@ -1,10 +1,10 @@
 <div class="cadastro">
   <img src="assets/image/imagem-cadastro.png" alt="Imagem de cadastro" />
-  <form method="post" action="../../model/cadastroUsuarioPost.js">
+  <form method="post" action="/cadastro">
     <h1 class="cadastro-titulo">Cadastro</h1>
     <div class="coluna1">
       <label for="usuario">Nome de usuário</label>
-      <input type="text" id="usuario" name="usuario" class="inputs" />
+      <input type="text" id="usuario" name="usuari" class="inputs" />
       <label for="email">Email</label>
       <input type="text" id="email" name="email" class="inputs" />
       <label for="senha">Senha</label>
@@ -12,12 +12,12 @@
     </div>
     <div class="coluna2">
       <label for="confirmar-senha">Confirmar senha</label>
-      <input type="text" id="confirmar-senha" name="confirmar-senha" class="inputs" />
+      <input type="text" id="confirmar-senha" name="endereco" class="inputs" />
       <label for="cep">Cep</label>
       <input type="text" id="cep" name="cep" class="inputs" />
       <label for="telefone">Telefone</label>
       <input type="text" id="telefone" name="telefone" class="inputs" />
     </div>
-    <button id="enviar-form" name="enviar-form">Enviar</button>
+    <button type="submit" id="enviar-form" name="enviar-form">Enviar</button>
   </form>
 </div>
