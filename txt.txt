@@ -6,3 +6,11 @@ oracle academy
 mariadb 
 mangodb
 mysql
+
+//ts
+"execMap":{
+    "js": "node --loader ts-node/esm"
+  },
+   "presets":[
+     "@babel/preset-env"
+  ],
