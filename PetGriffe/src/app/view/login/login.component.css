@@ -80,10 +80,11 @@
             width: 100%;
         }
         .inputs{
+          width: 240px;
             width: inherit;
         }
         .inputs:focus{
-            width: 130px;
+            width: 250px;
         }
         .login-titulo{
             margin-bottom: 30%;

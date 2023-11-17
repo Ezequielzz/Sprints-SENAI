@@ -1,6 +1,6 @@
 import Sequelize from "sequelize";
 //função para criar as tabelas
-import criarTabelas from "./criarTabelas.js";
+import {criarTabelas} from "./criarTabelas.js";
 //conectando com o banco de dados
 
 //conectando com o banco de dados(banco, usuário, senha,  {host(onde será hospedado)}, dialect(dizendo qual é o banco de dados))
