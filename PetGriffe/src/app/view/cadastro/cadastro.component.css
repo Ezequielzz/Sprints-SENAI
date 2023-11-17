@@ -21,6 +21,7 @@ form {
   display: flex;
   background-color: #dbd3d39a;
   border-radius: 5px;
+  margin: 10% 17% 0%;
 }
 
 .cadastro-titulo {
@@ -31,7 +32,7 @@ form {
 .cadastro img {
   width: 40%;
   height: 35vh;
-  border-radius: 5px;
+border-top-left-radius: 5px;
 }
 
 .inputs {
