@@ -1,7 +1,7 @@
-import tabelaLoginUsuarioPost from "./tabelaLoginUsuariosPost";
-import tabelaCadastroUsuarioPost from "./tabelaCadastroUsuarioPost";
-import tabelaGerenciamentoEstoque from "./tabelaGerenciamentoEstoque";
-import tabelaCadastroAdministradorSite from "./tabelaCadastroAdministradorSite";
+import tabelaLoginUsuarioPost from "./tabelaLoginUsuariosPost.js";
+import tabelaCadastroUsuarioPost from "./tabelaCadastroUsuarioPost.js";
+import tabelaGerenciamentoEstoque from "./tabelaGerenciamentoEstoque.js";
+import tabelaCadastroAdministradorSite from "./tabelaCadastroAdministradorSite.js";
 
 //função para criar as tabelas
 //exportando ela

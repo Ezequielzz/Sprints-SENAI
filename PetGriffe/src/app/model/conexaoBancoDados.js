@@ -1,9 +1,10 @@
 import Sequelize from "sequelize";
 //função para criar as tabelas
-import criarTabelas from "./criarTabelas";//conectando com o banco de dados
+import criarTabelas from "./criarTabelas.js";
+//conectando com o banco de dados
 
 //conectando com o banco de dados(banco, usuário, senha,  {host(onde será hospedado)}, dialect(dizendo qual é o banco de dados))
-const sequelize = new Sequelize("PetGriffeDB", "root", "", {
+const sequelize = new Sequelize("PetGriffeDB", "root", "root1", {
   host: "localhost",
   dialect: "mysql",
 });
@@ -15,6 +16,7 @@ export default {
 };
 
 //estabelecendo conexão com o  banco de dados
+async function main(){
 try {//verifica a conexão
   await sequelize.authenticate();
   await criarTabelas()
@@ -22,3 +24,6 @@ try {//verifica a conexão
 } catch (error) {//captura o erro
   console.error(error);
 }
+}
+
+main();

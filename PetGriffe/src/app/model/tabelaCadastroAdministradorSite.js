@@ -1,4 +1,4 @@
-import bancoDados from "./conexaoBancoDados";
+import bancoDados from "./conexaoBancoDados.js";
 
 const AdministradorSite = bancoDados.sequelize.define("adiministradorSite", {
   nome: {
@@ -21,10 +21,11 @@ const AdministradorSite = bancoDados.sequelize.define("adiministradorSite", {
   },
 });
 
-export default AdministradorSite;
 
 try {
   await AdministradorSite.sync();
 } catch (error) {
   console.error(error);
 }
+
+export default AdministradorSite;

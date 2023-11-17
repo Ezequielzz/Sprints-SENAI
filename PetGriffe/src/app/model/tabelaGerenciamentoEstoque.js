@@ -1,4 +1,4 @@
-import bancoDados from "./conexaoBancoDados";
+import bancoDados from "./conexaoBancoDados.js";
 
 const Estoque = bancoDados.sequelize.define("estoque", {
     produto: {
@@ -22,7 +22,7 @@ const Estoque = bancoDados.sequelize.define("estoque", {
 });
 
 //função para gerar um código aleatória para cada produto
-function gerarCodigoProduto() {
+async function gerarCodigoProduto() {
     return Math.floor(Math.random() * 10000);
 }
 
