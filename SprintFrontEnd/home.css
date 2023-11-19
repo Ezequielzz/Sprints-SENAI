@@ -219,16 +219,16 @@ body {
 
 /* -----------------------  XXXXXX ----------------------- */
 
-/* ----------------------- CARDS ----------------------- */
+/* ----------------------- CATEGORIAS ----------------------- */
 
 .categorias {
-    margin-top: 35px;
+    margin-top: 55px;
     display: flex;
     justify-content: center;
 }
 
 .cardC:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 45px;
 }
 
 .cardC {
@@ -267,12 +267,157 @@ body {
     display: flex;
     justify-content: center;
     color: #fff;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 25px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CARDS ----------------------- */
+
+.tituloCards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
     font-family: 'Bevan', serif;
-    font-size: 20px;
+}
+
+.maisVendidos, .promocoes, .recomendados {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
 }
 
 
+.card {
+    width: 170px;
+    height: 305px;
+    border: solid 2px #d4d4d4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
 
+.card:not(:last-child) {
+    margin-right: 75px;
+}
+
+.card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardImg img {
+    width: 120px;
+    height: 200px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+}
+
+.card .cardBody .cardTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardBody .cardTitulo p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.card .cardBody .cardBotao {
+    display: flex;
+    justify-content: center;
+}
+
+.cardBotao button {
+    border: solid 1px #027674; 
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #01bbb9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.47s; 
+}
+
+.cardBotao button:hover {
+    background: #FCB212;
+    border: solid 1px #ab790d;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- SERVIÇOS ----------------------- */
+
+.servicos {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardS {
+    width: 320px;
+    height: 275px;
+    margin-bottom: 30px;
+    border: solid 2px #d4d4d4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.cardS:not(:last-child) {
+    margin-right: 75px;
+}
+
+.cardS .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardS .cardSImg img {
+    width: 100%;
+    height: 180px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+}
+
+.cardS .cardSBody .cardSTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardS .cardSBody .cardSTitulo p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.cardS .cardSBody .cardSBotao {
+    display: flex;
+    justify-content: center;
+}
+
+.cardSBotao button {
+    border: solid 1px #027674; 
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #01bbb9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.47s;
+}
+
+.cardSBotao button:hover {
+    background: #FCB212;
+    border: solid 1px #ab790d;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
 
 
 

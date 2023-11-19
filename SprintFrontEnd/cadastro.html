@@ -16,11 +16,12 @@
     <!------------------>
 
     <title>Cadastro</title>
+
 </head>
 
 <body>
     <header class="navbar">
-        <a href=""><img class="navIcon" src="img/petgriffeIcon2.png" alt="icon"></a>
+        <a href="home.html"><img class="navIcon" src="img/petgriffeIcon2.png" alt="icon"></a>
         <nav class="nav">
             <div class="linkMenu">
                 <a href="" class="link">Serviço Pet</a>
@@ -32,13 +33,36 @@
         </nav>
     </header>
 
-    <div class="container-cadastro">
+    <div class="cadastro">
         <div class="imgCadastro">
             <img src="img/imgCadastro.png" alt="">
         </div>
-    </div>
+        <div class="formulario">
+            <label for="lnome">Nome de Usuário</label>
+            <input type="text" id="lnome" name="nome" placeholder="Insira seu username">
 
+            <label for="lemail">Email</label>
+            <input type="text" id="lemail" name="email" placeholder="Insira seu email">
+
+            <label for="lsenha">Senha</label>
+            <input type="text" id="lsenha" name="senha" placeholder="Insira sua senha">
+        </div>
+        <div class="formulario2">
+            <label for="lnome">CPF</label>
+            <input type="text" id="lnome" name="nome" placeholder="Insira seu CPF">
+
+            <label for="lemail">CEP</label>
+            <input type="text" id="lemail" name="email" placeholder="Insira seu CEP">
+
+            <label for="lsenha">Número</label>
+            <input type="text" id="lsenha" name="senha" placeholder="Insira seu nº residencial">
+        </div>
+        <div class="enviarCadastro">
+            <input type="submit">
+        </div>
+    </div>
     
+
 </body>
 
 </html>
