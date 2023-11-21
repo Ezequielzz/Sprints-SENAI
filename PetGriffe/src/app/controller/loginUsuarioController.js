@@ -1,9 +1,10 @@
 import express from "express";
 import jwt from "jsonwebtoken";
 import LoginUsuario from "../model/tabelaLoginUsuariosPost";
-import { router, chaveSecreta, bcrypt } from "./cadastroUsuario";
+import { router, chaveSecreta, bcrypt } from "./cadastroUsuarioController";
 //ordem padrão requisição e resposta, pode ser outros nomes 
-router.post("/login", async (req, res) => {
+
+const loginUsuario = async (req, res) => {
     const { email, senha } = req.body;
 
     //Buscando o usuário com base no email
@@ -23,4 +24,8 @@ router.post("/login", async (req, res) => {
     const token = jwt.sign({userId: usuario.id}, chaveSecreta, {expiresIn: "1h"});
 
     res.status(200).json({token});
-});
+};
+
+export default {
+    loginUsuario,
+}

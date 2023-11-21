@@ -1,4 +1,3 @@
-import express from "express";
 import bcrypt from "bcrypt"//usado para criar a hash das senhas
 import cadastroUsuarioPost from "../model/tabelaCadastroUsuarioPost.js"
 import crypto from "crypto";
@@ -7,7 +6,7 @@ const chaveSecreta = crypto.randomBytes(32).toString("hex");//gera uma chave de 
 const router = express.Router();
 
 //Rota para a criação de usuário
-router.post("/cadastro", async (req, res) => {
+const cadastroUsuario =  async (req, res) => {
     const { usuari, email, senha, endereco, cep, telefone } = req.body;//recebendo os dados do usuário
 
     //criando um hash seguro da senha
@@ -34,5 +33,7 @@ router.post("/cadastro", async (req, res) => {
             }
         }
     });
-});
-export {router, chaveSecreta, bcrypt};
+};
+export default{
+    cadastroUsuario,
+};

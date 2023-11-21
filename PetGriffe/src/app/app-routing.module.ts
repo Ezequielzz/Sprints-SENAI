@@ -21,7 +21,7 @@ const routes: Routes = [
   {path: 'gatos', component: GatosComponent},
   {path: 'servicos-pet', component: ServicosPetComponent},
   {path: 'familia-griffe', component: FamiliaGriffeComponent},
-  {path: 'passaros', component: PassarosComponent}
+  {path: 'passaros', component: PassarosComponent},
 ];
 
 @NgModule({
