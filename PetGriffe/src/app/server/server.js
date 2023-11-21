@@ -1,16 +1,28 @@
-import expres from "express";
+import Express from "express";
 import path from "path";
-app = expres();
+import cors from "cors";
+import cadastrousuarioRoutes from "../routes/cadastroUsuarioRoutes";
 
-import controllesCadastro from "../controller/cadastroUsuarioController";
-import controllesLogin from "../controller/loginUsuarioController";
-import controllesAdministrador from "../controller/administradorGeralController";
+const app = Express();
 
-    //Configurando o expres
-app.use(expres.urlencoded({ extended: true }));
-app.use(expres.json);
 
-        //Rotas
-app.get("app/cadastro", (req, res) => {
-    res.render()
-});
+//Configurando o Cors
+app.use(cors());
+
+//Configurando o expres
+app.use(Express.urlencoded({ extended: true }));
+app.use(Express.json);
+//Rotas
+app.use("/api", cadastrousuarioRoutes)
+
+if (process.NODE.ENV === 'production') {
+    app.use(Express.static(path.join(__dirname, 'dist')));
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, 'dist/index.html'));
+    });
+  }
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Servidor rorando na porta ${PORT}`);
+})

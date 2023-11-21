@@ -11,7 +11,7 @@ export class CadastroComponent {
   usuario: string = '';
   email: string = '';
   senha: string = '';
-  confirmarSenha: string = '';
+  endereco: string = '';
   cep: string = '';
   telefone: string = '';
 
@@ -22,22 +22,17 @@ export class CadastroComponent {
       usuario: this.usuario,
       email: this.email,
       senha: this.senha,
-      confirmarSenha: this.confirmarSenha,
+      endereco: this.endereco, // Adicionei o campo de endereço para corresponder ao seu backend
       cep: this.cep,
       telefone: this.telefone,
     };
 
-    this.cadastroService.cadastrarUsuario('/cadastro')
-      .subscribe(
+    // Agora, você deve passar os dados do formulário para o serviço
+    this.cadastroService.cadastrarUsuario('cadastro', dadosForm).subscribe(
         (resposta) => {
-          // Lógica para lidar com a resposta do serviço, se necessário
           console.log('Resposta do serviço:', resposta);
-
-          // Após o processamento bem-sucedido, navegue para a rota desejada
-          this.router.navigate(['/cadastro']);
-        },
-        (erro) => {
-          // Lógica para lidar com erros do serviço, se necessário
+          this.router.navigate(['/login']);
+        },(erro) => {
           console.error('Erro no serviço:', erro);
         }
       );

@@ -1,5 +1,5 @@
 import CadastroAdministradorSite from "../model/tabelaCadastroAdministradorSite";
-import { router, chaveSecreta, bcrypt } from "./cadastroUsuarioController";
+import { bcrypt } from "./cadastroUsuarioController";
 
 const cadastroAdministrador = async (req, res) => {
     const { nome, senha, nivel_acesso, chave_segura } = req.body;//recebendo as informações do usuário

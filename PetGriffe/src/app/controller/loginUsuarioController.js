@@ -1,7 +1,6 @@
-import express from "express";
 import jwt from "jsonwebtoken";
 import LoginUsuario from "../model/tabelaLoginUsuariosPost";
-import { router, chaveSecreta, bcrypt } from "./cadastroUsuarioController";
+import { chaveSecreta, bcrypt } from "./cadastroUsuarioController";
 //ordem padrão requisição e resposta, pode ser outros nomes 
 
 const loginUsuario = async (req, res) => {
