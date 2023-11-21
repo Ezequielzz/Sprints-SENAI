@@ -1,10 +1,10 @@
 <div class="cadastro">
   <img src="assets/image/imagem-cadastro.png" alt="Imagem de cadastro" />
-  <form method="post" action="/cadastro">
+  <form (ngSubmit)="submitForm()" #cadastroForm="ngForm">
     <h1 class="cadastro-titulo">Cadastro</h1>
     <div class="coluna1">
       <label for="usuario">Nome de usuário</label>
-      <input type="text" id="usuario" name="usuari" class="inputs" />
+      <input type="text" id="usuario" name="usuario" class="inputs" />
       <label for="email">Email</label>
       <input type="text" id="email" name="email" class="inputs" />
       <label for="senha">Senha</label>
