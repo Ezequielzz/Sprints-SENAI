@@ -340,7 +340,7 @@ body {
     background: #01bbb9;
     color: #fff;
     cursor: pointer;
-    transition: 0.47s; 
+    transition: 0.32s; 
 }
 
 .cardBotao button:hover {
@@ -421,110 +421,158 @@ body {
 
 
 
-/* .container{
-    width: 1000px;
+/*estilização para o rodapé*/
+footer {
+    background-color:rgba(0, 0, 0);
+    width: 100%;
+    bottom: 0;
     position: relative;
+    height: 38vh;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
 }
 
-.container .card{
-    position: relative;
-    cursor: pointer;
-    height: 200px;
+@media screen and (max-width:1029px) {
+    .estilizacao-a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 10pt;
+        transition: 0.5s;
+    }
+
+    footer {
+        height: 20vh;
+        transition: 0.5s;
+
+    }
+
 }
 
-.container .card .face{
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
+@media screen and (max-width:870px) {
+    .estilizacao-a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 8pt;
+        transition: 0.5s;
+        padding-left: 10px;
+
+    }
+
+    .informacoes-adicionais .redes-sociais img {
+        padding-left: 10px;
+    }
+
+    #instagram {
+        height: 20px;
+        width: 20px;
+    }
+
+    #twitwer {
+        height: 20px;
+        width: 20px;
+    }
+
+    #tiktok {
+        height: 20px;
+        width: 20px;
+    }
+
+    .informacoes-footer {
+        margin-right: 3%;
+    }
 }
 
-.container .card .face.face1 {
-    position: relative;
-    background: #333;
+/*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+footer p {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    z-index: 1;
-    transform: translateY(100px);
-    background-size: cover;
-    background-position: center;
-    background-image: url('img/CarrosselTopVendas.png');
+    margin-top: 3%;
 }
 
-
-.container .card:hover .face.face1 {
-    background-image: url('img/CarrosselTopVendas.png');
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    transform: translateY(0);
-}
-
-.container .card:hover .face.face1 h3,
-.container .card:hover .face.face1 img {
-    opacity: 1;
-}
-
-
-.container .card .face.face1 .content{
-    opacity: 0.2;
-    transition: 0.5s;
-}
-
-.container .card:hover .face.face1 .content{
-    opacity: 1;
-}
-
-.container .card .face.face1 .content img{
-    max-width: 100px;
-}
-
-.container .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.container .card .face.face2{
-    position: relative;
-    background: #f3f3f3;
+/*linha horizontal do footer*/
+hr {
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    transform: translateY(-100px);
+    width: 90%;
 }
 
-.container .card:hover .face.face2{
-    transform: translateY(0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-}
-
-.container .card .face.face2 .content p{
-    margin: 0;
-    padding: 0;
-}
-
-.container .card .face.face2 .content a{
-    margin: 15px 0 0;
-    display:  inline-block;
+/*estilização para links*/
+.estilizacao-a {
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
+}
+/*classe principal do footer*/
+.informacoes-adicionais {
+    width: 100%;
+}
+/*estilizando logo Petgriffe, no footer*/
+#logo-footer {
+    display: flex;
+    margin: auto;
+    height: 100px;
 }
 
-.container .card .face.face2 .content a:hover{
-    background: #333;
-    color: #fff;
-} */
+.informacoes-footer li,
+ul {
+    list-style: none;
+}
+/* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+.informacoes-footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 5px;
+}
+/*class principal de tiktok, instagram e twiter*/
+.redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+/*estilizando o tamanho delas*/
+#instagram {
+    height: 25px;
+}
 
+#twiter {
+    height: 30px;
+}
+
+#tiktok {
+    height: 27px;
+}
+
+/* @media screen and (max-width:1300px) {
+    footer {
+        height: 30vh;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .informacoes-adicionais #logo-footer {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .estilizacao-a {
+        font-size: 8pt;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    footer p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */
 

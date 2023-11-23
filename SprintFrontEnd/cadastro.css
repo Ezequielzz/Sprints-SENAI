@@ -57,17 +57,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 20px;
+  margin-left: 70px;
   width: 800px;
   height: 465px;
 }
 
 .formulario input {
-  width: 155px;
-  height: 25px;
+  width: 160px;
+  height: 30px;
   margin-top: 7px;
   border: solid 1px #939393;
-  border-radius: 10px;
+  border-radius: 17px;
+}
+
+.formulario label {
+  font-family: 'Lilita One', sans-serif;
 }
 
 .formulario input:not(:last-child) {
@@ -88,11 +92,15 @@ body {
 }
 
 .formulario2 input {
-  width: 155px;
-  height: 25px;
+  width: 160px;
+  height: 30px;
   margin-top: 7px;
   border: solid 1px #939393;
-  border-radius: 10px;
+  border-radius: 17px;
+}
+
+.formulario2 label {
+  font-family: 'Lilita One', sans-serif;
 }
 
 .formulario2 input:not(:last-child) {
@@ -100,9 +108,25 @@ body {
   width: 155px;
 }
 
-.enviarCadastro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.cadastro .formulario3 {
+  position: relative;
+  top: 170px;
+  right: 250px;
+}
+
+.enviarCadastro input{
+  width: 150px;
+  height: 45px;
+  border-radius: 27px;
+  border: solid 2px #298e8a;
+  background: #3ac9c5;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.30s;
+}
+
+.enviarCadastro input:hover {
+  
 }
