@@ -1,15 +1,5 @@
 {
   "type": "module",
-  "script": {
-<<<<<<< HEAD
-    "start": " npx --exec babel-node conexaoBancoDados.js"
-=======
-    "start": "nodemon conexaoBancoDados.js"
-  }, "/api":{
-    "target": "http://localhost:3000",
-    "secure": false
->>>>>>> a34113e0ae0bc2fde8499bf714827a9b800cea25
-  },
   "name": "pet-griffe",
   "version": "0.0.0",
   "scripts": {

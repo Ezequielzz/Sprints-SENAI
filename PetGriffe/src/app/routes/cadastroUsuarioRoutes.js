@@ -1,8 +1,8 @@
 import express from "express";
-import cadastroUsuarioController from "../controller/cadastroUsuarioController";
+import cadastroUsuarioController from "../controller/cadastroUsuarioController.js";
 
 const router = express.Router();
 
-router.post("/cadastro", cadastroUsuarioController.cadastroUsuario);
+router.post("api/cadastro", cadastroUsuarioController.cadastroUsuario);
 
 export default router;
