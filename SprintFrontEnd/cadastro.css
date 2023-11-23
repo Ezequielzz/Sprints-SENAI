@@ -66,8 +66,12 @@ body {
   width: 160px;
   height: 30px;
   margin-top: 7px;
-  border: solid 1px #939393;
+  border: solid 2px #000000;
   border-radius: 17px;
+}
+
+::placeholder {
+  color: black;
 }
 
 .formulario label {
@@ -95,7 +99,7 @@ body {
   width: 160px;
   height: 30px;
   margin-top: 7px;
-  border: solid 1px #939393;
+  border: solid 2px #000000;
   border-radius: 17px;
 }
 
@@ -118,15 +122,11 @@ body {
   width: 150px;
   height: 45px;
   border-radius: 27px;
-  border: solid 2px #298e8a;
+  border: none;
   background: #3ac9c5;
   color: #ffffff;
   font-weight: 700;
   font-size: 17px;
   cursor: pointer;
   transition: 0.30s;
-}
-
-.enviarCadastro input:hover {
-  
 }
