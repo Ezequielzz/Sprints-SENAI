@@ -116,7 +116,7 @@ body {
   position: relative;
   top: 170px;
   right: 250px;
-}
+}           
 
 .enviarCadastro input{
   width: 150px;
@@ -129,4 +129,8 @@ body {
   font-size: 17px;
   cursor: pointer;
   transition: 0.30s;
+}
+
+.enviarCadastro input:hover {
+   background: #41dfd9;
 }
