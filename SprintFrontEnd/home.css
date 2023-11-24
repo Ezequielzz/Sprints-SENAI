@@ -350,10 +350,19 @@ body {
 
 /* -----------------------  XXXXXX ----------------------- */
 
+
+
+
+
+
+
+
+
 /* ----------------------- SERVIÇOS ----------------------- */
 
 .servicos {
     margin-top: 115px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -409,7 +418,7 @@ body {
     background: #01bbb9;
     color: #fff;
     cursor: pointer;
-    transition: 0.47s;
+    transition: 0.32s;
 }
 
 .cardSBotao button:hover {
