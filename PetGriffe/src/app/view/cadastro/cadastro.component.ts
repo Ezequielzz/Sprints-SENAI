@@ -18,6 +18,8 @@ export class CadastroComponent {
   constructor(private router: Router, private cadastroService: CadastroService) {}
 
   submitForm() {
+console.log("Enviando dados do formulário:");
+
     const dadosForm = {
       usuario: this.usuario,
       email: this.email,
@@ -28,9 +30,9 @@ export class CadastroComponent {
     };
 
     // Agora, você deve passar os dados do formulário para o serviço
-    this.cadastroService.cadastrarUsuario('cadastro', dadosForm).subscribe(
-        (resposta) => {
-          console.log('Resposta do serviço:', resposta);
+    this.cadastroService.cadastrarUsuario('api/cadastro', dadosForm).subscribe(
+        (response) => {
+          console.log('Resposta do serviço:', response);
           this.router.navigate(['/login']);
         },(erro) => {
           console.error('Erro no serviço:', erro);
