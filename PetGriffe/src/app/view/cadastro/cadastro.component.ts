@@ -24,7 +24,7 @@ console.log("Enviando dados do formulário:");
       usuario: this.usuario,
       email: this.email,
       senha: this.senha,
-      endereco: this.endereco, // Adicionei o campo de endereço para corresponder ao seu backend
+      endereco: this.endereco, 
       cep: this.cep,
       telefone: this.telefone,
     };

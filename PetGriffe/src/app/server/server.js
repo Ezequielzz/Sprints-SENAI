@@ -1,7 +1,7 @@
 import Express from "express";
 import path from "path";
 import cors from "cors";
-import cadastrousuarioRoutes from "../routes/cadastroUsuarioRoutes.js"
+import cadastrousuarioRoutes from "../routes/cadastroUsuarioRoutes.js";
 
 const app = Express();
 

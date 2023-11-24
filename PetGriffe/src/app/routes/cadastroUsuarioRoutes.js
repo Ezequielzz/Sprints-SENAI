@@ -3,6 +3,6 @@ import cadastroUsuarioController from "../controller/cadastroUsuarioController.j
 
 const router = express.Router();
 
-router.post("api/cadastro", cadastroUsuarioController.cadastroUsuario);
+router.post("/api/cadastro", cadastroUsuarioController.cadastroUsuario);
 
 export default router;
