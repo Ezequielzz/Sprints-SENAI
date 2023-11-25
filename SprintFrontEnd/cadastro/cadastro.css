@@ -25,6 +25,11 @@ body {
   color: rgb(255, 255, 255);
   margin: 0 35px;
   margin-bottom: 30px;
+  transition: 0.30s;
+}
+
+.link:hover {
+  color: #FCB212;
 }
 
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../home/home.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,29 +15,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
 
-    <title>Página Inicial</title>
+    <title>Página Inicial - PetGriffe</title>
 </head>
 
 <body>
+
     <!----------------- NAVBAR ------------------>
     <div class="row">
         <div class="col-1">
             <div class="navIcon">
-                <a href="">
-                    <img src="img/petgriffeIcon2.png" alt="Icone Petgriffe">
+                <a href="../home/home.html">
+                    <img src="../img/petgriffeIcon2.png" alt="Icone Petgriffe">
                 </a>
             </div>
             <div class="barraBusca">
                 <input type="text" placeholder="Buscar..." class="barra">
-                <img src="img/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;">
+                <img src="../img/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;">
             </div>
             <div class="navegacao">
-                <a href="" class="navegar">Login</a>
+                <a href="../login/login.html" class="navegar">Login</a>
                 <p class="pnavegar">e</p>
-                <a href="cadastro.html" class="navegar">Cadastro</a>
+                <a href="../cadastro/cadastro.html" class="navegar">Cadastro</a>
                 <div class="carrinhoIcon">
                     <a href="">
-                        <img src="img/carrinhoIcon.png" alt="">
+                        <img src="../img/carrinhoIcon.png" alt="">
                     </a>
                 </div>
             </div>
@@ -45,9 +46,9 @@
         <div class="col-2">
             <div class="navegacao2">
                 <a href="" class="navegar2">Serviço Pet</a>
-                <a href="" class="navegar2">Gatos</a>
-                <a href="" class="navegar2">Cachorros</a>
-                <a href="" class="navegar2">Pássaros</a>
+                <a href="../animais/gato.html" class="navegar2">Gatos</a>
+                <a href="../animais/cachorro.html" class="navegar2">Cachorros</a>
+                <a href="../animais/passaro.html" class="navegar2">Pássaros</a>
                 <a href="" class="navegar2">Clube Griffe</a>
             </div>
         </div>
@@ -66,29 +67,29 @@
 
             <div class="imagem first">
                 <a href="">
-                    <img src="img/CarrosselSaúde.png" alt="Imagem 1 Carrosel">
+                    <img src="../img/CarrosselSaúde.png" alt="Imagem 1 Carrosel">
                 </a>
             </div>
             <div class="imagem">
                 <a href="">
-                    <img src="img/CarrosselTopVendas.png" alt="Imagem 2 Carrosel">
+                    <img src="../img/CarrosselTopVendas.png" alt="Imagem 2 Carrosel">
                 </a>
             </div>
             <div class="imagem">
                 <a href="">
-                    <img src="img/CarrosselBanho&Tosa.png" alt="Imagem 3 Carrosel">
+                    <img src="../img/CarrosselBanho&Tosa.png" alt="Imagem 3 Carrosel">
                 </a>
             </div>
             <div class="imagem">
                 <a href="">
-                    <img src="img/CarrosselFamiliaGriffe.png" alt="Imagem 4 Carrosel">
+                    <img src="../img/CarrosselFamiliaGriffe.png" alt="Imagem 4 Carrosel">
                 </a>
             </div>
 
             <div class="botoes">
-                <div class="anterior" onclick="mudarImagem(-1)"><img src="img/setaCarrossel2.png" alt="Seta Voltar">
+                <div class="anterior" onclick="mudarImagem(-1)"><img src="../img/setaCarrossel2.png" alt="Seta Voltar">
                 </div>
-                <div class="proximo" onclick="mudarImagem(1)"><img src="img/setaCarrossel1.png" alt="Seta Avançar">
+                <div class="proximo" onclick="mudarImagem(1)"><img src="../img/setaCarrossel1.png" alt="Seta Avançar">
                 </div>
             </div>
 
@@ -116,8 +117,8 @@
         <section class="categorias">
             <div class="cardC">
                 <div class="cardCImg">
-                    <a href="cachorro.html">
-                        <img src="img/categoriaCachorro.png" alt="Categoria Cachorro">
+                    <a href="../animais/cachorro.html">
+                        <img src="../img/categoriaCachorro.png" alt="Categoria Cachorro">
                     </a>
                 </div>
                 <div class="cardCBody">
@@ -129,8 +130,8 @@
 
             <div class="cardC">
                 <div class="cardCImg">
-                    <a href="gato.html">
-                        <img src="img/categoriaGato.png" alt="Categoria Gato">
+                    <a href="../animais/gato.html">
+                        <img src="../img/categoriaGato.png" alt="Categoria Gato">
                     </a>
                 </div>
                 <div class="cardCBody">
@@ -142,8 +143,8 @@
 
             <div class="cardC">
                 <div class="cardCImg">
-                    <a href="passaro.html">
-                        <img src="img/CategoriaPassaro.png" alt="Categoria Pássaro">
+                    <a href="../animais/passaro.html">
+                        <img src="../img/CategoriaPassaro.png" alt="Categoria Pássaro">
                     </a>
                 </div>
                 <div class="cardCBody">
@@ -165,11 +166,14 @@
         <section class="maisVendidos">
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -179,11 +183,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -193,11 +200,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -207,11 +217,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -233,11 +246,14 @@
 
              <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -247,11 +263,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -261,11 +280,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -275,11 +297,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -300,11 +325,14 @@
         <section class="recomendados">
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -314,11 +342,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -328,11 +359,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -342,11 +376,14 @@
 
             <div class="card">
                 <div class="cardImg">
-                    <img src="img/RaçãoBiofresh.jpg" alt="">
+                    <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                 </div>
                 <div class="cardBody">
                     <div class="cardTitulo">
                         <p>Ração Biofresh p/ Cães</p>
+                    </div>
+                    <div class="cardPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardBotao">
                         <button>Comprar</button>
@@ -368,11 +405,14 @@
 
             <div class="cardS">
                 <div class="cardSImg">
-                    <img src="img/CarrosselBanho&Tosa.png" alt="">
+                    <img src="../img/CarrosselBanho&Tosa.png" alt="">
                 </div>
                 <div class="cardSBody">
                     <div class="cardSTitulo">
-                        <p>Banho & Tosa</p>
+                        <p>Banho & Tosa Básico</p>
+                    </div>
+                    <div class="cardSPreco">
+                        <p>R$39,90</p>
                     </div>
                     <div class="cardSBotao">
                         <button>Agendar</button>
@@ -382,12 +422,15 @@
 
             <div class="cardS">
                 <div class="cardSImg">
-                    <img src="img/CarrosselBanho&Tosa.png" alt="">
+                    <img src="../img/CarrosselBanho&Tosa.png" alt="">
                 </div>
                 <div class="cardSBody">
                     <div class="cardSTitulo">
                         <p>Veterinário</p>
                     </div>
+                    <div class="cardSPreco">
+                        <p>R$00,00</p>
+                    </div>
                     <div class="cardSBotao">
                         <button>Agendar</button>
                     </div>
@@ -396,11 +439,14 @@
 
             <div class="cardS">
                 <div class="cardSImg">
-                    <img src="img/CarrosselBanho&Tosa.png" alt="">
+                    <img src="../img/CarrosselBanho&Tosa.png" alt="">
                 </div>
                 <div class="cardSBody">
                     <div class="cardSTitulo">
                         <p>Adestramento</p>
+                    </div>
+                    <div class="cardSPreco">
+                        <p>R$00,00</p>
                     </div>
                     <div class="cardSBotao">
                         <button>Agendar</button>
@@ -424,28 +470,20 @@
                 <li><a href="#"class="estilizacao-a">Política de Frete</a></li>
                 <li><a href="#"class="estilizacao-a">Política de Reembolso</a></li>
                 <li><a href="#"class="estilizacao-a">Termos de Serviço</a></li>
-                <li><a href="#"class="estilizacao-a">Vagas</a></li>
             </ul>
-            <p class="estilizacao-a">© 2021, TESTE Ltd, Todos os direitos reservados.</p>
+            <p class="estilizacao-a">© 2023, PetGriffe Ltd, Todos os direitos reservados.</p>
             <hr>
-            <img src="assets/image/logo.png" id="logo-footer" alt="Imagem logo da PetGriffe">
+            <img src="../img/petgriffeIcon2.png" id="logo-footer" alt="Imagem logo da PetGriffe">
             <div class="redes-sociais">
-                <a href="https://www.instagram.com/"><img id="instagram" src="img/instagramIcon.png" alt="Rede social, instagram"></a>
-                <a href="https://twitter.com/"><img id="twiter" src="img/twitterIcon.png" alt="Rede social, twiter"></a>
-                <a href="https://www.tiktok.com/explore"><img id="tiktok" src="img/tiktokIcon.png" alt="Rede social, tiktok"></a>
+                <a href="https://www.instagram.com/"><img id="instagram" src="../img/instagramIcon.png" alt="Rede social, instagram" style="height: 44px; margin-right: 10px;"></a>
+                <a href="https://twitter.com/"><img id="twiter" src="../img/twitterIcon.png" alt="Rede social, twiter" style="margin-right: 12px;"></a>
+                <a href="https://www.tiktok.com/explore"><img id="tiktok" src="../img/tiktokIcon.png" alt="Rede social, tiktok" style="height: 30px;"></a>
             </div>
         </div>
     </footer>
 
-
-
-
-
-
-
-
 </body>
 
-<script src="home.js"></script>
+<script src="../home/home.js"></script>
 
 </html>

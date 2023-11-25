@@ -1,0 +1,601 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* -----------------------  NAVBAR ----------------------- */
+
+.col-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3ac9c5;
+}
+
+.col-2 {
+    display: flex;
+    justify-content: center;
+    background: #3ac9c5;
+    margin-bottom: 25px;
+}
+
+.navIcon img {
+    width: 95px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegar {
+    font-family: 'Bevan', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    transition: 0.30s;
+}
+
+.pnavegar {
+    font-family: 'Bevan', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+}
+
+.carrinhoIcon img {
+    width: 80px;
+    height: 70px;
+}
+
+.navegar2 {
+    font-family: 'Bevan', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    transition: 0.30s;
+}
+
+.navegar:hover, .navegar2:hover {
+    color: #FCB212;
+}
+
+.barraBusca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    width: 550px;
+}
+
+.barra {
+    height: 35px;   
+    width: 500px;
+    border: none;
+    border-top: #b6b5b5 solid 2px;
+    border-bottom: #b6b5b5 solid 2px;
+    border-left: #b6b5b5 solid 2px;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+}
+
+.lupa {
+    background: #ffffff;
+    border-top: #b6b5b5 solid 2px;
+    border-bottom: #b6b5b5 solid 2px;
+    border-right: #b6b5b5 solid 2px;
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CARROSSEL ----------------------- */
+
+.carrossel {
+    margin: 0 auto;
+    width: 1010px;
+    height: 530px;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.imagens {
+    display: flex;
+    width: 400%;
+    height: 530px;
+}
+
+.imagens input {
+    display: none;
+}
+
+.imagem {
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.imagem img {
+    width: 1010px;
+    height: auto;
+}
+
+.manualNav {
+    position: absolute;
+    width: 1010px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background: #ffffff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.autoNav div {
+    border: 2px solid #3ac9c5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.autoNav {
+    position: absolute;
+    width: 1010px;
+    margin-top: 490px;
+    display: flex;
+    justify-content: center;
+}
+
+.autoNav div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~.autoNav .auto-btn1 {
+    background: #fff;
+}
+
+#radio2:checked ~.autoNav .auto-btn2 {
+    background: #fff;
+}
+
+#radio3:checked ~.autoNav .auto-btn3 {
+    background: #fff;
+}
+
+#radio4:checked ~.autoNav .auto-btn4 {
+    background: #fff;
+}
+
+
+.botoes {
+    position: absolute;
+    width: 1010px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.botoes img {
+    width: 30px;
+    height: 30px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CATEGORIAS ----------------------- */
+
+.categorias {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardC:not(:last-child) {
+    margin-right: 45px;
+}
+
+.cardC {
+    width: 245px;
+    height: 340px;
+    border: solid 2px #FCB212;
+    background-color: #01bbb9;
+    border-radius: 10px;
+}
+
+.cardC {
+    transition: all 0.45s ease-in;
+    transition: all 0.35s ease-out;
+}
+
+.cardC:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cardC .cardCImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardC .cardCImg img {
+    width: 100%;
+    height: 265px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+}
+
+.cardCBody h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 25px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CARDS ----------------------- */
+
+.tituloCards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    font-family: 'Bevan', serif;
+}
+
+.maisVendidos, .promocoes, .recomendados {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    width: 170px;
+    height: 350px;
+    border: solid 2px #d4d4d4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.card:not(:last-child) {
+    margin-right: 75px;
+}
+
+.card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardImg img {
+    width: 120px;
+    height: 200px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+}
+
+.card .cardBody .cardTitulo, .cardPreco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardBody .cardTitulo p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.card .cardBody .cardPreco p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.card .cardBody .cardBotao {
+    display: flex;
+    justify-content: center;
+}
+
+.cardBotao button {
+    border: solid 1px #027674; 
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #01bbb9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.32s; 
+}
+
+.cardBotao button:hover {
+    background: #FCB212;
+    border: solid 1px #ab790d;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+
+
+
+
+
+
+
+
+/* ----------------------- SERVIÇOS ----------------------- */
+
+.servicos {
+    margin-top: 115px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardS {
+    width: 320px;
+    height: 335px;
+    margin-bottom: 30px;
+    border: solid 2px #d4d4d4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.cardS:not(:last-child) {
+    margin-right: 75px;
+}
+
+.cardS .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardS .cardSImg img {
+    width: 100%;
+    height: 180px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+}
+
+.cardS .cardSBody .cardSTitulo, .cardSPreco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardS .cardSBody .cardSTitulo p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.cardS .cardSBody .cardSPreco p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.cardS .cardSBody .cardSBotao {
+    display: flex;
+    justify-content: center;
+}
+
+.cardSBotao button {
+    border: solid 1px #027674; 
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #01bbb9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.32s;
+}
+
+.cardSBotao button:hover {
+    background: #FCB212;
+    border: solid 1px #ab790d;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+
+
+/*estilização para o rodapé*/
+footer {
+    background-color:rgba(0, 0, 0);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:1029px) {
+    .estilizacao-a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 10pt;
+        transition: 0.5s;
+    }
+
+    footer {
+        height: 20vh;
+        transition: 0.5s;
+
+    }
+
+}
+
+@media screen and (max-width:870px) {
+    .estilizacao-a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 8pt;
+        transition: 0.5s;
+        padding-left: 10px;
+
+    }
+
+    .informacoes-adicionais .redes-sociais img {
+        padding-left: 10px;
+    }
+
+    #instagram {
+        height: 20px;
+        width: 20px;
+    }
+
+    #twitwer {
+        height: 20px;
+        width: 20px;
+    }
+
+    #tiktok {
+        height: 20px;
+        width: 20px;
+    }
+
+    .informacoes-footer {
+        margin-right: 3%;
+    }
+}
+
+/*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+/*linha horizontal do footer*/
+hr {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+/*estilização para links*/
+.estilizacao-a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*classe principal do footer*/
+.informacoes-adicionais {
+    width: 100%;
+}
+/*estilizando logo Petgriffe, no footer*/
+#logo-footer {
+    display: flex;
+    margin: auto;
+    height: 100px;
+}
+
+.informacoes-footer li,
+ul {
+    list-style: none;
+}
+/* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+.informacoes-footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 5px;
+}
+/*class principal de tiktok, instagram e twiter*/
+.redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+/*estilizando o tamanho delas*/
+#instagram {
+    height: 25px;
+}
+
+#twiter {
+    height: 30px;
+}
+
+#tiktok {
+    height: 27px;
+}
+
+/* @media screen and (max-width:1300px) {
+    footer {
+        height: 30vh;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .informacoes-adicionais #logo-footer {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .estilizacao-a {
+        font-size: 8pt;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    footer p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+

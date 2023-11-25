@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="../login/login.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,55 +15,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <!------------------>
 
-    <title>Cadastro</title>
+    <title>Login - PetGriffe</title>
 
 </head>
 
 <body>
     <header class="navbar">
-        <a href="home.html"><img class="navIcon" src="img/petgriffeIcon2.png" alt="icon"></a>
+        <a href="../home/home.html"><img class="navIcon" src="../img/petgriffeIcon2.png" alt="icon"></a>
         <nav class="nav">
             <div class="linkMenu">
                 <a href="" class="link">Serviço Pet</a>
-                <a href="" class="link">Gatos</a>
-                <a href="" class="link">Cachorros</a>
-                <a href="" class="link">Pássaros</a>
+                <a href="../animais/gato.html" class="link">Gatos</a>
+                <a href="../animais/cachorro.html" class="link">Cachorros</a>
+                <a href="../animais/passaro.html" class="link">Pássaros</a>
                 <a href="" class="link">Família Griffe</a>
             </div>
         </nav>
     </header>
 
-    <div class="cadastro">
-        <div class="imgCadastro">
-            <img src="img/imgCadastro.png" alt="">
+    <div class="login">
+        <div class="imglogin">
+            <img src="../img/imgLogin.png" alt="">
         </div>
         <div class="formulario">
             <label for="lnome">Nome de Usuário</label>
             <input type="text" id="lnome" name="nome" placeholder="Insira seu username">
 
-            <label for="lemail">Email</label>
-            <input type="text" id="lemail" name="email" placeholder="Insira seu email">
-
             <label for="lsenha">Senha</label>
             <input type="text" id="lsenha" name="senha" placeholder="Insira sua senha">
-        </div>
-        <div class="formulario2">
-            <label for="lnome">CPF</label>
-            <input type="text" id="lnome" name="nome" placeholder="Insira seu CPF">
 
-            <label for="lemail">CEP</label>
-            <input type="text" id="lemail" name="email" placeholder="Insira seu CEP">
-
-            <label for="lsenha">Número</label>
-            <input type="text" id="lsenha" name="senha" placeholder="Insira seu nº residencial">
-        </div>
-        <div class="formulario3">
-            <div class="enviarCadastro">
+            <div class="enviarlogin">
                 <input type="submit" id="lenviar" name="enviar">
             </div>
         </div>
     </div>
-    
+
 
 </body>
 
