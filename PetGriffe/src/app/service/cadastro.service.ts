@@ -12,7 +12,8 @@ export class CadastroService {
 
   cadastrarUsuario(rota: string, dadosForm: { usuario: string; email: string;senha: string; endereco: string; cep: string; telefone: string; }): Observable<any> {
 
-    const url = `${this.baseUrl}/api/${rota}`;
+    const url = `${this.baseUrl}/${rota}`;
+    console.log('URL da requisição:', url); // Adicione esta linha para verificar a URL
     return this.http.post(url, dadosForm);
   }
 }

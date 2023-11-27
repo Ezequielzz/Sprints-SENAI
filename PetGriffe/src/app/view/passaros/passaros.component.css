@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+}
+#img-passaro{
+    width: 20%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.categoria {
+  width: 25%;
+  height: 6vh;
+  border-radius: 15px;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3ac9c5;
+}
+.categoria p{
+    color: #ffffff;
+    font-size: 15pt;
+    padding-left: 40px;
+}
+.produtos{
+    display: flex;
+    flex-direction: row;
+}
+.cards{
+    width: 30%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 6px;
+}
+@media screen and (max-width:1100){
+   
+}
+
