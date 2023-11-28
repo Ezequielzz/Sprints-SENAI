@@ -2,7 +2,7 @@ import Sequelize from "sequelize";
 //evitar importações desnecessária pata evitar dependencias circulares entre os modulos
 //conectando com o banco de dados(banco, usuário, senha,  {host(onde será hospedado)}, dialect(dizendo qual é o banco de dados))
 
-const sequelize = new Sequelize("PetGriffeDB", "root", "root1", {
+const sequelize = new Sequelize("PetGriffeDB", "root", "", {
   host: "localhost",
   dialect: "mysql",
 });

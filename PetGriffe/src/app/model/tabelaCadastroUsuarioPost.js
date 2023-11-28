@@ -3,7 +3,8 @@ import bancoDados from "./conexaoBancoDados.js";
 //criando a tabela e definindo a entidade
 const CadstroUsuario = bancoDados.sequelize.define("cadastroUsuario", {
     nome: {
-        type: bancoDados.Sequelize.STRING
+        type: bancoDados.Sequelize.STRING,
+        allowNull: false
     },
     email: {
         type: bancoDados.Sequelize.STRING,
