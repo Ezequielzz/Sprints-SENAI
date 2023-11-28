@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'header', component: HeaderComponent},
   {path: 'inicio', component: InicioComponent},
   {path: 'footer', component: FooterComponent},
-  {path: 'api/cadastro', component: CadastroComponent},
+  {path: 'cadastro', component: CadastroComponent},
   {path: 'login', component: LoginComponent},
   {path: 'cachorros', component: CachorrosComponent},
   {path: 'gatos', component: GatosComponent},

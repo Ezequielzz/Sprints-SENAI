@@ -29,8 +29,8 @@ console.log("Enviando dados do formulário:");
       telefone: this.telefone,
     };
 
-    // Agora, você deve passar os dados do formulário para o serviço
-    this.cadastroService.cadastrarUsuario('api/cadastro', dadosForm).subscribe(
+    // Passando os dados do formulário para o serviço
+    this.cadastroService.cadastrarUsuario('cadastro', dadosForm).subscribe(
         (response) => {
           console.log('Resposta do serviço:', response);
           this.router.navigate(['/login']);

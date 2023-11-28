@@ -2,7 +2,7 @@ import express from "express";
 import cadastroUsuarioController from "../controller/cadastroUsuarioController.js";
 
 const router = express.Router();
-
-router.post("/api/cadastro", cadastroUsuarioController.cadastroUsuario);
+//rota cadastro (sem prefixo /api)
+router.post("/cadastro", cadastroUsuarioController.cadastroUsuario);
 
 export default router;
