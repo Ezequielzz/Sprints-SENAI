@@ -1,0 +1,121 @@
+.carrossel {
+    margin: 0 auto;
+    width: 1010px;
+    height: 530px;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+.imagens {
+    display: flex;
+    width: 400%;
+    height: 530px;
+}
+
+.imagens input {
+    display: none;
+}
+
+.imagem {
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.imagem img {
+    width: 1010px;
+    height: auto;
+}
+
+.manualNav {
+    position: absolute;
+    width: 1010px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background: #ffffff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.autoNav div {
+    border: 2px solid #3ac9c5;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.autoNav {
+    position: absolute;
+    width: 1010px;
+    margin-top: 490px;
+    display: flex;
+    justify-content: center;
+}
+
+.autoNav div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~.autoNav .auto-btn1 {
+    background: #fff;
+}
+
+#radio2:checked ~.autoNav .auto-btn2 {
+    background: #fff;
+}
+
+#radio3:checked ~.autoNav .auto-btn3 {
+    background: #fff;
+}
+
+#radio4:checked ~.autoNav .auto-btn4 {
+    background: #fff;
+}
+
+
+.botoes {
+    position: absolute;
+    width: 1010px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.botoes img {
+    width: 30px;
+    height: 30px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */

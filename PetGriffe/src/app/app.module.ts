@@ -18,6 +18,13 @@ import { PassarosComponent } from './view/passaros/passaros.component';
 import { LoginComponent } from './view/login/login.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { CardsComponent } from './view/cachorros/cards/cards.component';
+import { CardsPassarosComponent } from './view/passaros/cards-passaros/cards-passaros.component';
+import { CardsGatosComponent } from './view/gatos/cards-gatos/cards-gatos.component';
+import { CardHomeComponent } from './view/home/card-home/card-home.component';
+import { CarouselComponent } from './view/home/carousel/carousel.component';
+import { CategoriasComponent } from './view/home/categorias/categorias.component';
+// import {carsl}
 
 @NgModule({
   declarations: [
@@ -31,7 +38,13 @@ import { HttpClientModule } from '@angular/common/http';
     FamiliaGriffeComponent,
     ServicosPetComponent,
     PassarosComponent,
-    LoginComponent
+    LoginComponent,
+    CardsComponent,
+    CardsPassarosComponent,
+    CardsGatosComponent,
+    CardHomeComponent,
+    CarouselComponent,
+    CategoriasComponent,
   ],
   imports: [
     BrowserModule,

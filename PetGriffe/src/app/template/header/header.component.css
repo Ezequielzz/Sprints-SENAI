@@ -1,258 +1,88 @@
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.col-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3ac9c5;
 }
 
-::selection {
-  background-color: rgb(168, 153, 58);
-}
-
-.header {
-  background-color: #3ac9c5;
-  height: 15vh;
+.col-2 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  background: #3ac9c5;
+  margin-bottom: 25px;
 }
 
-.style-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-#logo img {
-  height: 100px;
-}
-
-#carrinho-compras img {
-  height: 60px;
-}
-
-/*removendo o focus da input*/
-textarea:focus,
-select:focus,
-input:focus {
-  outline: 0;
-}
-
-.pesquisas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-#barra-pesquisa {
-  width: 400px;
-  border-radius: 4px;
-  border: solid 0.5px #808080;
-  padding-right: 30px;
-}
-
-.botao-pesquisa {
-  position: absolute;
-  right: 10px;
-  /* Ajuste a posição à direita conforme necessário */
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  background-image: url("/assets/image/lupa.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.navegacao-pai {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
-  height: 5vh;
-}
-
-.autenticacao-usuario {
-  display: flex;
-  align-items: center;
-}
-
-#cadastro-login {
-  list-style: none;
-  display: flex;
-  padding-left: 130px;
-}
-
-#cadastro-login li {
-  padding-left: 10px;
+.navIcon img {
+  width: 95px;
 }
 
 .navegacao {
   display: flex;
-  justify-content: center;
-  position: fixed;
-  margin-top: 140px;
-  margin-right: 50px;
-}
-
-.navegacao ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navegacao li {
-  display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.navegacao li a {
+.navegar {
+  font-family: 'Bevan', serif;
+  font-size: 15px;
   text-decoration: none;
-  padding: 5px 20px;
+  color: rgb(255, 255, 255);
+  margin: 0 5px;
+  transition: 0.30s;
 }
 
-.navegacao li+li {
-  margin-left: 10px;
+.pnavegar {
+  font-family: 'Bevan', serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 5px;
 }
 
-@media screen and (max-width: 1370px) {
-  .menu-hamburguer {
-    margin-left: 30px;
-    margin-top: -35px;
-  }
+.carrinhoIcon img {
+  width: 80px;
+  height: 70px;
+}
 
-  .menu-faketrigger {
-    position: absolute;
-    width: 50px;
-    height: 60px;
-    z-index: 1000;
-    margin-top: -8px;
-    opacity: 0;
-    cursor: pointer;
-  }
+.navegar2 {
+  font-family: 'Bevan', serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+  transition: 0.30s;
+}
 
-  .menu-linhas {
-    position: absolute;
-    z-index: 999;
-    width: 50px;
-    height: 10px;
-  }
+.navegar:hover, .navegar2:hover {
+  color: #FCB212;
+}
 
-  .menu-linhas span {
-    display: block;
-    width: 50px;
-    height: 10px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    transition: all ease-in 0.3s;
-  }
+.barraBusca {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 140px;
+  width: 550px;
+}
 
-  .menu-faketrigger:checked~.menu-linhas span {
-    background-color: #232323;
-  }
+.barra {
+  height: 35px;   
+  width: 500px;
+  border: none;
+  border-top: #b6b5b5 solid 2px;
+  border-bottom: #b6b5b5 solid 2px;
+  border-left: #b6b5b5 solid 2px;
+  border-bottom-left-radius: 19px;
+  border-top-left-radius: 19px;
+  outline: 0;
+}
 
-  .menu-faketrigger:checked~.menu-linhas span:nth-child(1) {
-    transform-origin: 0% 0%;
-    transform: rotate(45deg) scaleX(1.25);
-    /*scaleX para aumentar o tamanho após a rotação*/
-  }
-
-  .menu-faketrigger:checked~.menu-linhas span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-faketrigger:checked~.menu-linhas span:nth-child(3) {
-    transform-origin: 0% 100%;
-    transform: rotate(-45deg) scaleX(1.25);
-  }
-
-    .menu-hamburguer ul {
-        position: absolute;
-        z-index: 998;
-        left: 0;
-        /*encosta na esquerda*/
-        top: 0;
-        /*encosta em cima*/
-        width: 300px;
-        height: calc(100vh - 160px);
-        /*com o calc remove a barra de rolagem*/
-        padding-top: 160px;
-        /*vai gerar barra de rolagem*/
-        background-color: #ededed;
-        margin-left: -300px;
-        /*ficar fora da tela*/
-        transition: all 0.3s ease-in-out;
-        border-bottom-right-radius: 3px;
-    }
-
-  .menu-faketrigger:checked~ul {
-    margin-left: 0;
-    /*aperece novamente*/
-  }
-
-  .menu-hamburguer ul li {
-    padding: 20px 80px;
-  }
-
-  .menu-hamburguer ul li a {
-    color: #232323;
-    transition: all ease-in-out 0.3s;
-    font-size: 22px;
-  }
-
-  .menu-hamburguer ul li a:hover {
-    color: #00000059;
-  }
-
-  .navegacao,
-  .autenticacao-usuario,
-  .navegacao-pai,
-  #barra-pesquisa {
-    display: none;
-  }
-
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-
-  }
-
-
-  #logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin-top: -10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .navegacao-pai {
-    display: flex;
-    align-items: center;
-  }
-
-  @media screen and (max-height:700px) {
-    .menu-hamburguer ul {
-      width: 220px;
-      height: calc(100vh - 90px);
-      /*com o calc remove a barra de rolagem*/
-      padding-top: 100px;
-      margin-left: -220px;
-      /*ficar fora da tela*/
-    }
-
-    .menu-hamburguer ul li {
-      padding: 14px 50px;
-    }
-
-    .menu-hamburguer ul li a {
-      font-size: 17px;
-    }
-  }
+.lupa {
+  background: #ffffff;
+  border-top: #b6b5b5 solid 2px;
+  border-bottom: #b6b5b5 solid 2px;
+  border-right: #b6b5b5 solid 2px;
+  border-bottom-right-radius: 19px;
+  border-top-right-radius: 19px;
 }

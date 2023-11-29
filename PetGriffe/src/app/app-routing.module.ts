@@ -10,6 +10,7 @@ import { CachorrosComponent } from './view/cachorros/cachorros.component';
 import { GatosComponent } from './view/gatos/gatos.component';
 import { ServicosPetComponent } from './view/servicos-pet/servicos-pet.component';
 import { FamiliaGriffeComponent } from './view/familia-griffe/familia-griffe.component';
+// import {home}
 
 const routes: Routes = [
   {path: 'header', component: HeaderComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'servicos-pet', component: ServicosPetComponent},
   {path: 'familia-griffe', component: FamiliaGriffeComponent},
   {path: 'passaros', component: PassarosComponent},
+  
 ];
 
 @NgModule({

@@ -1,51 +1,32 @@
-<header class="header">
-  <!-- configurando o menu-hamburguer -->
-  <div class="menu-hamburguer">
-    <input type="checkbox" class="menu-faketrigger" />
-
-    <div class="menu-linhas">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul class="navegacao-responsiva">
-      <li><a href="/servicos-pet" class="style-a">Serviços pet</a></li>
-      <li><a href="/gatos" class="style-a">Gatos</a></li>
-      <li><a href="/cachorros" class="style-a">Cachorros</a></li>
-      <li><a href="/passaros" class="style-a">Pássaros</a></li>
-      <li><a href="/familia-griffe" class="style-a">Família Griffe</a></li>
-      <li><a href="/cadastro" class="style-a">Cadastro</a></li>
-      <li><a href="/login" class="style-a">Login</a></li>
-    </ul>
+<div class="row">
+  <div class="col-1">
+      <div class="navIcon">
+          <a href="/">
+              <img src="assets/image/logo.png" alt="Icone Petgriffe">
+          </a>
+      </div>
+      <div class="barraBusca">
+          <input type="text" placeholder="Buscar..." class="barra">
+          <img src="assets/image/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;">
+      </div>
+      <div class="navegacao">
+          <a href="/login" class="navegar">Login</a>
+          <p class="pnavegar">e</p>
+          <a href="/cadastro" class="navegar">Cadastro</a>
+          <div class="carrinhoIcon">
+              <a href="">
+                  <img src="assets/image/carrinho-compras.png" alt="">
+              </a>
+          </div>
+      </div>
   </div>
-  <a href="/" id="logo"
-    ><img src="assets/image/logo.png" alt="Imagem logo do site PetGriffe"
-  /></a>
-  <div class="navegacao-pai">
-    <div class="pesquisas">
-      <input
-        type="text"
-        placeholder="Buscar..."
-        id="barra-pesquisa"
-        name="barraPesquisa"
-      />
-      <span id="buscar-botao" class="botao-pesquisa"></span>
-    </div>
-    <div class="autenticacao-usuario">
-      <ul id="cadastro-login">
-        <li id="cadastro"><a href="#" class="style-a">Login</a></li>
-        <li id="login"><a href="/cadastro" class="style-a">Cadastro</a></li>
-      </ul>
-    </div>
+  <div class="col-2">
+      <div class="navegacao2">
+          <a href="" class="navegar2">Serviço Pet</a>
+          <a href="/gatos" class="navegar2">Gatos</a>
+          <a href="/cachorros" class="navegar2">Cachorros</a>
+          <a href="/passaros" class="navegar2">Pássaros</a>
+          <a href="" class="navegar2">Clube Griffe</a>
+      </div>
   </div>
-  <ul class="navegacao">
-    <li><a href="#" class="style-a">Serviços pet</a></li>
-    <li><a href="#" class="style-a">Gatos</a></li>
-    <li><a href="#" class="style-a">Cachorros</a></li>
-    <li><a href="#" class="style-a">Pássaros</a></li>
-    <li><a href="#" class="style-a">Família Griffe</a></li>
-  </ul>
-  <a href="#" class="style-a" id="carrinho-compras"
-    ><img src="assets/image/carrinho-compras.png" alt=""
-  /></a>
-</header>
+</div>

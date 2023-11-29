@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #img-gato {
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+  
+  }
+  
+  .container {
+    width: 100%;
+    height: calc(100vh - 3%);
+  }
+  
+  .categoria {
+    width: 25%;
+    height: 6vh;
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-left: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3ac9c5;
+  }
+  
+  .categoria p {
+    color: #ffffff;
+    font-size: 15pt;
+    padding-left: 40px;
+  }
