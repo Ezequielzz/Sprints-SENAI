@@ -1,21 +1,3 @@
-let contar = 1;
-document.getElementById("radio1").checked = true;
-
-function mudarImagem(next) {
-    contar = contar + next;
-
-    if (contar < 1) {
-        contar = 4;
-    } else if (contar > 4) {
-        contar = 1;
-    }
-
-    document.getElementById("radio" + contar).checked = true;
-}
-
-
-// -------------------------------------------------------------------
-
 // Codigo para o Fundionamento de Cada Carrossel de Card
 
 var container1 = document.getElementById('container1');
@@ -275,4 +257,88 @@ function slideLeft3() {
 
 window.addEventListener("resize", function() {
     setParams3(container3.offsetWidth);
+});
+
+
+
+
+var container4 = document.getElementById('container4');
+var slider4 = document.getElementById('slider4');
+var slides4 = document.querySelectorAll('#slider4 .slide').length;
+var buttons4 = document.querySelectorAll('#slider-container4 .btn');
+
+var currentPosition4 = 0;
+var currentMargin4 = 0;
+var slidesPerPage4 = 0;
+var slidesCount4 = slides4 - slidesPerPage4;
+
+function setParams4(w) {
+    if (w < 551) {
+        slidesPerPage4 = 1;
+    } else if (w < 901) {
+        slidesPerPage4 = 2;
+    } else if (w < 1101) {
+        slidesPerPage4 = 3;
+    } else {
+        slidesPerPage4 = 4;
+    }
+
+    slidesCount4 = slides4 - slidesPerPage4;
+
+    if (currentPosition4 > slidesCount4) {
+        currentPosition4 -= slidesPerPage4;
+    }
+
+    currentMargin4 = -currentPosition4 * (100 / slidesPerPage4);
+    slider4.style.marginLeft = currentMargin4 + '%';
+
+    if (currentPosition4 > 0) {
+        buttons4[0].classList.remove('inactive');
+    } else {
+        buttons4[0].classList.add('inactive');
+    }
+
+    if (currentPosition4 < slidesCount4) {
+        buttons4[1].classList.remove('inactive');
+    } else {
+        buttons4[1].classList.add('inactive');
+    }
+}
+
+setParams4(container4.offsetWidth);
+
+function slideRight4() {
+    if (currentPosition4 !== 0) {
+        slider4.style.marginLeft = currentMargin4 + (100 / slidesPerPage4) + '%';
+        currentMargin4 += (100 / slidesPerPage4);
+        currentPosition4--;
+    }
+
+    if (currentPosition4 === 0) {
+        buttons4[0].classList.add('inactive');
+    }
+
+    if (currentPosition4 < slidesCount4) {
+        buttons4[1].classList.remove('inactive');
+    }
+}
+
+function slideLeft4() {
+    if (currentPosition4 !== slidesCount4) {
+        slider4.style.marginLeft = currentMargin4 - (100 / slidesPerPage4) + '%';
+        currentMargin4 -= (100 / slidesPerPage4);
+        currentPosition4++;
+    }
+
+    if (currentPosition4 === slidesCount4) {
+        buttons4[1].classList.add('inactive');
+    }
+
+    if (currentPosition4 > 0) {
+        buttons4[0].classList.remove('inactive');
+    }
+}
+
+window.addEventListener("resize", function() {
+    setParams4(container4.offsetWidth);
 });

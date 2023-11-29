@@ -293,7 +293,7 @@ body {
 .card {
     width: 170px;
     height: 350px;
-    border: solid 2px #d4d4d4;
+    border: solid 2px #01bbb9;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -329,6 +329,10 @@ body {
     font-family: 'Lilita One', sans-serif;
 }
 
+.cardPreco {
+    transition: 0,30s;
+}
+
 .card .cardBody .cardBotao {
     display: flex;
     justify-content: center;
@@ -355,108 +359,287 @@ body {
 /* -----------------------  XXXXXX ----------------------- */
 
 
+/* CSS dos Carrosséis de Cards */
 
+/* CSS para o carrossel 1 */
 
-#container {
-    height: 100vh;
-    width: 100vw;
+#container1 {
+    height: 64vh;
+    width: 99vw;
     margin: 0;
     padding: 0;
-    background: rgb(255, 255, 255);
     display: grid ;
-    place-items: center
-  }
-  
-  #slider-container {
-    height: 350px;
+    place-items: center;
+    overflow: hidden;
+}
+
+#slider-container1 {
+    height: 352px;
     width: 85vw;
     max-width: 1400px;
     position: relative;
     overflow: hidden;
     padding: 20px;
-  }
-  
-  #slider-container .btn {
+}
+
+#slider-container1 .btn {
     position: absolute;
     top: calc(50% - 30px);
-    height: 30px;
-    width: 30px;
-    border-left: 8px solid pink;
-    border-top: 8px solid pink;
-  }
-  
-  #slider-container .btn:hover {
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.30s;
+}
+
+#slider-container1 .btn:hover {
     transform: scale(1.2);
-  }
-  
-  #slider-container .btn.inactive {
-    border-color: rgb(153, 121, 126)
-  }
-  
-  #slider-container .btn:first-of-type {
+}
+
+#slider-container1 .btn.inactive {
+    border-color: #027674;
+}
+
+#slider-container1 .btn:first-of-type {
     transform: rotate(-45deg);
-    left: 10px
-  }
-  
-  #slider-container .btn:last-of-type {
+    left: 10px;
+}
+
+#slider-container1 .btn:last-of-type {
     transform: rotate(135deg);
     right: 10px;
-  }
-  
-  #slider-container #slider {
+}
+
+#slider-container1 #slider1 {
     display: flex;
     width: 1000%;
     height: 100%; 
     transition: all .5s;
-  }
-  
-  #slider-container #slider .slide {
+}
+
+#slider-container1 #slider1 .slide {
     height: 90%;
     margin: auto 10px;
-    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
     display: grid;
     place-items: center;
-  }
-  
-  #slider-container #slider .slide span {
-    color: white;
+}
+
+#slider-container1 #slider1 .slide span {
     font-size: 150px;
-  }
-  
-  @media only screen and (min-width: 1100px) {
-  
-    #slider-container #slider .slide {
-      width: calc(2.5% - 20px);
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(2.5% - 20px);
     }
-  
-  }
-  
-  @media only screen and (max-width: 1100px) {
-  
-    #slider-container #slider .slide {
-      width: calc(3.3333333% - 20px);
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(3.3333333% - 20px);
     }
-  
-  }
-  
-  @media only screen and (max-width: 900px) {
-  
-    #slider-container #slider .slide {
-      width: calc(5% - 20px);
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(5% - 20px);
     }
-  
-  }
-  
-  @media only screen and (max-width: 550px) {
-  
-    #slider-container #slider .slide {
-      width: calc(10% - 20px);
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(10% - 20px);
     }
-  
-  }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CSS para o segundo carrossel */
+
+#container2 {
+    height: 64vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid ;
+    place-items: center;
+    overflow: hidden;
+}
+
+#slider-container2 {
+    height: 352px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container2 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.30s;
+}
+
+#slider-container2 .btn:hover {
+    transform: scale(1.2);
+}
+
+#slider-container2 .btn.inactive {
+    border-color: #027674;
+}
+
+#slider-container2 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+#slider-container2 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+#slider-container2 #slider2 {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+}
+
+#slider-container2 #slider2 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container2 #slider2 .slide span {
+    font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(2.5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(3.3333333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(10% - 20px);
+    }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CSS para o carrossel 3 */
+
+#container3 {
+    height: 64vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid ;
+    place-items: center;
+    overflow: hidden;
+}
+
+#slider-container3 {
+    height: 352px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container3 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.30s;
+}
+
+#slider-container3 .btn:hover {
+    transform: scale(1.2);
+}
+
+#slider-container3 .btn.inactive {
+    border-color: #027674;
+}
+
+#slider-container3 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+#slider-container3 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+#slider-container3 #slider3 {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+}
+
+#slider-container3 #slider3 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container3 #slider3 .slide span {
+    font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(2.5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(3.3333333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(10% - 20px);
+    }
+}
 
 
-
+/* -----------------------  XXXXXX ----------------------- */
 
 /* ----------------------- SERVIÇOS ----------------------- */
 
