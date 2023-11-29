@@ -9,7 +9,7 @@ import { ValidacaoService } from 'src/app/service/validacao.cadastro.service';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
-  usuario: string = '';
+  nome: string = '';
   email: string = '';
   senha: string = '';
   endereco: string = '';
@@ -29,7 +29,7 @@ export class CadastroComponent {
 console.log("Enviando dados do formulário:");
 
     const dadosForm = {
-      usuario: this.usuario,
+      nome: this.nome,
       email: this.email,
       senha: this.senha,
       endereco: this.endereco, 

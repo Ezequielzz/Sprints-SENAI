@@ -6,7 +6,7 @@ const chaveSecreta = crypto.randomBytes(32).toString("hex");//gera uma chave de 
 
 //Rota para a criação de usuário
 const cadastroUsuario =  async (req, res) => {
-    const { usuario, email, senha, endereco, cep, telefone } = req.body;//recebendo os dados do usuário
+    const { nome, email, senha, endereco, cep, telefone } = req.body;//recebendo os dados do usuário
 
     //criando um hash seguro da senha
     bcrypt.hash(senha, 10, async (err, hash) => {
@@ -18,12 +18,12 @@ const cadastroUsuario =  async (req, res) => {
 
             try {
                 const usuarioCad = await cadastroUsuarioPost.create({
-                    usuario,
-                    email,
+                    nome : nome,
+                    email : email,
                     senha: hash,
-                    endereco,
-                    cep,
-                    telefone
+                    endereco : endereco,
+                    cep : cep,
+                    telefone : telefone
                 });
                 res.status(201).json({ message: "Usuário criado com sucesso." })
             } catch (error) {

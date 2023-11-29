@@ -12,7 +12,7 @@ export class CadastroService {
   constructor(private http: HttpClient) {}
 
   //recebendo parametros
-  cadastrarUsuario(rota: string, dadosForm: { usuario: string; email: string;senha: string; endereco: string; cep: string; telefone: string; }): Observable<any> {
+  cadastrarUsuario(rota: string, dadosForm: { nome: string; email: string;senha: string; endereco: string; cep: string; telefone: string; }): Observable<any> {
 
     const url = `${this.baseUrl}/${rota}`;
     console.log('URL da requisição:', url); //Linha para verificar a URL

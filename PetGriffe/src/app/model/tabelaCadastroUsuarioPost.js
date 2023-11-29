@@ -8,7 +8,9 @@ const CadstroUsuario = bancoDados.sequelize.define("cadastroUsuario", {
     },
     email: {
         type: bancoDados.Sequelize.STRING,
-        uninque: true //garante que os valores de 'email sejam únicos
+        uninque: true, //garante que os valores de 'email sejam únicos
+        allowNull: false,
+        primaryKey: true,
     },
     senha: {
         type: bancoDados.Sequelize.STRING,
