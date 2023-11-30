@@ -2,6 +2,7 @@ import Express from "express";
 import path from "path";
 import cors from "cors";
 import cadastrousuarioRoutes from "../routes/cadastroUsuarioRoutes.js";
+import loginUsuarioRoutes from "../routes/loginUsuarioRoutes.js"
 
 const app = Express();
 
@@ -14,6 +15,7 @@ app.use(Express.urlencoded({ extended: true }));
 app.use(Express.json());
 //Rotas
 app.use("/api", cadastrousuarioRoutes);
+app.use("/api/login", loginUsuarioRoutes);
 
 app.use((err, req, res, next) => {
   console.error("Erro no servidor", err);

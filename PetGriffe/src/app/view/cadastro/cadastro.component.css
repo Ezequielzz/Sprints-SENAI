@@ -16,6 +16,15 @@ form {
   align-items: center;
 }
 
+.mensagem-validacao {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 0px;
+  font-size: 15pt;
+  color: #ab0d0d;
+}
+
 .cadastro {
   width: 65%;
   display: flex;
@@ -32,7 +41,7 @@ form {
 .cadastro img {
   width: 40%;
   height: 35vh;
-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .inputs {
@@ -44,7 +53,8 @@ border-top-left-radius: 5px;
   transition: .3s;
   background-color: #8a8888;
 }
-.inputs:focus{
+
+.inputs:focus {
   width: 270px;
   background-color: #8a8888bb;
 }
@@ -69,7 +79,8 @@ border-top-left-radius: 5px;
   background-color: #3ac9c5;
   color: #ffffff;
 }
-#enviar-form:hover{
+
+#enviar-form:hover {
   width: 16%;
   height: 4%;
 
