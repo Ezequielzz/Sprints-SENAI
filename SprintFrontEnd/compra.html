@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compra.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <title>Compra - PetGriffe</title>
+</head>
+
+<body>
+    <!----------------- NAVBAR ------------------>
+    <div class="row">
+        <div class="col-1">
+            <div class="navIcon">
+                <a href="home/home.html">
+                    <img src="img/petgriffeIcon2.png" alt="Icone Petgriffe">
+                </a>
+            </div>
+            <div class="barraBusca">
+                <input type="text" placeholder="Buscar..." class="barra">
+                <img src="img/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;">
+            </div>
+            <div class="navegacao">
+                <a href="login/login.html" class="navegar">Login</a>
+                <p class="pnavegar">e</p>
+                <a href="cadastro/cadastro.html" class="navegar">Cadastro</a>
+                <div class="carrinhoIcon">
+                    <a href="">
+                        <img src="img/carrinhoIcon.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="navegacao2">
+                <a href="" class="navegar2">Serviço Pet</a>
+                <a href="animais/gato.html" class="navegar2">Gatos</a>
+                <a href="animais/cachorro.html" class="navegar2">Cachorros</a>
+                <a href="animais/passaro.html" class="navegar2">Pássaros</a>
+                <a href="" class="navegar2">Clube Griffe</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------->
+
+    <div class="container">
+        <div class="produto">
+            <div class="produtoImg">
+                <img src="img/ColeiraCachorro1.png" alt="">
+            </div>
+
+            <div class="infosGeral">
+                <div class="produtoNome">
+                    <h2>Nome do Produto</h2>
+                </div>
+
+                <div class="produtoInfos">
+                    <select class="quant" id="quant">
+                        <option value="1">Quantidade: 1</option>
+                        <option value="2">Quantidade: 2</option>
+                        <option value="3">Quantidade: 3</option>
+                    </select>
+                    <div class="produtoValor">R$00,00</div>
+                </div>
+                <div class="produtoAcoes">
+                    <a href="produto.html">Editar</a>
+                    <a href="">Excluir Produto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="finalizarCompra">
+            <div class="frete">
+                <label for="frete">Calcular Frete</label>
+                <input type="text" name="inserirFrete" id="lfrete">
+                <input type="submit" name="enviarFrete" id="bfrete">
+                <div class="valorFrete">
+                    <h3>Frete: </h3>
+                </div>
+            </div>
+            <div class="resumoPedido">
+                <p>Resumo do Pedido</p>
+                <hr>
+                <div class="subtotal">
+                    <h3>Subtotal</h3>
+                    <h4>R$00,00</h4>
+                </div>
+                <div class="total">
+                    <h3>Total</h3>
+                    <h3>R$00,00</h3>
+                </div>
+                <div class="comprar">
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

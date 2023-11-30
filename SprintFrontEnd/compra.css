@@ -1,0 +1,270 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* -----------------------  NAVBAR ----------------------- */
+
+.col-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3ac9c5;
+}
+
+.col-2 {
+    display: flex;
+    justify-content: center;
+    background: #3ac9c5;
+    margin-bottom: 25px;
+}
+
+.navIcon img {
+    width: 95px;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegar {
+    font-family: 'Bevan', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    transition: 0.30s;
+}
+
+.pnavegar {
+    font-family: 'Bevan', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+}
+
+.carrinhoIcon img {
+    width: 80px;
+    height: 70px;
+}
+
+.navegar2 {
+    font-family: 'Bevan', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    transition: 0.30s;
+}
+
+.navegar:hover, .navegar2:hover {
+    color: #FCB212;
+}
+
+.barraBusca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    width: 550px;
+}
+
+.barra {
+    height: 35px;   
+    width: 500px;
+    border: none;
+    border-top: #b6b5b5 solid 2px;
+    border-bottom: #b6b5b5 solid 2px;
+    border-left: #b6b5b5 solid 2px;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+}
+
+.lupa {
+    background: #ffffff;
+    border-top: #b6b5b5 solid 2px;
+    border-bottom: #b6b5b5 solid 2px;
+    border-right: #b6b5b5 solid 2px;
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+.container {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.container {
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.container .produto {
+    display: flex;
+}
+
+.container .produtoImg {
+    margin-right: 20px;
+    width: 350px;
+    height: 350px;
+    border: solid 2px #3ac9c5;
+}
+
+.produtoImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.infosGeral {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container .produtoNome {
+    height: 50px;
+    font-family: 'Bevan', serif;
+}
+
+.produtoNome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 55px;
+}
+
+.produtoInfos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bevan', serif;
+}
+
+.produtoInfos select {
+    font-weight: 600;
+    height: 50px;
+    border: solid 1px rgb(218, 218, 218);
+    border-radius: 0;
+}
+
+.produtoAcoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produtoAcoes a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+
+
+
+.finalizarCompra .frete {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: #f3f3f3;
+    border-radius: 20px;
+    height: 160px;
+    width: 165px;
+    padding: 7px;
+}
+
+.frete label {
+    font-family: 'Bevan', serif;
+}
+
+.frete #lfrete {
+    width: 150px;
+    height: 25px;
+    border-radius: 8px;
+    border: solid 1px #9d9d9d;
+}
+
+.frete #bfrete {
+    width: 159px;
+    height: 30px;
+    border: solid 1px #027674;
+    border-radius: 10px;
+    background: #01bbb9;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.30s;
+}
+
+.frete #bfrete:hover {
+    background: #FCB212;
+    border: solid 1px #ab790d;
+}
+
+.frete .valorFrete {
+    color: #2ed80c;
+    font-family: 'Bevan', serif;
+    font-size: 12px;
+}
+
+.resumoPedido {
+    font-family: 'Bevan', serif;
+}
+
+.resumoPedido .subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resumoPedido .subtotal h3 {
+    font-weight: 700;
+}
+
+.resumoPedido .subtotal h4 {
+    font-weight: 100;
+    color: #9d9d9d;
+}
+
+
+.resumoPedido .total h3 {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.resumoPedido .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comprar button {
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 12px;
+    border: solid 1px #027674;
+    background: #01bbb9;
+    cursor: pointer;
+}

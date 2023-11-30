@@ -79,3 +79,6 @@ function slideLeft() {
         buttons[0].classList.remove('inactive');
     }
 };
+
+
+
