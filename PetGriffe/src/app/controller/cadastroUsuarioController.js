@@ -17,7 +17,7 @@ const cadastroUsuario =  async (req, res) => {
             //Cria o usuário com a senha já hasheada
 
             try {
-                const usuarioCad = await cadastroUsuarioPost.create({
+                await cadastroUsuarioPost.create({
                     nome : nome,
                     email : email,
                     senha: hash,

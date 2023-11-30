@@ -15,6 +15,9 @@ const loginUsuario = async (req, res) => {
 
     //Verificando a senha com bcrypt
     const senhaCorreta = await bcrypt.compare(senha, usuario.senha);
+    if (senhaCorreta) {
+        return RegExp.status(202).json({message: "Senha correta."});
+    }
 
     if(!senhaCorreta){
         return res.status(401).json({error: "Senha incorreta."});

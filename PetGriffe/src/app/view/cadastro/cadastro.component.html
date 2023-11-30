@@ -4,19 +4,19 @@
     <h1 class="cadastro-titulo">Cadastro</h1>
     <div class="coluna1">
       <label for="usuario">Nome</label>
-      <input type="text" id="usuario" name="nome" class="inputs" />
+      <input type="text" id="usuario" name="nome" class="inputs" [(ngModel)]="nome" />
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" class="inputs" />
+      <input type="text" id="email" name="email" class="inputs" [(ngModel)]="email"/>
       <label for="senha">Senha</label>
-      <input type="text" id="senha" name="senha" class="inputs" />
+      <input type="text" id="senha" name="senha" class="inputs" [(ngModel)]="senha"/>
     </div>
     <div class="coluna2">
       <label for="confirmar-senha">Endereço</label>
-      <input type="text" id="confirmar-senha" name="endereco" class="inputs" />
+      <input type="text" id="confirmar-senha" name="endereco" class="inputs" [(ngModel)]="endereco"/>
       <label for="cep">Cep</label>
-      <input type="text" id="cep" name="cep" class="inputs" />
+      <input type="text" id="cep" name="cep" class="inputs" [(ngModel)]="cep"/>
       <label for="telefone">Telefone</label>
-      <input type="text" id="telefone" name="telefone" class="inputs" />
+      <input type="text" id="telefone" name="telefone" class="inputs" [(ngModel)]="telefone"/>
     </div>
     <button type="submit" id="enviar-form" name="enviar-form">Enviar</button>
   </form>
