@@ -1,322 +1,51 @@
-#container {
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    background: rgb(255, 255, 255);
-    display: grid ;
-    place-items: center
-  }
-  
-  #slider-container {
-    height: 310px;
-    width: 85vw;
-    max-width: 1400px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
-  }
-  
-  #slider-container .btn {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 30px;
-    width: 30px;
-    border-left: 8px solid pink;
-    border-top: 8px solid pink;
-  }
-  
-  #slider-container .btn:hover {
-    transform: scale(1.2);
-  }
-  
-  #slider-container .btn.inactive {
-    border-color: rgb(153, 121, 126)
-  }
-  
-  #slider-container .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px
-  }
-  
-  #slider-container .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
-  }
-  
-  #slider-container #slider {
-    display: flex;
-    width: 1000%;
-    height: 100%; 
-    transition: all .5s;
-  }
-  
-  #slider-container #slider .slide {
-    height: 90%;
-    margin: auto 10px;
-    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
-    display: grid;
-    place-items: center;
-  }
-  
-  #slider-container #slider .slide span {
-    color: white;
-    font-size: 150px;
-  }
-  
-  @media only screen and (min-width: 1100px) {
-  
-    #slider-container #slider .slide {
-      width: calc(2.5% - 20px);
-    }
-  
-  }
-  
-  @media only screen and (max-width: 1100px) {
-  
-    #slider-container #slider .slide {
-      width: calc(3.3333333% - 20px);
-    }
-  
-  }
-  
-  @media only screen and (max-width: 900px) {
-  
-    #slider-container #slider .slide {
-      width: calc(5% - 20px);
-    }
-  
-  }
-  
-  @media only screen and (max-width: 550px) {
-  
-    #slider-container #slider .slide {
-      width: calc(10% - 20px);
-    }
-  
-  }
-
-
-
-
-
-  .tituloCards {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 100px;
-    font-family: 'Bevan', serif;
-}
-
-.maisVendidos, .promocoes, .recomendados {
-    margin-top: 115px;
-    display: flex;
-    justify-content: center;
-}
-
-
-.card {
-    width: 170px;
-    height: 305px;
-    border: solid 2px #d4d4d4;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.card:not(:last-child) {
-    margin-right: 75px;
-}
-
-.card .cardImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card .cardImg img {
-    width: 120px;
-    height: 200px;
-    border-top-right-radius: 7.5px;
-    border-top-left-radius: 7.5px;
-}
-
-.card .cardBody .cardTitulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card .cardBody .cardTitulo p{
-    font-family: 'Lilita One', sans-serif;
-}
-
-.card .cardBody .cardBotao {
-    display: flex;
-    justify-content: center;
-}
-
-.cardBotao button {
-    border: solid 1px #027674; 
-    border-radius: 10px;
-    width: 100px;
-    height: 30px;
-    font-size: 17px;
-    font-weight: 600;
-    background: #01bbb9;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.32s; 
-}
-
-.cardBotao button:hover {
-    background: #FCB212;
-    border: solid 1px #ab790d;
-}
-
-
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  background: #333;
-  height: 100vh;
-  width: 100vw;
-}
-
-.toggler{
-/* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
-  z-index:2;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Estilos para o ícone do toggle */
+.navbar-toggle {
   cursor: pointer;
-  opacity: 0;
-}
-
-.hamburger{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 40px;
-  width: 40px;
-  padding: 0.6rem;
-
-/* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
-
-.hamburger > div{
-  position: relative;
-  top: 0;
-  left: 0;
-  background: white;
-  height: 2px;
-  width: 60%;
-  transition: all  0.4s ease;
-}
-
-/* CREATING THE TOP AND BOTTOM LINES : 
-TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
-
-.hamburger > div::before,
-.hamburger > div::after{
-  content: '';
-  position: absolute;
-  top: -10px;
-  background: white;
-  width: 100%;
-  height: 2px;
-  transition: all  0.4s ease;
-}
-
-.hamburger > div::after{
-  top: 10px;
-}
-
-/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
-
-.toggler:checked + .hamburger > div{
-  background: rgba(0,0,0,0);
-}
-
-.toggler:checked + .hamburger > div::before{
-  top: 0;
-  transform: rotate(45deg);
-  background: black;
-}
-
-/* AND ROTATING THE TOP AND BOTTOM LINES :  */
-
-.toggler:checked + .hamburger > div::after{
-  top: 0;
-  transform: rotate(135deg);
-  background: black;
-}
-
-
-/* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
-
-.menu{
-  background: white;
-  width: 0%;
-  height: 100vh;
-
-/* APPLYING TRANSITION TO THE MENU :  */
-
-  transition: all 0.4s ease;
-}
-
-/* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
-
-.toggler:checked ~ .menu{
-  width: 30%;
-}
-
-
-/* STYLING THE LIST :  */
-
-.menu >  div > ul{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 25px;
+  padding: 5px;
+  z-index: 1100; /* Garante que o ícone esteja acima do overlay */
+}
+
+.toggle-icon {
+  height: 3px;
+  background-color: #000;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1100; /* Colocado acima do overlay e do ícone do menu */
+}
+
+/* Estilos para o overlay */
+.navbar-menu-overlay {
   position: fixed;
-  top: 70px;
-  padding-left: 10px;
-
-/* HIDDEN INITIALLY  :  */
-
-  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  display: none;
+  z-index: 1000; /* Colocado abaixo do menu */
 }
 
-.menu > div > ul > li{
-  list-style: none;
-  padding: 0.5rem;
+/* Estilos para o menu */
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Começa fora da tela */
+  width: 58%; /* Ajuste conforme necessário */
+  height: 100%;
+  background-color: #fff; /* Cor de fundo para visualização */
+  transition: transform 0.3s ease-in-out;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar o menu */
 }
 
-.menu > div > ul > li > a{
-  color: black;
-  text-decoration: none;
-  font-size: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.navbar-menu.active {
+  transform: translateX(100%); /* Move para a posição visível */
 }
 
-/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
-
-.toggler:checked ~ .menu > div > ul{
-  transition: visibility 0.4s ease;
-  transition-delay: 0.1s;
-  visibility: visible;
-}
-
-.toggler:checked ~ .menu > div > ul > li > a:hover{
-  color: orange;
+.navbar-menu.active + .navbar-menu-overlay {
+  display: block; /* Mostra o overlay quando o menu está aberto */
 }

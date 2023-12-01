@@ -46,7 +46,7 @@ body {
     margin: 0 5px;
 }
 
-.carrinhoIcon img {
+.carrinho img {
     width: 80px;
     height: 70px;
 }
@@ -94,6 +94,62 @@ body {
 }
 
 /* -----------------------  XXXXXX ----------------------- */
+
+
+
+
+
+/* Estilos para o ícone do carrinho */
+.carrinho-toggle {
+    cursor: pointer;
+}
+
+/* Estilos para o menu do carrinho */
+.carrinho-menu {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Começa fora da tela */
+    width: 400px; /* Ajuste conforme necessário */
+    height: 100%;
+    background-color: #fff; /* Cor de fundo para visualização */
+    transition: right 0.3s ease-in-out;
+    z-index: 1099; /* Colocado abaixo do ícone do carrinho */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar o menu */
+}
+
+.carrinho-menu.active {
+    right: 0; /* Move para a posição visível */
+}
+
+/* Estilos para o botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #000;
+}
+
+.close-btn img {
+    width: 23px;
+    height: 23px;
+}
+
+/* Estilo para desabilitar o scroll */
+.no-scroll {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
 
 /* ----------------------- CARROSSEL ----------------------- */
 
@@ -374,7 +430,7 @@ body {
 }
 
 #slider-container1 {
-    height: 352px;
+    height: 452px;
     width: 85vw;
     max-width: 1400px;
     position: relative;
@@ -390,6 +446,7 @@ body {
     border-left: 8px solid #01bbb9;
     border-top: 8px solid #01bbb9;
     transition: 0.30s;
+    cursor: pointer;
 }
 
 #slider-container1 .btn:hover {
@@ -483,6 +540,7 @@ body {
     border-left: 8px solid #01bbb9;
     border-top: 8px solid #01bbb9;
     transition: 0.30s;
+    cursor: pointer;
 }
 
 #slider-container2 .btn:hover {
@@ -576,6 +634,7 @@ body {
     border-left: 8px solid #01bbb9;
     border-top: 8px solid #01bbb9;
     transition: 0.30s;
+    cursor: pointer;
 }
 
 #slider-container3 .btn:hover {

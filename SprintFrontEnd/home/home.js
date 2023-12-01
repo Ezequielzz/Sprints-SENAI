@@ -14,6 +14,21 @@ function mudarImagem(next) {
 }
 
 
+
+
+function toggleCarrinho() {
+    var carrinhoMenu = document.getElementById("carrinhoMenu");
+    carrinhoMenu.classList.toggle("active");
+
+    // Seleciona o elemento body
+    var body = document.querySelector("body");
+
+    // Toggla a classe para habilitar/desabilitar o scroll
+    body.classList.toggle("no-scroll");
+}
+
+
+
 // -------------------------------------------------------------------
 
 // Codigo para o Fundionamento de Cada Carrossel de Card
