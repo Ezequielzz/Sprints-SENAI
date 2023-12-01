@@ -83,3 +83,21 @@
     background: #FCB212;
     border: solid 1px #ab790d;
 }
+
+/*responsividade*/
+@media screen and (max-width:768px) {
+    .racoesEpetiscos, .brinquedos, .acessorios, .conforto {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin-right: 0;
+        margin-bottom: 20px
+    }
+        .card:not(:last-child){
+            margin-right: 0;
+        }
+        .tituloCards{
+            margin: 0;
+        }
+}

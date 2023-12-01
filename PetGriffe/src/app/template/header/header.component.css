@@ -1,3 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+.menu-hamburguer{
+  display: none;
+}
+
+.navegacao-responsiva{
+  position: absolute;
+  z-index: 998;
+  left: 0;
+  /*encosta na esquerda*/
+  top: 0;
+  /*encosta em cima*/
+  width: 300px;
+  height: calc(100vh - 160px);
+  /*com o calc remove a barra de rolagem*/
+  padding-top: 160px;
+  /*vai gerar barra de rolagem*/
+  background-color: #ededed;
+  margin-left: -300px;
+  /*ficar fora da tela*/
+  transition: all .3s ease-in-out;
+}
+.menu-hamburguer ul li{
+  padding: 20px 80px;
+}
+.menu-hamburguer a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 15pt;
+  transition: .2s;
+}
+.menu-hamburguer a:hover{
+  text-decoration: none;
+  color: #0000009f;
+  font-size: 13pt;
+}
+.menu-linhas{
+  position: absolute;
+  z-index: 999;
+ top: 0;
+  left: 2%;
+  margin-top: 2%;
+  width: 50px;
+  height: 10px;
+}
+.menu-linhas span{
+ display: block;
+ width: 50px;
+ height: 10px;
+ margin-bottom: 10px;
+ border-radius: 2px;
+ transition: all ease-in-out .3s;
+ background-color: #ffffff;
+}
+#faketrigger{
+  position: absolute;
+  width: 85px;
+  height: 80px;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .col-1 {
   display: flex;
   justify-content: space-between;
@@ -53,7 +128,8 @@
   transition: 0.30s;
 }
 
-.navegar:hover, .navegar2:hover {
+.navegar:hover,
+.navegar2:hover {
   color: #FCB212;
 }
 
@@ -67,7 +143,7 @@
 }
 
 .barra {
-  height: 35px;   
+  height: 35px;
   width: 500px;
   border: none;
   border-top: #b6b5b5 solid 2px;
@@ -85,4 +161,47 @@
   border-right: #b6b5b5 solid 2px;
   border-bottom-right-radius: 19px;
   border-top-right-radius: 19px;
+}
+@media screen and (max-width:1200px){
+
+  /*menu-hamburguer*/
+  .menu-hamburguer {
+    display: block;
+    width: 30px;
+    margin-top: 0px;
+    left: 3%;
+   }
+   
+   #faketrigger:checked ~ .menu-linhas span{
+    background-color: #FCB212;
+   }
+   #faketrigger:checked ~ .menu-linhas span:nth-child(1){
+     transform-origin: 0% 0%;
+     transform: rotate(45deg) scaleX(1.25);
+   }
+    #faketrigger:checked ~ .menu-linhas span:nth-child(2){
+     opacity: 0;
+   }
+   #faketrigger:checked ~ .menu-linhas span:nth-child(3){
+     transform-origin: 0% 100%;
+     transform: rotate(-45deg) scaleX(1.25);
+   }
+
+   #faketrigger:checked ~.navegacao-responsiva{
+    margin-left: 0;
+  }
+  
+   .col-1 .navegacao, .navegacao2, .col-1 .barraBusca{
+    display: none;
+   }
+   .col-1 .carrinhoIcon{
+    display: block;
+    right: 0;
+   }
+}
+@media screen and (max-width:500px){
+  #faketrigger:checked ~.navegacao-responsiva{
+   width: 100%;
+  }
+  
 }
