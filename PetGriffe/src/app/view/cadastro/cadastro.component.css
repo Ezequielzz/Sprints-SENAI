@@ -11,6 +11,7 @@ body {
 
 form {
   width: 60%;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +40,7 @@ form {
 }
 
 .cadastro img {
-  width: 40%;
+  width: 100%;
   height: 35vh;
   border-top-left-radius: 5px;
 }
@@ -55,7 +56,7 @@ form {
 }
 
 .inputs:focus {
-  width: 270px;
+  height: 30px;
   background-color: #8a8888bb;
 }
 
@@ -84,4 +85,24 @@ form {
   width: 16%;
   height: 4%;
 
+}
+
+@media screen and (max-width:1450px){
+  .cadastro{
+    flex-direction: column;
+    align-items: center;
+  }
+  .cadastro-titulo{
+    margin-bottom: 25%;
+    color: #ffffff;
+  }
+  #enviar-form{
+    margin-top: 20%;
+  }
+  
+}
+@media screen and (max-width:750px){
+  .cadastro-titulo{
+    margin-bottom: 40%;
+  }
 }
