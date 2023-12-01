@@ -69,7 +69,10 @@ body {
     background: #dfdfdf;
 }
 
-.opcoesAgenda .cons
+.opcoesAgenda .consultaInfos select {
+    height: 40px;
+    width: 400px;
+}
 
 .opcoesAgenda select {
     margin-bottom: 20px;
