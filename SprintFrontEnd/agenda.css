@@ -74,6 +74,39 @@ body {
     width: 400px;
 }
 
+.opcoesAgenda .horarioInfos select {
+    height: 40px;
+    width: 400px;
+}
+
+.opcoesAgenda .telefoneInfos input {
+    height: 30px;
+    width: 400px;
+}
+
+.opcoesAgenda .emailInfos input {
+    height: 30px;
+    width: 400px;
+}
+
+.opcoesAgenda .observacoesInfos textarea {
+    resize: none;
+    height: 105px;
+    width: 400px;
+}
+
+.opcoesAgenda .enviarInfos input {
+    height: 50px;
+    width: 120px;
+}
+
+.opcoesAgenda .enviarInfos {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .opcoesAgenda select {
     margin-bottom: 20px;
 }

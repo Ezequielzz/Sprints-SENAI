@@ -1,3 +1,5 @@
+// Código para o Funcionamento do Carrossel de Imagens
+
 let contar = 1;
 document.getElementById("radio1").checked = true;
 
@@ -13,8 +15,9 @@ function mudarImagem(next) {
     document.getElementById("radio" + contar).checked = true;
 }
 
+// -------------------------------------------------------------------
 
-
+// Código para o Funcionamento do Carrinho de Compras
 
 function toggleCarrinho() {
     var carrinhoMenu = document.getElementById("carrinhoMenu");
@@ -26,6 +29,40 @@ function toggleCarrinho() {
     // Toggla a classe para habilitar/desabilitar o scroll
     body.classList.toggle("no-scroll");
 }
+
+
+
+function adicionarAoCarrinho(nome, preco, imagem) {
+    var carrinhoContent = document.querySelector('.carrinho-content');
+
+    // Verifica se o elemento carrinhoContent foi encontrado
+    if (carrinhoContent) {
+        // Cria o HTML para o novo produto
+        var novoProdutoHTML = `
+            <div class="carrinho-item">
+                <div class="carrinho-img">
+                    <img src="${imagem}" alt="Imagem do produto">
+                </div>
+                <div class="carrinho-info">
+                    <p>${nome}</p>
+                    <p>${preco}</p>
+                </div>
+            </div>
+        `;
+
+        // Adiciona o HTML do novo produto ao conteúdo do carrinho
+        carrinhoContent.innerHTML += novoProdutoHTML;
+    } else {
+        console.error('Elemento .carrinho-content não encontrado.');
+    }
+}
+
+// Restante do código permanece igual
+
+
+
+
+
 
 
 

@@ -41,8 +41,7 @@
             </div>
             <div class="agenda">
                 <h2>
-                    < Outubro>
-                        </Outubro>
+                    < Outubro >
                 </h2>
             </div>
         </div>
@@ -51,9 +50,10 @@
                 <label for="consulta">Tipo de Agendamento:</label>
                 <div class="consultaInfos">
                     <select class="quant" id="consulta">
-                        <option value="1">Quantidade: 1</option>
-                        <option value="2">Quantidade: 2</option>
-                        <option value="3">Quantidade: 3</option>
+                        <option value="1">Banho & Tosa Básico</option>
+                        <option value="2">Banho & Tosa Completo</option>
+                        <option value="3">Veterinário</option>
+                        <option value="4">Adestramento</option>
                     </select>
                 </div>
 
@@ -61,25 +61,25 @@
                 <label for="horario">Horários:</label>
                 <div class="horarioInfos">
                     <select class="quant" id="horario">
-                        <option value="1">Quantidade: 1</option>
-                        <option value="2">Quantidade: 2</option>
-                        <option value="3">Quantidade: 3</option>
+                        <option value="1">13:30h</option>
+                        <option value="2">14:00h</option>
+                        <option value="3">14:30h</option>
                     </select>
                 </div>
 
                 <label for="telefone">Telefone:</label>
                 <div class="telefoneInfos">
-                    <input type="tel" id="ltelefone" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required />
+                    <input type="tel" id="ltelefone" name="telefone" placeholder="Insira seu telefone..." pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required/>
                 </div>
 
                 <label for="lemail">Email:</label>
                 <div class="emailInfos">
-                    <input type="email" name="email" id="lemail" pattern=".+@example\.com" size="30" required />
+                    <input type="email" name="email" id="lemail" placeholder="Insira seu email..." pattern=".+@example\.com" size="30" required/>
                 </div>
 
                 <label for="lobservacoes">Observações:</label>
                 <div class="observacoesInfos">
-                    <textarea name="observacoes" id="lobservacoes" cols="50" rows="5"></textarea>
+                    <textarea name="observacoes" placeholder="Insira uma observação desejada..." id="lobservacoes" cols="50" rows="5"></textarea>
                 </div>
 
                 <div class="enviarInfos">
