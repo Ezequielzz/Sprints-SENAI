@@ -42,8 +42,9 @@
                         <img src="../img/carrinhoIcon.png" alt="">
                     </div>
                     <div class="carrinho-menu" id="carrinhoMenu">
-                        <!-- Conteúdo do carrinho aqui -->
-                        <!-- ... -->
+                        <div id="carrinhoElement">
+                            <!-- Elemento do carrinho de compras -->
+                        </div>
                         <button class="close-btn" onclick="toggleCarrinho()">
                             <img src="../img/fechar.png" alt="">
                         </button>
@@ -54,7 +55,7 @@
         </div>
         <div class="col-2">
             <div class="navegacao2">
-                <a href="" class="navegar2">Serviço Pet</a>
+                <a href="../agenda.html" class="navegar2">Serviço Pet</a>
                 <a href="../animais/gato.html" class="navegar2">Gatos</a>
                 <a href="../animais/cachorro.html" class="navegar2">Cachorros</a>
                 <a href="../animais/passaro.html" class="navegar2">Pássaros</a>
@@ -177,20 +178,37 @@
             <span onclick="slideRight1()" class="btn"></span>
             <div id="slider1">
                 <div class="slide">
-                    <div class="card">
+                    <div class="card produto" id="produto1">
                         <div class="cardImg">
-                            <img src="../img/ColeiraCachorro1.png" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="Produto 1">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
                                 <p>Ração Biofresh p/ Cães</p>
                             </div>
                             <div class="cardPreco">
-                                <p>R$00,00</p>
+                                <p>R$ 200,00</p>
                             </div>
                             <div class="cardBotao">
-                                <!-- Adicionando uma classe ao botão -->
-                                <button class="botao-comprar">Comprar</button>
+                                <button onclick="adicionarProduto('produto1')">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card produto" id="produto2">
+                        <div class="cardImg">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="Produto 2">
+                        </div>
+                        <div class="cardBody">
+                            <div class="cardTitulo">
+                                <p>Ração Biofresh p/ Cães</p>
+                            </div>
+                            <div class="cardPreco">
+                                <p>R$ 200,00</p>
+                            </div>
+                            <div class="cardBotao">
+                                <button onclick="adicionarProduto('produto2')">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -258,9 +276,6 @@
                             <div class="cardTitulo">
                                 <p>Ração Biofresh p/ Cães</p>
                             </div>
-                            <div class="cardPreco">
-                                <p>R$00,00</p>
-                            </div>
                             <div class="cardBotao">
                                 <button>Comprar</button>
                             </div>
@@ -270,22 +285,7 @@
                 <div class="slide">
                     <div class="card">
                         <div class="cardImg">
-                            <img src="img/RaçãoBiofresh.jpg" alt="">
-                        </div>
-                        <div class="cardBody">
-                            <div class="cardTitulo">
-                                <p>Ração Biofresh p/ Cães</p>
-                            </div>
-                            <div class="cardBotao">
-                                <button>Comprar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="card">
-                        <div class="cardImg">
-                            <img src="img/RaçãoBiofresh.jpg" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
@@ -408,7 +408,7 @@
                 <div class="slide">
                     <div class="card">
                         <div class="cardImg">
-                            <img src="img/RaçãoBiofresh.jpg" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
@@ -423,7 +423,7 @@
                 <div class="slide">
                     <div class="card">
                         <div class="cardImg">
-                            <img src="img/RaçãoBiofresh.jpg" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
@@ -546,7 +546,7 @@
                 <div class="slide">
                     <div class="card">
                         <div class="cardImg">
-                            <img src="img/RaçãoBiofresh.jpg" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
@@ -561,7 +561,7 @@
                 <div class="slide">
                     <div class="card">
                         <div class="cardImg">
-                            <img src="img/RaçãoBiofresh.jpg" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
@@ -600,7 +600,7 @@
                     <p>R$39,90</p>
                 </div>
                 <div class="cardSBotao">
-                    <button>Agendar</button>
+                    <a href="../agenda.html"><button>Agendar</button></a>
                 </div>
             </div>
         </div>
@@ -617,7 +617,7 @@
                     <p>R$00,00</p>
                 </div>
                 <div class="cardSBotao">
-                    <button>Agendar</button>
+                    <a href="../agenda.html"><button>Agendar</button></a>
                 </div>
             </div>
         </div>
@@ -634,7 +634,7 @@
                     <p>R$00,00</p>
                 </div>
                 <div class="cardSBotao">
-                    <button>Agendar</button>
+                    <a href="../agenda.html"><button>Agendar</button></a>
                 </div>
             </div>
         </div>

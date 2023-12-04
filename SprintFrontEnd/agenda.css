@@ -34,12 +34,13 @@ body {
 
 
 
+
+
 .agendamento {
     display: flex;
     justify-content: center;
     margin-left: 60px;
     margin-right: 60px;
-
 }
 
 .agendamento .infosAgenda {
@@ -49,16 +50,26 @@ body {
     align-items: center;
     background: #3ac9c5;
     width: 700px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.agendamento .infosAgenda h2 {
+    font-family: 'Bevan', serif;
+    color: #ffffff;
+    font-size: 27px;
 }
 
 .agendaIcon img {
-    width: 120px;
+    width: 180px;
 }
 
 .agendamento .opcoesAgenda {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .opcoesAgenda {
@@ -66,38 +77,81 @@ body {
     flex-direction: column;
     width: 590px;
     height: 650px;
-    background: #dfdfdf;
+    background: #eeeeee;
 }
 
 .opcoesAgenda .consultaInfos select {
+    border: solid 1px black;
+    border-radius: 13px;
+    font-weight: 600;
     height: 40px;
-    width: 400px;
+    width: 407px;
+}
+
+.opcoesAgenda label {
+    font-family: 'Bevan', serif;
+    font-size: 13px;
 }
 
 .opcoesAgenda .horarioInfos select {
+    border: solid 1px black;
+    border-radius: 13px;
+    font-weight: 600;
     height: 40px;
-    width: 400px;
+    width: 407px;
+}
+
+.opcoesAgenda .dataInfos select {
+    border: solid 1px black;
+    border-radius: 13px;
+    font-weight: 600;
+    height: 40px;
+    width: 407px;
 }
 
 .opcoesAgenda .telefoneInfos input {
+    border: solid 1px black;
+    border-radius: 10px;
+    font-weight: 600;
     height: 30px;
     width: 400px;
 }
 
 .opcoesAgenda .emailInfos input {
+    border: solid 1px black;
+    border-radius: 10px;
+    font-weight: 600;
     height: 30px;
     width: 400px;
 }
 
 .opcoesAgenda .observacoesInfos textarea {
+    border: solid 1px black;
+    border-radius: 13px;
+    font-weight: 600;
     resize: none;
-    height: 105px;
+    height: 110px;
     width: 400px;
 }
 
 .opcoesAgenda .enviarInfos input {
-    height: 50px;
-    width: 120px;
+    background: #3ac9c5;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    width: 160px;
+    height: 45px;
+    transition: 0.30s;
+    border-radius: 27px;
+}
+
+.opcoesAgenda .enviarInfos input:hover {
+    background: #41dfd9;
+}
+
+.opcoesAgenda .enviarInfos {
+    margin-top: 35px;
 }
 
 .opcoesAgenda .enviarInfos {
@@ -106,15 +160,11 @@ body {
 }
 
 
-
 .opcoesAgenda select {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .opcoesAgenda input {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.opcoesAgenda .enviarInfos {
-    margin-top: 35px;
-}

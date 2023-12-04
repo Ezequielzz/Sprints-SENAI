@@ -30,34 +30,48 @@ function toggleCarrinho() {
     body.classList.toggle("no-scroll");
 }
 
+let carrinhoDeCompras = [];
 
+function adicionarProduto(identificador) {
+    const produto = document.getElementById(identificador);
+    const imagem = produto.querySelector('img').src;
+    const nome = produto.querySelectorAll('p')[0].innerText;
+    const preco = produto.querySelectorAll('p')[1].innerText;
 
-function adicionarAoCarrinho(nome, preco, imagem) {
-    var carrinhoContent = document.querySelector('.carrinho-content');
+    const produtoInfo = {
+        imagem: imagem,
+        nome: nome,
+        preco: preco
+    };
 
-    // Verifica se o elemento carrinhoContent foi encontrado
-    if (carrinhoContent) {
-        // Cria o HTML para o novo produto
-        var novoProdutoHTML = `
-            <div class="carrinho-item">
-                <div class="carrinho-img">
-                    <img src="${imagem}" alt="Imagem do produto">
-                </div>
-                <div class="carrinho-info">
-                    <p>${nome}</p>
-                    <p>${preco}</p>
-                </div>
-            </div>
-        `;
-
-        // Adiciona o HTML do novo produto ao conteúdo do carrinho
-        carrinhoContent.innerHTML += novoProdutoHTML;
-    } else {
-        console.error('Elemento .carrinho-content não encontrado.');
-    }
+    adicionarAoCarrinho(produtoInfo);
 }
 
-// Restante do código permanece igual
+function adicionarAoCarrinho(produtoInfo) {
+    carrinhoDeCompras.push(produtoInfo);
+    atualizarCarrinho();
+}
+
+function atualizarCarrinho() {
+    const carrinhoElement = document.getElementById('carrinhoElement');
+    carrinhoElement.innerHTML = '';
+
+    carrinhoDeCompras.forEach((produto) => {
+        const itemCarrinho = document.createElement('div');
+        itemCarrinho.innerHTML = `
+            <img src="${produto.imagem}" alt="${produto.nome}">
+            <p>${produto.nome}</p>
+            <p>${produto.preco}</p>
+        `;
+        carrinhoElement.appendChild(itemCarrinho);
+    });
+}
+
+
+
+
+
+
 
 
 
@@ -147,7 +161,7 @@ function slideLeft1() {
     }
 }
 
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
     setParams1(container1.offsetWidth);
 });
 
@@ -239,7 +253,7 @@ function slideLeft2() {
 }
 
 // Evento de redimensionamento para o Carrossel 2
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
     setParams2(container2.offsetWidth);
 });
 
@@ -325,6 +339,6 @@ function slideLeft3() {
     }
 }
 
-window.addEventListener("resize", function() {
+window.addEventListener("resize", function () {
     setParams3(container3.offsetWidth);
 });

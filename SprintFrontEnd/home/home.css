@@ -6,19 +6,19 @@ body {
 
 body::-webkit-scrollbar {
     width: 7px;
-    transition: 0.30s;
+    transition: 1s;
   }
   
   body::-webkit-scrollbar-track {
     background: rgb(255, 255, 255);
     border-radius: 50px;
-    transition: 0.30s;
+    transition: 1s;
   }
   
   body::-webkit-scrollbar-thumb {
     background-color: #3ac9c5;
     border-radius: 16px;
-    transition: 0.30s;
+    transition: 1s;
   }
 
 /* -----------------------  NAVBAR ----------------------- */
@@ -162,6 +162,33 @@ body::-webkit-scrollbar {
 }
 
 
+/* Estilos para o carrinho de compras */
+#carrinhoElement {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Estilos adicionais conforme necessário */
+}
+
+#carrinhoElement > div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px; /* Ajuste o tamanho do item conforme necessário */
+    /* Estilos adicionais conforme necessário */
+}
+
+#carrinhoElement img {
+    max-width: 100%;
+    height: auto;
+    /* Estilos adicionais conforme necessário */
+}
+
+#carrinhoElement p {
+    margin: 5px 0;
+    /* Estilos adicionais conforme necessário */
+}
 
 
 
