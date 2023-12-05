@@ -10,13 +10,22 @@ body {
 }
 
 form {
+  flex-direction: column;
+  justify-content: space-around;
   width: 60%;
   height: 35vh;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+.container-input{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
 .mensagem-validacao {
   display: flex;
   justify-content: center;
@@ -60,30 +69,71 @@ form {
   background-color: #8a8888bb;
 }
 
-.coluna1,
-.coluna2 {
+.inputs::placeholder{
+color: #000000;
+}
+
+.formulario input {
+  width: 160px;
+  height: 30px;
+  margin-top: 7px;
+  border: solid 2px #000000;
+  border-radius: 17px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.formulario label {
+  font-family: 'Lilita One', sans-serif;
+}
+
+.formulario input:not(:last-child) {
+  margin-bottom: 30px;
+  width: 155px;
+}
+
+.formulario2 input {
+  width: 160px;
+  height: 30px;
+  margin-top: 7px;
+  border: solid 2px #000000;
+  border-radius: 17px;
+}
+
+.formulario2 label {
+  font-family: 'Lilita One', sans-serif;
+}
+
+.formulario2 input:not(:last-child) {
+  margin-bottom: 30px;
+  width: 155px;
+}
+
+.formulario,
+.formulario2 {
   display: flex;
   flex-direction: column;
   padding: 10px;
   width: 35%;
 }
-
 #enviar-form {
-  position: fixed;
-  width: 15%;
-  height: 3%;
-  margin-top: 15%;
+  margin: 0;
+  width: 150px;
+  height: 45px;
+  border-radius: 27px;
   border: none;
-  border-radius: 5px;
-  transition: .3s;
-  cursor: pointer;
-  background-color: #3ac9c5;
+  background: #3ac9c5;
   color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.30s;
 }
 
 #enviar-form:hover {
-  width: 16%;
-  height: 4%;
+  width: 350px;
 
 }
 
@@ -99,7 +149,10 @@ form {
   #enviar-form{
     margin-top: 20%;
   }
-  
+  #enviar-form:hover{
+    width: 200px;
+
+  }
 }
 @media screen and (max-width:850px){
   .cadastro-titulo{

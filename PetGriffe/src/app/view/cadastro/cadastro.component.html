@@ -6,22 +6,24 @@
   <img src="assets/image/imagem-cadastro.png" alt="Imagem de cadastro" />
   <form (ngSubmit)="submitForm()" #cadastroForm="ngForm">
     <h1 class="cadastro-titulo">Cadastro</h1>
-    <div class="coluna1">
+    <div class="container-input">
+    <div class="formulario">
       <label for="usuario">Nome</label>
-      <input type="text" id="usuario" name="nome" class="inputs" [(ngModel)]="nome" />
+      <input type="text" id="usuario" name="nome" class="inputs" placeholder="Insira seu username" [(ngModel)]="nome" />
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" class="inputs" [(ngModel)]="email" />
+      <input type="email" id="email" name="email" class="inputs" placeholder="Insira seu email" [(ngModel)]="email" />
       <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha" class="inputs" [(ngModel)]="senha" />
+      <input type="password" id="senha" name="senha" class="inputs" placeholder="Insira sua senha" [(ngModel)]="senha" />
     </div>
-    <div class="coluna2">
+    <div class="formulario2">
       <label for="cendereco">Endereço</label>
-      <input type="text" id="endereco" name="endereco" class="inputs" [(ngModel)]="endereco" />
+      <input type="text" id="endereco" name="endereco" class="inputs" placeholder="Insira seu CPF" [(ngModel)]="endereco" />
       <label for="cep">Cep</label>
-      <input type="text" id="cep" name="cep" class="inputs" [(ngModel)]="cep" />
+      <input type="text" id="cep" name="cep" class="inputs" placeholder="Insira seu CEP" [(ngModel)]="cep" />
       <label for="telefone">Telefone</label>
-      <input type="tel" id="telefone" name="telefone" class="inputs" [(ngModel)]="telefone" />
+      <input type="tel" id="telefone" name="telefone" class="inputs" placeholder="Insira seu TELEFONE" [(ngModel)]="telefone" />
     </div>
+  </div>
     <button type="submit" id="enviar-form" name="enviar-form">Enviar</button>
   </form>
 </div>
