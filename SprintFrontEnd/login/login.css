@@ -151,8 +151,8 @@ body::-moz-scrollbar-thumb {
   .login {
     display: flex;
     flex-direction: column;
-    height: 870px;
-    width: 800px;
+    height: 700px;
+    width: 630px;
     margin-bottom: 30px;
   }
 
@@ -160,7 +160,7 @@ body::-moz-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 630px;
     border-radius: 20px 20px 20px 20px;
   }
 
