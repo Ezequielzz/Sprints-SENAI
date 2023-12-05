@@ -3,6 +3,41 @@ body {
     margin: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 7px;
+    transition: 1s;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 1s;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #3ac9c5;
+    border-radius: 16px;
+    transition: 1s;
+  }
+  
+  body::-moz-scrollbar {
+    width: 7px;
+    transition: 1s;
+  }
+  
+  body::-moz-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 1s;
+  }
+  
+  body::-moz-scrollbar-thumb {
+    background-color: #3ac9c5;
+    border-radius: 16px;
+    transition: 1s;
+  }
+
+
 /* -----------------------  NAVBAR ----------------------- */
 
 .col-1 {
