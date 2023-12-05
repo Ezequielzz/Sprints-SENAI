@@ -800,80 +800,6 @@ body::-moz-scrollbar-thumb {
 
 /* -----------------------  XXXXXX ----------------------- */
 
-/* ----------------------- SERVIÇOS ----------------------- */
-
-.servicos {
-   margin-top: 115px;
-   margin-bottom: 50px;
-   display: flex;
-   justify-content: center;
-}
-
-.cardS {
-   width: 320px;
-   height: 335px;
-   margin-bottom: 30px;
-   border: solid 2px #d4d4d4;
-   background-color: #ffffff;
-   border-radius: 10px;
-}
-
-.cardS:not(:last-child) {
-   margin-right: 75px;
-}
-
-.cardS .cardImg {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.cardS .cardSImg img {
-   width: 100%;
-   height: 180px;
-   border-top-right-radius: 7.5px;
-   border-top-left-radius: 7.5px;
-}
-
-.cardS .cardSBody .cardSTitulo,
-.cardSPreco {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.cardS .cardSBody .cardSTitulo p {
-   font-family: "Lilita One", sans-serif;
-}
-
-.cardS .cardSBody .cardSPreco p {
-   font-family: "Lilita One", sans-serif;
-}
-
-.cardS .cardSBody .cardSBotao {
-   display: flex;
-   justify-content: center;
-}
-
-.cardSBotao button {
-   border: solid 1px #027674;
-   border-radius: 10px;
-   width: 100px;
-   height: 30px;
-   font-size: 17px;
-   font-weight: 600;
-   background: #01bbb9;
-   color: #fff;
-   cursor: pointer;
-   transition: 0.32s;
-}
-
-.cardSBotao button:hover {
-   background: #fcb212;
-   border: solid 1px #ab790d;
-}
-
-/* -----------------------  XXXXXX ----------------------- */
 
 /*estilização para o rodapé*/
 footer {
@@ -1005,7 +931,8 @@ ul {
 }
 
 
-/* RESPONSIVIDADE */
+/* ----------------------- RESPONSIVIDAE ----------------------- */
+
 @media screen and (max-height: 1200px) {
    #container1 {
       height: 70vh;
@@ -1243,3 +1170,5 @@ ul {
       font-size: 16px; 
     }
 }
+
+/* -----------------------  XXXXXX ----------------------- */
