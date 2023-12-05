@@ -9,7 +9,7 @@ const app = Express();
 //Configurando o Cors
 app.use(cors());
 
-//Configurando o expres
+//Configurando o express
 app.use(Express.urlencoded({ extended: true }));
 app.use(Express.json());
 //Rotas

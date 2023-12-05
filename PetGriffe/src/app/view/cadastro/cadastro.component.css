@@ -87,7 +87,7 @@ form {
 
 }
 
-@media screen and (max-width:1450px){
+@media screen and (max-width:1200px){
   .cadastro{
     flex-direction: column;
     align-items: center;
@@ -102,9 +102,7 @@ form {
   
 }
 @media screen and (max-width:850px){
-  .cadastro-titulo{
-    margin-bottom: 40%;
-  }
+  
   #enviar-form{
     margin-top: 30%;
   }
