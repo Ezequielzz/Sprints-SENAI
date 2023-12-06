@@ -1,52 +1,70 @@
 <div class="row">
-    <div class="col-1">
-        <div class="menu-hamburguer">
-            <input type="checkbox" id="faketrigger">
-            <div class="menu-linhas">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <div class="col-1">
+    <div class="menu-hamburguer">
+      <input type="checkbox" id="faketrigger" />
+      <div class="menu-linhas">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-            <ul class="navegacao-responsiva">
-                <li><a href="#">Serviços Pet</a></li>
-                <li><a href="/gatos">gatos</a></li>
-                <li><a href="/cachorros">Cachorros</a></li>
-                <li><a href="/passaros">Pássaros</a></li>
-                <li><a href="#">Clube Griffe</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/cadastro">Cadastro</a></li>
+      <ul class="navegacao-responsiva">
+        <li><a href="#">Serviços Pet</a></li>
+        <li><a href="/gatos">gatos</a></li>
+        <li><a href="/cachorros">Cachorros</a></li>
+        <li><a href="/passaros">Pássaros</a></li>
+        <li><a href="#">Clube Griffe</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/cadastro">Cadastro</a></li>
+      </ul>
+    </div>
 
-            </ul>
-        </div>
-
+    <!----------------- NAVBAR ------------------>
+    <div class="row">
+      <div class="col-1">
         <div class="navIcon">
-            <a href="/">
-                <img src="assets/image/logo.png" alt="Icone Petgriffe">
-            </a>
+          <a href="/home">
+            <img src="assets/image/logo.png" alt="Icone Petgriffe" />
+          </a>
         </div>
         <div class="barraBusca">
-            <input type="text" placeholder="Buscar..." class="barra">
-            <img src="assets/image/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;">
+          <input type="text" placeholder="Buscar..." class="barra" />
+          <img
+            src="assets/image/lupa.png"
+            alt=""
+            class="lupa"
+            style="width: 40px; height: 37px"
+          />
         </div>
         <div class="navegacao">
-            <a href="/login" class="navegar">Login</a>
-            <p class="pnavegar">e</p>
-            <a href="/cadastro" class="navegar">Cadastro</a>
-            <div class="carrinhoIcon">
-                <a href="">
-                    <img src="assets/image/carrinho-compras.png" alt="">
-                </a>
+          <a href="/login" class="navegar">Login</a>
+          <p class="pnavegar">e</p>
+          <a href="/cadastro" class="navegar">Cadastro</a>
+
+          <div class="carrinho">
+            <div class="carrinho-toggle" onclick="toggleCarrinho()">
+              <img src="assets/image/carrinho-compras.png" alt="" />
             </div>
+            <div class="carrinho-menu" id="carrinhoMenu">
+              <div id="carrinhoElement">
+                <!-- Elemento do carrinho de compras -->
+              </div>
+              <button class="close-btn" onclick="fecharCarrinho()">
+                <img src="assets/image/fechar.png" alt="" />
+              </button>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="col-2">
+      </div>
+      <div class="col-2">
         <div class="navegacao2">
-            <a href="" class="navegar2">Serviço Pet</a>
-            <a href="/gatos" class="navegar2">Gatos</a>
-            <a href="/cachorros" class="navegar2">Cachorros</a>
-            <a href="/passaros" class="navegar2">Pássaros</a>
-            <a href="" class="navegar2">Clube Griffe</a>
+          <a href="../agenda.html" class="navegar2">Serviço Pet</a>
+          <a href="/gatos" class="navegar2">Gatos</a>
+          <a href="/cachorros" class="navegar2">Cachorros</a>
+          <a href="/passaros" class="navegar2">Pássaros</a>
+          <a href="" class="navegar2">Clube Griffe</a>
         </div>
+      </div>
     </div>
+  </div>
 </div>

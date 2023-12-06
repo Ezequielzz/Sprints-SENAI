@@ -23,7 +23,7 @@ import { CardsPassarosComponent } from './view/passaros/cards-passaros/cards-pas
 import { CardsGatosComponent } from './view/gatos/cards-gatos/cards-gatos.component';
 import { CardHomeComponent } from './view/home/card-home/card-home.component';
 import { CarouselComponent } from './view/home/carousel/carousel.component';
-import { CategoriasComponent } from './view/home/categorias/categorias.component';
+import { HomeComponent } from './view/home/home.component';
 // import {carsl}
 
 @NgModule({
@@ -44,7 +44,7 @@ import { CategoriasComponent } from './view/home/categorias/categorias.component
     CardsGatosComponent,
     CardHomeComponent,
     CarouselComponent,
-    CategoriasComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

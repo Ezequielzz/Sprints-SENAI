@@ -1,121 +1,175 @@
+/* ----------------------- CARROSSEL ----------------------- */
+
 .carrossel {
     margin: 0 auto;
     width: 1010px;
     height: 530px;
-    overflow: hidden; 
+    overflow: hidden;
     border-radius: 10px;
-}
-
-.imagens {
+ }
+ 
+ .imagens {
     display: flex;
     width: 400%;
     height: 530px;
-}
-
-.imagens input {
+ }
+ 
+ .imagens input {
     display: none;
-}
-
-.imagem {
+ }
+ 
+ .imagem {
     width: 25%;
     position: relative;
     transition: 1s;
-}
-
-.imagem img {
+ }
+ 
+ .imagem img {
     width: 1010px;
     height: auto;
-}
-
-.manualNav {
+ }
+ 
+ .manualNav {
     position: absolute;
     width: 1010px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
-}
-
-.manual-btn {
+ }
+ 
+ .manual-btn {
     border: 2px solid #ffffff;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.manual-btn:not(:last-child) {
+ }
+ 
+ .manual-btn:not(:last-child) {
     margin-right: 20px;
-}
-
-.manual-btn:hover{
+ }
+ 
+ .manual-btn:hover {
     background: #ffffff;
-}
-
-#radio1:checked ~ .first {
+ }
+ 
+ #radio1:checked~.first {
     margin-left: 0;
-}
-
-#radio2:checked ~ .first {
+ }
+ 
+ #radio2:checked~.first {
     margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
+ }
+ 
+ #radio3:checked~.first {
     margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
+ }
+ 
+ #radio4:checked~.first {
     margin-left: -75%;
-}
-
-.autoNav div {
+ }
+ 
+ .autoNav div {
     border: 2px solid #3ac9c5;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
-}
-
-.autoNav {
+ }
+ 
+ .autoNav {
     position: absolute;
     width: 1010px;
     margin-top: 490px;
     display: flex;
     justify-content: center;
-}
-
-.autoNav div:not(:last-child) {
+ }
+ 
+ .autoNav div:not(:last-child) {
     margin-right: 20px;
-}
-
-#radio1:checked ~.autoNav .auto-btn1 {
+ }
+ 
+ #radio1:checked~.autoNav .auto-btn1 {
     background: #fff;
-}
-
-#radio2:checked ~.autoNav .auto-btn2 {
+ }
+ 
+ #radio2:checked~.autoNav .auto-btn2 {
     background: #fff;
-}
-
-#radio3:checked ~.autoNav .auto-btn3 {
+ }
+ 
+ #radio3:checked~.autoNav .auto-btn3 {
     background: #fff;
-}
-
-#radio4:checked ~.autoNav .auto-btn4 {
+ }
+ 
+ #radio4:checked~.autoNav .auto-btn4 {
     background: #fff;
-}
-
-
-.botoes {
+ }
+ 
+ .botoes {
     position: absolute;
     width: 1010px;
     margin-top: 250px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-}
-
-.botoes img {
+ }
+ 
+ .botoes img {
     width: 30px;
     height: 30px;
-}
-
-/* -----------------------  XXXXXX ----------------------- */
+ }
+ 
+ /* -----------------------  XXXXXX ----------------------- */
+ 
+ /* ----------------------- CATEGORIAS ----------------------- */
+ 
+ .categorias {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .cardC:not(:last-child) {
+    margin-right: 45px;
+ }
+ 
+ .cardC {
+    width: 245px;
+    height: 340px;
+    border: solid 2px #fcb212;
+    background-color: #01bbb9;
+    border-radius: 10px;
+ }
+ 
+ .cardC {
+    transition: all 0.55s ease-in;
+    transition: all 0.45s ease-out;
+ }
+ 
+ .cardC:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+ 
+ .cardC .cardCImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .cardC .cardCImg img {
+    width: 100%;
+    height: 265px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+ }
+ 
+ .cardCBody h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: "Lilita One", sans-serif;
+    font-size: 25px;
+ }
+ 

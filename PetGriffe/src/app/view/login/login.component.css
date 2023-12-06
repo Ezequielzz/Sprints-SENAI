@@ -5,95 +5,315 @@
   }
   
   body {
-    width: 100%;
-    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
   }
-  form {
-    width: 60%;
+  
+  body::-webkit-scrollbar {
+    width: 7px;
+    transition: 1s;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 1s;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #3ac9c5;
+    border-radius: 16px;
+    transition: 1s;
+  }
+  
+  body::-moz-scrollbar {
+    width: 7px;
+    transition: 1s;
+  }
+  
+  body::-moz-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 1s;
+  }
+  
+  body::-moz-scrollbar-thumb {
+    background-color: #3ac9c5;
+    border-radius: 16px;
+    transition: 1s;
+  }
+  
+  .navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 14vh;
+    margin-bottom: 60px;
+    background-color: #3ac9c5;
+  }
+  
+  .navIcon {
+    height: 80px;
+    width: 95px;
+  }
+  
+  .link {
+    font-family: "Bevan", serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 35px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+  }
+  
+  .link:hover {
+    color: #fcb212;
   }
   
   .login {
-    width: 65%;
     display: flex;
-    background-color: #dbd3d39a;
-    border-radius: 5px;
-    margin: 10% 17% 0%;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 465px;
+    background: #eeeeee;
+    border-radius: 20px;
+    margin: 0 auto;
   }
   
-  .login-titulo {
-    position: fixed;
-    margin-bottom: 15%;
-  }
-  
-  .login img {
-    width: 40%;
-    height: 35vh;
-  border-top-left-radius: 5px;
-  }
-  
-  .inputs {
+  .login .imglogin {
     display: flex;
-    width: 250px;
+    align-items: center;
+  }
+  
+  .login .imglogin img {
+    width: 750px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .login .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 90px;
+    width: 700px;
+    height: 465px;
+  }
+  
+  .formulario input {
+    width: 160px;
+    height: 30px;
+    margin-top: 7px;
+    border: solid 2px #000000;
+    border-radius: 17px;
+  }
+  
+  ::placeholder {
+    color: black;
+  }
+  
+  .formulario label {
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .formulario input:not(:last-child) {
+    margin-bottom: 30px;
+    width: 155px;
+  }
+  
+  #lsenha {
+    margin-bottom: 40px;
+  }
+  
+  .enviarlogin input {
+    width: 150px;
+    height: 45px;
+    border-radius: 27px;
     border: none;
-    border-radius: 3px;
-    outline: 0;
-    margin-bottom: 9%;
-    transition: .3s;
-    background-color: #8a8888;
+    background: #3ac9c5;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
   }
-  .inputs:focus{
-    width: 270px;
-    background-color: #8a8888bb;
+  
+  .enviarlogin input:hover {
+    background: #41dfd9;
   }
- 
-#realizar-login {
-    position: fixed;
-  width: 15%;
-  height: 3%;
-  margin-top: 15%;
-  border: none;
-  border-radius: 5px;
-  transition: .3s;
-  cursor: pointer;
-  background-color: #3ac9c5;
-  color: #ffffff;
-}
-#realizar-login:hover{
-  width: 16%;
-  height: 4%;
-
-}
-    @media screen and (max-width:1024px) {
-        form{
-          align-items: center;
-          margin-top: 20%;
-        }
-        .login{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 50vh;
-        }
-        .login img{
-            height: 15vh;
-            width: 100%;
-        }
-        .inputs{
-          width: 240px;
-            width: inherit;
-        }
-        .inputs:focus{
-            width: 250px;
-        }
-        .login-titulo{
-            margin-bottom: 30%;
-        }
-        #realizar-login{
-            margin-top: 30%;
-        }
-        
+  
+  
+  
+  /* RESPONSIVIDADE */
+  @media screen and (max-width: 1280px) {
+    .navbar {
+      margin-bottom: 30px;
     }
+  
+    .login {
+      display: flex;
+      flex-direction: column;
+      height: 700px;
+      width: 630px;
+      margin-bottom: 30px;
+    }
+  
+    .login .imglogin img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 630px;
+      border-radius: 20px 20px 20px 20px;
+    }
+  
+    .login .formulario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px; /* Espaçamento interno */
+      box-sizing: border-box; /* Inclui padding na largura total */
+      margin: 0;
+    }
+  
+    .formulario input {
+      margin-bottom: 20px;
+    }
+  
+    #lnome {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    #lsenha {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    .enviarlogin input {
+      width: 100%;
+      width: 170px;
+      height: 50px;
+      margin-top: 20px;
+    }
+  }
+  
+  
+  
+  /* RESPONSIVIDADE */
+  @media screen and (max-width: 800px) {
+    .navbar {
+      margin-bottom: 30px;
+    }
+  
+    .login {
+      display: flex;
+      flex-direction: column;
+      height: 680px;
+      width: 550px;
+      margin-bottom: 30px;
+    }
+  
+    .login .imglogin img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 550px;
+      border-radius: 20px 20px 20px 20px;
+    }
+  
+    .login .formulario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px; /* Espaçamento interno */
+      box-sizing: border-box; /* Inclui padding na largura total */
+      margin: 0;
+    }
+  
+    .formulario input {
+      margin-bottom: 20px;
+    }
+  
+    #lnome {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    #lsenha {
+      width: 220px;
+      height: 40px;
+      border-radius: 27px;
+    }
+  
+    .enviarlogin input {
+      width: 100%;
+      width: 170px;
+      height: 50px;
+      margin-top: 20px;
+    }
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width: 570px) {
+    .navbar {
+      margin-bottom: 40px;
+    }
+  
+    .login {
+      display: flex;
+      flex-direction: column;
+      height: 500px;
+      width: 310px;
+      margin-bottom: 10px;
+    }
+  
+    .login .imglogin img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 310px;
+      border-radius: 15px 15px 15px 15px;
+    }
+  
+    .login .formulario {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    .formulario input {
+      margin-bottom: 20px;
+    }
+  
+    #lnome {
+      width: 170px;
+      height: 35px;
+      border-radius: 27px;
+    }
+  
+    #lsenha {
+      width: 170px;
+      height: 35px;
+      border-radius: 27px;
+    }
+  
+    .enviarlogin input {
+      width: 100%;
+      width: 190px;
+      height: 50px;
+      margin-top: 20px;
+    }
+  }

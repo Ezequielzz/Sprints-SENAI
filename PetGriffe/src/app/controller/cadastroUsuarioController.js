@@ -9,7 +9,7 @@ const cadastroUsuario =  async (req, res) => {
     const { nome, email, senha, endereco, cep, telefone } = req.body;//recebendo os dados do usuário
 
     //criando um hash seguro da senha
-    bcrypt.hash(senha, 10, async (err, hash) => {
+    bcrypt.hash(senha, 50, async (err, hash) => {
         if (err) {
             console.error(err);
             res.status(500).json({ error: "Erro ao criar usuário." });

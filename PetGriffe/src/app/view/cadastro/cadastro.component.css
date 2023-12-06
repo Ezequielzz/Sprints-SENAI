@@ -43,11 +43,6 @@ form {
   margin: 10% 17% 0%;
 }
 
-.cadastro-titulo {
-  position: fixed;
-  margin-bottom: 15%;
-}
-
 .cadastro img {
   width: 100%;
   height: 35vh;
@@ -61,12 +56,11 @@ form {
   outline: 0;
   margin-bottom: 15%;
   transition: .3s;
-  background-color: #8a8888;
+  background-color: #ffffff;
 }
 
 .inputs:focus {
-  height: 30px;
-  background-color: #8a8888bb;
+  background-color: #8a888841;
 }
 
 .inputs::placeholder{
@@ -137,7 +131,7 @@ color: #000000;
 
 }
 
-@media screen and (max-width:1450px){
+@media screen and (max-width:1200px){
   .cadastro{
     flex-direction: column;
     align-items: center;
@@ -155,9 +149,7 @@ color: #000000;
   }
 }
 @media screen and (max-width:850px){
-  .cadastro-titulo{
-    margin-bottom: 40%;
-  }
+  
   #enviar-form{
     margin-top: 30%;
   }

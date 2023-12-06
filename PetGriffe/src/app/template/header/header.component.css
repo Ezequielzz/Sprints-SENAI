@@ -1,77 +1,83 @@
-*{
+* {
   padding: 0;
   margin: 0;
   list-style: 0;
 }
-body{
+
+body {
+  background-color: #ffffff;
   margin: 0;
-  padding: 0;
-  
-}
-.menu-hamburguer{
-  display: none;
 }
 
-.navegacao-responsiva{
-  position: absolute;
-  z-index: 998;
-  left: 0;
-  /*encosta na esquerda*/
-  top: 0;
-  /*encosta em cima*/
-  width: 300px;
-  height: calc(100vh - 160px);
-  /*com o calc remove a barra de rolagem*/
-  padding-top: 160px;
-  /*vai gerar barra de rolagem*/
-  background-color: #ededed;
-  margin-left: -300px;
-  /*ficar fora da tela*/
-  transition: all .3s ease-in-out;
+body::-webkit-scrollbar {
+  width: 7px;
+  transition: 1s;
 }
-.menu-hamburguer ul li{
-  padding: 20px 80px;
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
 }
-.menu-hamburguer a{
-  text-decoration: none;
-  color: #000000;
-  font-size: 15pt;
-  transition: .2s;
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
 }
-.menu-hamburguer a:hover{
-  text-decoration: none;
-  color: #0000009f;
-  font-size: 13pt;
+
+#carrinhoMenu::-webkit-scrollbar {
+  width: 7px;
+  transition: 1s;
 }
-.menu-linhas{
-  position: absolute;
-  z-index: 999;
- top: 0;
-  left: 2%;
-  margin-top: 2%;
-  width: 50px;
-  height: 10px;
+
+#carrinhoMenu::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
 }
-.menu-linhas span{
- display: block;
- width: 50px;
- height: 10px;
- margin-bottom: 10px;
- border-radius: 2px;
- transition: all ease-in-out .3s;
- background-color: #ffffff;
+
+#carrinhoMenu::-webkit-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
 }
-#faketrigger{
-  position: absolute;
-  width: 85px;
-  height: 80px;
-  z-index: 1001;
-  top: 0;
-  left: 0;
-  margin: 0;
-  opacity: 0;
-  cursor: pointer;
+
+body::-moz-scrollbar {
+  width: 7px;
+  transition: 1s;
 }
+
+body::-moz-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+/* -----------------------  NAVBAR ----------------------- */
 
 .col-1 {
   display: flex;
@@ -98,39 +104,227 @@ body{
 }
 
 .navegar {
-  font-family: 'Bevan', serif;
+  font-family: "Bevan", serif;
   font-size: 15px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   margin: 0 5px;
-  transition: 0.30s;
+  transition: 0.3s;
 }
 
 .pnavegar {
-  font-family: 'Bevan', serif;
+  font-family: "Bevan", serif;
   font-size: 15px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   margin: 0 5px;
 }
 
-.carrinhoIcon img {
+.carrinho img {
   width: 80px;
   height: 70px;
 }
 
 .navegar2 {
-  font-family: 'Bevan', serif;
+  font-family: "Bevan", serif;
   font-size: 15px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   margin: 0 15px;
-  transition: 0.30s;
+  transition: 0.3s;
 }
 
 .navegar:hover,
 .navegar2:hover {
-  color: #FCB212;
+  color: #fcb212;
+}
+
+.barraBusca {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 140px;
+  width: 550px;
+}
+
+.barra {
+  height: 35px;
+  width: 500px;
+  border: none;
+  border-top: #b6b5b5 solid 2px;
+  border-bottom: #b6b5b5 solid 2px;
+  border-left: #b6b5b5 solid 2px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  outline: 0;
+}
+
+.lupa {
+  background: #ffffff;
+  border-top: #b6b5b5 solid 2px;
+  border-bottom: #b6b5b5 solid 2px;
+  border-right: #b6b5b5 solid 2px;
+  border-bottom-right-radius: 19px;
+  border-top-right-radius: 19px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* Estilos para o ícone do carrinho */
+.carrinho-toggle {
+  cursor: pointer;
+}
+
+/* Estilos para o menu do carrinho */
+.carrinho-menu {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  /* Começa fora da tela */
+  width: 400px;
+  /* Ajuste conforme necessário */
+  height: 100%;
+  background-color: #fff;
+  /* Cor de fundo para visualização */
+  transition: right 0.3s ease-in-out;
+  z-index: 1099;
+  /* Colocado abaixo do ícone do carrinho */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Sombra para destacar o menu */
+}
+
+.carrinho-menu.active {
+  right: 0;
+  /* Move para a posição visível */
+}
+
+/* Estilos para o botão de fechar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.close-btn img {
+  width: 15px;
+  height: 15px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+#carrinhoElement {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  gap: 20px;
+}
+
+#carrinhoElement > div {
+  border: 2px solid #3ac9c5;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 20px;
+  width: 270px;
+  display: flex;
+}
+
+#carrinhoElement img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Adicione esses estilos ao seu arquivo CSS */
+
+.textoCarrinho {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 110px);
+  /* Ajuste conforme necessário */
+}
+
+.nomeProduto {
+  font-family: "Bevan", serif;
+  font-size: 12px;
+}
+
+.precoProduto {
+  margin-top: auto;
+  text-align: left;
+  font-family: "Bevan", serif;
+  font-size: 14px;
+}
+
+/* ----------------------- CARROSSEL ----------------------- */
+
+/* -----------------------  NAVBAR ----------------------- */
+
+.col-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3ac9c5;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: center;
+  background: #3ac9c5;
+  margin-bottom: 25px;
+}
+
+.navIcon img {
+  width: 95px;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegar {
+  font-family: "Bevan", serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.pnavegar {
+  font-family: "Bevan", serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 5px;
+}
+
+.carrinho img {
+  width: 80px;
+  height: 70px;
+}
+
+.navegar2 {
+  font-family: "Bevan", serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.navegar:hover,
+.navegar2:hover {
+  color: #fcb212;
 }
 
 .barraBusca {
@@ -151,7 +345,6 @@ body{
   border-left: #b6b5b5 solid 2px;
   border-bottom-left-radius: 19px;
   border-top-left-radius: 19px;
-  outline: 0;
 }
 
 .lupa {
@@ -162,46 +355,210 @@ body{
   border-bottom-right-radius: 19px;
   border-top-right-radius: 19px;
 }
-@media screen and (max-width:1200px){
 
+/* -----------------------  XXXXXX ----------------------- */
+
+/* Estilos para o ícone do carrinho */
+.carrinho-toggle {
+  cursor: pointer;
+}
+
+/* Estilos para o menu do carrinho */
+.carrinho-menu {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  /* Começa fora da tela */
+  width: 400px;
+  /* Ajuste conforme necessário */
+  height: 100%;
+  background-color: #fff;
+  /* Cor de fundo para visualização */
+  transition: right 0.3s ease-in-out;
+  z-index: 1099;
+  /* Colocado abaixo do ícone do carrinho */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Sombra para destacar o menu */
+}
+
+.carrinho-menu.active {
+  right: 0;
+  /* Move para a posição visível */
+}
+
+/* Estilos para o botão de fechar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.close-btn img {
+  width: 15px;
+  height: 15px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+#carrinhoElement {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  gap: 20px;
+}
+
+#carrinhoElement > div {
+  border: 2px solid #3ac9c5;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 20px;
+  width: 270px;
+  display: flex;
+}
+
+#carrinhoElement img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Adicione esses estilos ao seu arquivo CSS */
+
+.textoCarrinho {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 110px);
+  /* Ajuste conforme necessário */
+}
+
+.nomeProduto {
+  font-family: "Bevan", serif;
+  font-size: 12px;
+}
+
+.precoProduto {
+  margin-top: auto;
+  text-align: left;
+  font-family: "Bevan", serif;
+  font-size: 14px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/*Estilos Menu-Hamburguer*/
+
+.menu-hamburguer {
+  display: none;
+}
+
+.navegacao-responsiva {
+  position: absolute;
+  z-index: 998;
+  left: 0;
+  /*encosta na esquerda*/
+  top: 0;
+  /*encosta em cima*/
+  width: 300px;
+  height: calc(100vh - 160px);
+  /*com o calc remove a barra de rolagem*/
+  padding-top: 160px;
+  /*vai gerar barra de rolagem*/
+  background-color: #ededed;
+  margin-left: -300px;
+  /*ficar fora da tela*/
+  transition: all 0.3s ease-in-out;
+}
+.menu-hamburguer ul li {
+  padding: 20px 80px;
+}
+.menu-hamburguer a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 15pt;
+  transition: 0.2s;
+}
+.menu-hamburguer a:hover {
+  text-decoration: none;
+  color: #0000009f;
+  font-size: 13pt;
+}
+.menu-linhas {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 2%;
+  margin-top: 2%;
+  width: 50px;
+  height: 10px;
+}
+.menu-linhas span {
+  display: block;
+  width: 50px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  transition: all ease-in-out 0.3s;
+  background-color: #ffffff;
+}
+#faketrigger {
+  position: absolute;
+  width: 85px;
+  height: 80px;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
   /*menu-hamburguer*/
   .menu-hamburguer {
     display: block;
     width: 30px;
     margin-top: 0px;
     left: 3%;
-   }
-   
-   #faketrigger:checked ~ .menu-linhas span{
-    background-color: #FCB212;
-   }
-   #faketrigger:checked ~ .menu-linhas span:nth-child(1){
-     transform-origin: 0% 0%;
-     transform: rotate(45deg) scaleX(1.25);
-   }
-    #faketrigger:checked ~ .menu-linhas span:nth-child(2){
-     opacity: 0;
-   }
-   #faketrigger:checked ~ .menu-linhas span:nth-child(3){
-     transform-origin: 0% 100%;
-     transform: rotate(-45deg) scaleX(1.25);
-   }
+  }
 
-   #faketrigger:checked ~.navegacao-responsiva{
+  #faketrigger:checked ~ .menu-linhas span {
+    background-color: #fcb212;
+  }
+  #faketrigger:checked ~ .menu-linhas span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+  }
+  #faketrigger:checked ~ .menu-linhas span:nth-child(2) {
+    opacity: 0;
+  }
+  #faketrigger:checked ~ .menu-linhas span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+  }
+
+  #faketrigger:checked ~ .navegacao-responsiva {
     margin-left: 0;
   }
-  
-   .col-1 .navegacao, .navegacao2, .col-1 .barraBusca{
+
+  .col-1 .navegacao,
+  .navegacao2,
+  .col-1 .barraBusca {
     display: none;
-   }
-   .col-1 .carrinhoIcon{
+  }
+  .col-1 .carrinhoIcon {
     display: block;
     right: 0;
-   }
-}
-@media screen and (max-width:500px){
-  #faketrigger:checked ~.navegacao-responsiva{
-   width: 100%;
   }
-  
+}
+@media screen and (max-width: 500px) {
+  #faketrigger:checked ~ .navegacao-responsiva {
+    width: 100%;
+  }
 }
