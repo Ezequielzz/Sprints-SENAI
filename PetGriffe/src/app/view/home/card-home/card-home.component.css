@@ -1,64 +1,64 @@
+/* ----------------------- CARDS ----------------------- */
+
 .tituloCards {
     display: flex;
     justify-content: center;
     position: relative;
     top: 100px;
-    font-family: 'Bevan', serif;
-}
-
-.maisVendidos, .promocoes, .recomendados {
-    margin-top: 115px;
-    display: flex;
-    justify-content: center;
-}
-
-
-.card {
+    font-family: "Bevan", serif;
+ }
+ 
+ .card {
     width: 170px;
     height: 350px;
-    border: solid 2px #d4d4d4;
+    border: solid 2px #01bbb9;
     background-color: #ffffff;
     border-radius: 10px;
-}
-
-.card:not(:last-child) {
+ }
+ 
+ .card:not(:last-child) {
     margin-right: 75px;
-}
-
-.card .cardImg {
+ }
+ 
+ .card .cardImg {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.card .cardImg img {
+ }
+ 
+ .card .cardImg img {
     width: 120px;
     height: 200px;
     border-top-right-radius: 7.5px;
     border-top-left-radius: 7.5px;
-}
-
-.card .cardBody .cardTitulo, .cardPreco {
+ }
+ 
+ .card .cardBody .cardTitulo,
+ .cardPreco {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.card .cardBody .cardTitulo p{
-    font-family: 'Lilita One', sans-serif;
-}
-
-.card .cardBody .cardPreco p{
-    font-family: 'Lilita One', sans-serif;
-}
-
-.card .cardBody .cardBotao {
+ }
+ 
+ .card .cardBody .cardTitulo p {
+    font-family: "Lilita One", sans-serif;
+ }
+ 
+ .card .cardBody .cardPreco p {
+    font-family: "Lilita One", sans-serif;
+ }
+ 
+ .cardPreco {
+    transition: 0, 30s;
+ }
+ 
+ .card .cardBody .cardBotao {
     display: flex;
     justify-content: center;
-}
-
-.cardBotao button {
-    border: solid 1px #027674; 
+ }
+ 
+ .cardBotao button {
+    border: solid 1px #027674;
     border-radius: 10px;
     width: 100px;
     height: 30px;
@@ -67,10 +67,667 @@
     background: #01bbb9;
     color: #fff;
     cursor: pointer;
-    transition: 0.32s; 
-}
-
-.cardBotao button:hover {
-    background: #FCB212;
+    transition: 0.32s;
+ }
+ 
+ .cardBotao button:hover {
+    background: #fcb212;
     border: solid 1px #ab790d;
-}
+ }
+ 
+ /* ----------------------- XXXXXX ----------------------- */
+ 
+ /* ---------------------- CARROSSÉIS CARDS ---------------------- */
+ 
+ /* CSS para o carrossel 1 */
+ 
+ #container1 {
+    height: 70vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+ }
+ 
+ #slider-container1 {
+    height: 510px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+ }
+ 
+ #slider-container1 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.3s;
+    cursor: pointer;
+ }
+ 
+ #slider-container1 .btn:hover {
+    transform: scale(1.2);
+ }
+ 
+ #slider-container1 .btn.inactive {
+    border-color: #027674;
+ }
+ 
+ #slider-container1 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+ }
+ 
+ #slider-container1 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+ }
+ 
+ #slider-container1 #slider1 {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all 0.5s;
+ }
+ 
+ #slider-container1 #slider1 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+ }
+ 
+ #slider-container1 #slider1 .slide span {
+    font-size: 150px;
+ }
+ 
+ @media only screen and (min-width: 1100px) {
+    #slider-container1 #slider1 .slide {
+       width: calc(2.5% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 1100px) {
+    #slider-container1 #slider1 .slide {
+       width: calc(3.3333333% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 900px) {
+    #slider-container1 #slider1 .slide {
+       width: calc(5% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 550px) {
+    #slider-container1 #slider1 .slide {
+       width: calc(10% - 20px);
+    }
+ }
+ 
+ /* ----------------------------------------------------------------- */
+ 
+ /* CSS para o segundo carrossel */
+ 
+ #container2 {
+    height: 70vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+ }
+ 
+ #slider-container2 {
+    height: 510px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+ }
+ 
+ #slider-container2 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.3s;
+    cursor: pointer;
+ }
+ 
+ #slider-container2 .btn:hover {
+    transform: scale(1.2);
+ }
+ 
+ #slider-container2 .btn.inactive {
+    border-color: #027674;
+ }
+ 
+ #slider-container2 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+ }
+ 
+ #slider-container2 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+ }
+ 
+ #slider-container2 #slider2 {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all 0.5s;
+ }
+ 
+ #slider-container2 #slider2 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+ }
+ 
+ #slider-container2 #slider2 .slide span {
+    font-size: 150px;
+ }
+ 
+ @media only screen and (min-width: 1100px) {
+    #slider-container2 #slider2 .slide {
+       width: calc(2.5% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 1100px) {
+    #slider-container2 #slider2 .slide {
+       width: calc(3.3333333% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 900px) {
+    #slider-container2 #slider2 .slide {
+       width: calc(5% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 550px) {
+    #slider-container2 #slider2 .slide {
+       width: calc(10% - 20px);
+    }
+ }
+ 
+ /* ----------------------------------------------------------------- */
+ 
+ /* CSS para o carrossel 3 */
+ 
+ #container3 {
+    height: 70vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+ }
+ 
+ #slider-container3 {
+    height: 510px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+ }
+ 
+ #slider-container3 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.3s;
+    cursor: pointer;
+ }
+ 
+ #slider-container3 .btn:hover {
+    transform: scale(1.2);
+ }
+ 
+ #slider-container3 .btn.inactive {
+    border-color: #027674;
+ }
+ 
+ #slider-container3 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+ }
+ 
+ #slider-container3 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+ }
+ 
+ #slider-container3 #slider3 {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all 0.5s;
+ }
+ 
+ #slider-container3 #slider3 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+ }
+ 
+ #slider-container3 #slider3 .slide span {
+    font-size: 150px;
+ }
+ 
+ @media only screen and (min-width: 1100px) {
+    #slider-container3 #slider3 .slide {
+       width: calc(2.5% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 1100px) {
+    #slider-container3 #slider3 .slide {
+       width: calc(3.3333333% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 900px) {
+    #slider-container3 #slider3 .slide {
+       width: calc(5% - 20px);
+    }
+ }
+ 
+ @media only screen and (max-width: 550px) {
+    #slider-container3 #slider3 .slide {
+       width: calc(10% - 20px);
+    }
+ }
+ 
+ /* -----------------------  XXXXXX ----------------------- */
+ 
+ 
+ /*estilização para o rodapé*/
+ footer {
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ @media screen and (max-width: 1029px) {
+    .estilizacao-a {
+       color: #ffffff;
+       text-decoration: none;
+       font-size: 10pt;
+       transition: 0.5s;
+    }
+ 
+    footer {
+       height: 20vh;
+       transition: 0.5s;
+    }
+ }
+ 
+ @media screen and (max-width: 870px) {
+    .estilizacao-a {
+       color: #ffffff;
+       text-decoration: none;
+       font-size: 8pt;
+       transition: 0.5s;
+       padding-left: 10px;
+    }
+ 
+    .informacoes-adicionais .redes-sociais img {
+       padding-left: 10px;
+    }
+ 
+    #instagram {
+       height: 20px;
+       width: 20px;
+    }
+ 
+    #twitwer {
+       height: 20px;
+       width: 20px;
+    }
+ 
+    #tiktok {
+       height: 20px;
+       width: 20px;
+    }
+ 
+    .informacoes-footer {
+       margin-right: 3%;
+    }
+ }
+ 
+ /*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+ footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+ }
+ 
+ /*linha horizontal do footer*/
+ hr {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+ }
+ 
+ /*estilização para links*/
+ .estilizacao-a {
+    color: #ffffff;
+    text-decoration: none;
+ }
+ 
+ /*classe principal do footer*/
+ .informacoes-adicionais {
+    width: 100%;
+ }
+ 
+ /*estilizando logo Petgriffe, no footer*/
+ #logo-footer {
+    display: flex;
+    margin: auto;
+    height: 100px;
+ }
+ 
+ .informacoes-footer li,
+ ul {
+    list-style: none;
+ }
+ 
+ /* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+ .informacoes-footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 5px;
+ }
+ 
+ /*class principal de tiktok, instagram e twiter*/
+ .redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+ }
+ 
+ /*estilizando o tamanho delas*/
+ #instagram {
+    height: 25px;
+ }
+ 
+ #twiter {
+    height: 30px;
+ }
+ 
+ #tiktok {
+    height: 27px;
+ }
+ 
+ 
+ /* ----------------------- RESPONSIVIDAE ----------------------- */
+ 
+ @media screen and (max-height: 1200px) {
+    #container1 {
+       height: 70vh;
+    }
+ 
+    #slider-container1 {
+       height: 550px;
+    }
+ 
+    #container2 {
+       height: 70vh;
+    }
+ 
+    #slider-container2 {
+       height: 550px;
+    }
+ 
+    #container3 {
+       height: 70vh;
+    }
+ 
+    #slider-container3 {
+       height: 550px;
+    }
+ }
+ 
+ @media screen and (max-height: 866px) {
+    #container1 {
+       height: 88vh;
+    }
+ 
+    #slider-container1 {
+       height: 475px;
+    }
+ 
+    #container2 {
+       height: 88vh;
+    }
+ 
+    #slider-container2 {
+       height: 475px;
+    }
+ 
+    #container3 {
+       height: 88vh;
+    }
+ 
+    #slider-container3 {
+       height: 475px;
+    }
+ }
+ 
+ @media screen and (max-height: 485px) {
+    #container1 {
+       height: 106vh;
+    }
+ 
+    #slider-container1 {
+       height: 490px;
+    }
+ 
+    #container2 {
+       height: 106vh;
+    }
+ 
+    #slider-container2 {
+       height: 490px;
+    }
+ 
+    #container3 {
+       height: 106vh;
+    }
+ 
+    #slider-container3 {
+       height: 490px;
+    }
+ }
+ 
+ 
+ 
+ 
+ @media screen and (max-width: 1280px) {
+    .carrossel {
+       width: 835px;
+       height: 430px;
+       border-radius: 8px;
+    }
+ 
+    .imagens {
+       width: 400%;
+       height: 330px;
+    }
+ 
+    .imagem {
+       width: 25%;
+    }
+ 
+    .imagem img {
+       width: 835px;
+       height: auto;
+    }
+ 
+    .manualNav {
+       width: 835px;
+       margin-top: 60px;
+    }
+ 
+    .autoNav {
+       width: 835px;
+       margin-top: 390px;
+    }
+ 
+    .botoes {
+       width: 835px;
+       margin-top: 207px;
+    }
+ 
+ 
+    .cardC {
+       width: 225px;
+       height: 300px;
+     }
+   
+     .cardC .cardCImg img {
+       height: 225px;
+     }
+   
+     .cardCBody h2 {
+       font-size: 20px; 
+     }
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 840px) {
+    .carrossel {
+       width: 600px;
+       height: 330px;
+       border-radius: 8px;
+    }
+ 
+    .imagens {
+       width: 400%;
+       height: 330px;
+    }
+ 
+    .imagem {
+       width: 25%;
+    }
+ 
+    .imagem img {
+       width: 600px;
+       height: auto;
+    }
+ 
+    .manualNav {
+       width: 600px;
+       margin-top: -30px;
+    }
+ 
+    .autoNav {
+       width: 600px;
+       margin-top: 300px;
+    }
+ 
+    .botoes {
+       width: 600px;
+       margin-top: 150px;
+    }
+ 
+ 
+    .cardC {
+       width: 155px;
+       height: 220px;
+     }
+   
+     .cardC .cardCImg img {
+       height: 155px;
+     }
+   
+     .cardCBody h2 {
+       font-size: 16px; 
+     }
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 610px) {
+    .carrossel {
+       width: 440px;
+       height: 280px;
+       border-radius: 8px;
+    }
+ 
+    .imagens {
+       width: 400%;
+       height: 300px;
+    }
+ 
+    .imagem {
+       width: 25%;
+    }
+ 
+    .imagem img {
+       width: 440px;
+       height: 280px;
+    }
+ 
+    .manualNav {
+       width: 440px;
+       margin-top: -50px;
+    }
+ 
+    .autoNav {
+       width: 440px;
+       margin-top: 250px;
+    }
+ 
+    .botoes {
+       width: 440px;
+       margin-top: 125px;
+    }
+ 
+ 
+    .cardC {
+       width: 120px;
+       height: 190px;
+     }
+   
+     .cardC .cardCImg img {
+       height: 140px;
+     }
+   
+     .cardCBody h2 {
+       font-size: 16px; 
+     }
+ }

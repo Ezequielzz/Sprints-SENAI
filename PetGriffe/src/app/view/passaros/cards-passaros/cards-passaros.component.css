@@ -1,3 +1,26 @@
+/* ----------------------- BANNER ----------------------- */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3ac9c5;
+    color: white;
+    font-family: 'Bevan', serif;
+    width: 700px;
+    height: 170px;
+    border-radius: 25px;
+}
+
+/* ----------------------- XXXXXX ----------------------- */
+
+/* ----------------------- CARDS ----------------------- */
+
 .tituloCards {
     display: flex;
     justify-content: center;
@@ -79,3 +102,593 @@
 }
 
 /* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CARDS ----------------------- */
+
+.tituloCards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    font-family: 'Bevan', serif;
+}
+
+.racoesEpetiscos, .brinquedos, .acessorios, .conforto {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+.conforto {
+    margin-bottom: 70px;
+}
+
+.card {
+    width: 190px;
+    height: 350px;
+    border: solid 2px #d4d4d4;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.card:not(:last-child) {
+    margin-right: 75px;
+}
+
+.card .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardImg img {
+    width: 120px;
+    height: 200px;
+    margin-top: 2px;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+}
+
+.card .cardBody .cardTitulo, .cardPreco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .cardBody .cardTitulo p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.card .cardBody .cardPreco p{
+    font-family: 'Lilita One', sans-serif;
+}
+
+.card .cardBody .cardBotao {
+    display: flex;
+    justify-content: center;
+}
+
+.cardBotao button {
+    border: solid 1px #027674; 
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    background: #01bbb9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.32s; 
+}
+
+.cardBotao button:hover {
+    background: #FCB212;
+    border: solid 1px #ab790d;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+
+/* CSS dos Carrosséis de Cards */
+
+/* CSS para o carrossel 1 */
+
+#container1 {
+    height: 64vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid ;
+    place-items: center;
+    overflow: hidden;
+}
+
+#slider-container1 {
+    height: 352px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container1 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.30s;
+}
+
+#slider-container1 .btn:hover {
+    transform: scale(1.2);
+}
+
+#slider-container1 .btn.inactive {
+    border-color: #027674;
+}
+
+#slider-container1 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+#slider-container1 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+#slider-container1 #slider1 {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+}
+
+#slider-container1 #slider1 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container1 #slider1 .slide span {
+    font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(2.5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(3.3333333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container1 #slider1 .slide {
+        width: calc(10% - 20px);
+    }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CSS para o segundo carrossel */
+
+#container2 {
+    height: 64vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid ;
+    place-items: center;
+    overflow: hidden;
+}
+
+#slider-container2 {
+    height: 352px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container2 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.30s;
+}
+
+#slider-container2 .btn:hover {
+    transform: scale(1.2);
+}
+
+#slider-container2 .btn.inactive {
+    border-color: #027674;
+}
+
+#slider-container2 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+#slider-container2 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+#slider-container2 #slider2 {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+}
+
+#slider-container2 #slider2 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container2 #slider2 .slide span {
+    font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(2.5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(3.3333333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container2 #slider2 .slide {
+        width: calc(10% - 20px);
+    }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CSS para o carrossel 3 */
+
+#container3 {
+    height: 64vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid ;
+    place-items: center;
+    overflow: hidden;
+}
+
+#slider-container3 {
+    height: 352px;
+    width: 84vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container3 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.30s;
+}
+
+#slider-container3 .btn:hover {
+    transform: scale(1.2);
+}
+
+#slider-container3 .btn.inactive {
+    border-color: #027674;
+}
+
+#slider-container3 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+#slider-container3 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+#slider-container3 #slider3 {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+}
+
+#slider-container3 #slider3 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container3 #slider3 .slide span {
+    font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(2.5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(3.3333333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container3 #slider3 .slide {
+        width: calc(10% - 20px);
+    }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CSS para o carrossel 4 */
+
+#container4 {
+    height: 64vh;
+    width: 99vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+#slider-container4 {
+    height: 352px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#slider-container4 .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 20px;
+    width: 20px;
+    border-left: 8px solid #01bbb9;
+    border-top: 8px solid #01bbb9;
+    transition: 0.30s;
+}
+
+#slider-container4 .btn:hover {
+    transform: scale(1.2);
+}
+
+#slider-container4 .btn.inactive {
+    border-color: #027674;
+}
+
+#slider-container4 .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+#slider-container4 .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+#slider-container4 #slider4 {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+    transition: all .5s;
+}
+
+#slider-container4 #slider4 .slide {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    place-items: center;
+}
+
+#slider-container4 #slider4 .slide span {
+    font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+    #slider-container4 #slider4 .slide {
+        width: calc(2.5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #slider-container4 #slider4 .slide {
+        width: calc(3.3333333% - 20px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #slider-container4 #slider4 .slide {
+        width: calc(5% - 20px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #slider-container4 #slider4 .slide {
+        width: calc(10% - 20px);
+    }
+}
+
+
+
+
+
+
+/* -----------------------  XXXXXX ----------------------- */
+
+
+
+
+/*estilização para o rodapé*/
+footer {
+    background-color:rgba(0, 0, 0);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+
+}
+
+@media screen and (max-width:1029px) {
+    .estilizacao-a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 10pt;
+        transition: 0.5s;
+    }
+
+    footer {
+        height: 20vh;
+        transition: 0.5s;
+
+    }
+
+}
+
+@media screen and (max-width:870px) {
+    .estilizacao-a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 8pt;
+        transition: 0.5s;
+        padding-left: 10px;
+
+    }
+
+    .informacoes-adicionais .redes-sociais img {
+        padding-left: 10px;
+    }
+
+    #instagram {
+        height: 20px;
+        width: 20px;
+    }
+
+    #twitwer {
+        height: 20px;
+        width: 20px;
+    }
+
+    #tiktok {
+        height: 20px;
+        width: 20px;
+    }
+
+    .informacoes-footer {
+        margin-right: 3%;
+    }
+}
+
+/*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+/*linha horizontal do footer*/
+hr {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+/*estilização para links*/
+.estilizacao-a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*classe principal do footer*/
+.informacoes-adicionais {
+    width: 100%;
+}
+/*estilizando logo Petgriffe, no footer*/
+#logo-footer {
+    display: flex;
+    margin: auto;
+    height: 100px;
+}
+
+.informacoes-footer li,
+ul {
+    list-style: none;
+}
+/* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+.informacoes-footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 5px;
+}
+/*class principal de tiktok, instagram e twiter*/
+.redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+/*estilizando o tamanho delas*/
+#instagram {
+    height: 25px;
+}
+
+#twiter {
+    height: 30px;
+}
+
+#tiktok {
+    height: 27px;
+}
