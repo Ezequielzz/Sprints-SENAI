@@ -24,6 +24,25 @@
     <!----------------- NAVBAR ------------------>
     <div class="row">
         <div class="col-1">
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <img src="../img/menuHamburger.png" alt="Menu">
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="../login/login.html">Login</a></li>
+                    <li><a href="../cadastro/cadastro.html">Cadastro</a></li>
+                    <li><a href="../agenda.html">Serviço Pet</a></li>
+                    <li><a href="../animais/gato.html">Gatos</a></li>
+                    <li><a href="../animais/cachorro.html">Cachorros</a></li>
+                    <li><a href="../animais/passaro.html">Pássaros</a></li>
+                    <li><a href="#">Clube Griffe</a></li>
+                </ul>
+                <button class="close-btn" onclick="fecharMenu()">
+                    <img src="../img/fechar.png" alt="Fechar">
+                </button>
+            </nav>
+            
             <div class="navIcon">
                 <a href="../home/home.html">
                     <img src="../img/petgriffeIcon2.png" alt="Icone Petgriffe">
@@ -37,11 +56,21 @@
                 <a href="../login/login.html" class="navegar">Login</a>
                 <p class="pnavegar">e</p>
                 <a href="../cadastro/cadastro.html" class="navegar">Cadastro</a>
-                <div class="carrinhoIcon">
-                    <a href="">
+
+                <div class="carrinho">
+                    <div class="carrinho-toggle" onclick="toggleCarrinho()">
                         <img src="../img/carrinhoIcon.png" alt="">
-                    </a>
+                    </div>
+                    <div class="carrinho-menu" id="carrinhoMenu">
+                        <div id="carrinhoElement">
+                            <!-- Elemento do carrinho de compras -->
+                        </div>
+                        <button class="close-btn" onclick="fecharCarrinho()">
+                            <img src="../img/fechar.png" alt="">
+                        </button>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="col-2">
@@ -74,37 +103,37 @@
             <span onclick="slideRight1()" class="btn"></span>
             <div id="slider1">
                 <div class="slide">
-                    <div class="card">
+                    <div class="card produto" id="produto3">
                         <div class="cardImg">
-                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="Produto 3">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
                                 <p>Ração Biofresh p/ Cães</p>
                             </div>
                             <div class="cardPreco">
-                                <p>R$00,00</p>
+                                <p>R$ 200,00</p>
                             </div>
                             <div class="cardBotao">
-                                <button>Comprar</button>
+                                <button onclick="adicionarProduto('produto3')">Comprar</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide">
-                    <div class="card">
+                    <div class="card produto" id="produto4">
                         <div class="cardImg">
-                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="">
+                            <img src="../img/RaçãoBiofreshCães1.jpg" alt="Produto 4">
                         </div>
                         <div class="cardBody">
                             <div class="cardTitulo">
                                 <p>Ração Biofresh p/ Cães</p>
                             </div>
                             <div class="cardPreco">
-                                <p>R$00,00</p>
+                                <p>R$ 200,00</p>
                             </div>
                             <div class="cardBotao">
-                                <button>Comprar</button>
+                                <button onclick="adicionarProduto('produto4')">Comprar</button>
                             </div>
                         </div>
                     </div>

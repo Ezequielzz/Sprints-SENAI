@@ -1,41 +1,75 @@
 body {
     background-color: #ffffff;
     margin: 0;
-}
-
-body::-webkit-scrollbar {
+ }
+ 
+ body::-webkit-scrollbar {
     width: 7px;
     transition: 1s;
-  }
-  
-  body::-webkit-scrollbar-track {
+ }
+ 
+ body::-webkit-scrollbar-track {
     background: rgb(255, 255, 255);
     border-radius: 50px;
     transition: 1s;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+ }
+ 
+ body::-webkit-scrollbar-thumb {
     background-color: #3ac9c5;
     border-radius: 16px;
     transition: 1s;
-  }
-  
-  body::-moz-scrollbar {
+ }
+ 
+ #carrinhoMenu::-webkit-scrollbar {
     width: 7px;
     transition: 1s;
-  }
-  
-  body::-moz-scrollbar-track {
+ }
+ 
+ #carrinhoMenu::-webkit-scrollbar-track {
     background: rgb(255, 255, 255);
     border-radius: 50px;
     transition: 1s;
-  }
-  
-  body::-moz-scrollbar-thumb {
+ }
+ 
+ #carrinhoMenu::-webkit-scrollbar-thumb {
     background-color: #3ac9c5;
     border-radius: 16px;
     transition: 1s;
-  }
+ }
+ 
+ body::-moz-scrollbar {
+    width: 7px;
+    transition: 1s;
+ }
+ 
+ body::-moz-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 1s;
+ }
+ 
+ body::-moz-scrollbar-thumb {
+    background-color: #3ac9c5;
+    border-radius: 16px;
+    transition: 1s;
+ }
+ 
+ #carrinhoMenu::-moz-scrollbar {
+    width: 7px;
+    transition: 1s;
+ }
+ 
+ #carrinhoMenu::-moz-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 1s;
+ }
+ 
+ #carrinhoMenu::-moz-scrollbar-thumb {
+    background-color: #3ac9c5;
+    border-radius: 16px;
+    transition: 1s;
+ }
 
 /* -----------------------  NAVBAR ----------------------- */
 
@@ -44,71 +78,77 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     align-items: center;
     background: #3ac9c5;
-}
-
-.col-2 {
+ }
+ 
+ .col-2 {
     display: flex;
     justify-content: center;
     background: #3ac9c5;
     margin-bottom: 25px;
-}
-
-.navIcon img {
+ }
+ 
+ .navIcon img {
     width: 95px;
-}
-
-.navegacao {
+ }
+ 
+ .navegacao {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.navegar {
-    font-family: 'Bevan', serif;
+ }
+ 
+ .navegar {
+    font-family: "Bevan", serif;
     font-size: 15px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 0 5px;
-    transition: 0.30s;
-}
-
-.pnavegar {
-    font-family: 'Bevan', serif;
+    transition: 0.3s;
+ }
+ 
+ .pnavegar {
+    font-family: "Bevan", serif;
     font-size: 15px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 0 5px;
-}
-
-.carrinhoIcon img {
+ }
+ 
+ .carrinho img {
     width: 80px;
     height: 70px;
-}
-
-.navegar2 {
-    font-family: 'Bevan', serif;
+ }
+ 
+ .menu-toggle img {
+    width: 60px;
+    height: 60px;
+ }
+ 
+ .navegar2 {
+    font-family: "Bevan", serif;
     font-size: 15px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 0 15px;
-    transition: 0.30s;
-}
-
-.navegar:hover, .navegar2:hover {
-    color: #FCB212;
-}
-
-.barraBusca {
+    transition: 0.3s;
+ }
+ 
+ .navegar:hover,
+ .navegar2:hover {
+    color: #fcb212;
+ }
+ 
+ .barraBusca {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-left: 140px;
     width: 550px;
-}
-
-.barra {
-    height: 35px;   
+ }
+ 
+ .barra {
+    height: 35px;
     width: 500px;
     border: none;
     border-top: #b6b5b5 solid 2px;
@@ -116,18 +156,155 @@ body::-webkit-scrollbar {
     border-left: #b6b5b5 solid 2px;
     border-bottom-left-radius: 19px;
     border-top-left-radius: 19px;
-}
-
-.lupa {
+ }
+ 
+ .lupa {
     background: #ffffff;
     border-top: #b6b5b5 solid 2px;
     border-bottom: #b6b5b5 solid 2px;
     border-right: #b6b5b5 solid 2px;
     border-bottom-right-radius: 19px;
     border-top-right-radius: 19px;
-}
-
-/* ----------------------- XXXXXX ----------------------- */
+ }
+ 
+ /* -----------------------  XXXXXX ----------------------- */
+ 
+ /* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
+ 
+ /* Estilos para o ícone do carrinho */
+ .carrinho-toggle {
+    cursor: pointer;
+ }
+ 
+ /* Estilos para o menu do carrinho */
+ .carrinho-menu {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    transition: right 0.3s ease-in-out;
+    z-index: 1099;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.45s;
+ }
+ 
+ .carrinho-menu.active {
+    right: 0;
+    /* Move para a posição visível */
+ }
+ 
+ /* Estilos para o botão de fechar */
+ .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #000;
+ }
+ 
+ .close-btn img {
+    width: 15px;
+    height: 15px;
+ }
+ 
+ .no-scroll {
+    overflow: hidden;
+ }
+ 
+ #carrinhoElement {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    gap: 20px;
+ }
+ 
+ #carrinhoElement>div {
+    border: 2px solid #3ac9c5;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 20px;
+    width: 270px;
+    display: flex;
+ }
+ 
+ #carrinhoElement img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+ }
+ 
+ /* Adicione esses estilos ao seu arquivo CSS */
+ 
+ .textoCarrinho {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 110px);
+    /* Ajuste conforme necessário */
+ }
+ 
+ .nomeProduto {
+    font-family: "Bevan", serif;
+    font-size: 12px;
+ }
+ 
+ .precoProduto {
+    margin-top: auto;
+    text-align: left;
+    font-family: "Bevan", serif;
+    font-size: 14px;
+ }
+ 
+ 
+ /* Estilos para o ícone do menu */
+ .menu-toggle {
+    cursor: pointer;
+    display: none;
+ }
+ 
+ /* Estilos para o menu */
+ .menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Esconde o menu inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transition: left 0.40s ease;
+    /* Adiciona uma transição suave */
+ }
+ 
+ .menu ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+ }
+ 
+ .menu ul li {
+    padding: 10px 20px;
+ }
+ 
+ .menu ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+ }
+ 
+ .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+ }
+ 
+ /* -----------------------  XXXXXX ----------------------- */
 
 /* ----------------------- BANNER ----------------------- */
 
@@ -739,36 +916,235 @@ ul {
     height: 27px;
 }
 
-/* @media screen and (max-width:1300px) {
-    footer {
-        height: 30vh;
-        transition: 0.5s;
+
+
+
+@media screen and (max-width: 1280px) {
+ 
+    .menu {
+       display: block;
+       /* Exibir o menu */
     }
-}
-
-@media screen and (max-height:400px) {
-    .informacoes-adicionais #logo-footer {
-        height: 30px;
+ 
+    .close-btn {
+       display: block;
+       /* Exibir o botão fechar */
     }
-}
-
-@media screen and (max-width:560px) {
-    .estilizacao-a {
-        font-size: 8pt;
-        display: flex;
-        flex-direction: column;
-    } 
-
-    footer p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+ 
+    .menu-toggle {
+       display: block;
+       /* Exibir o ícone do menu */
+    }
+ 
+    .barraBusca {
+       display: none;
+    }
+ 
+    .navegar {
+       display: none;
+    }
+ 
+    .pnavegar {
+       display: none;
+    }
+ 
+    .col-2 {
+       display: none;
+    }
+ 
+    .col-1 {
+       margin-bottom: 20px;
+    }
+ 
+    .carrinho-menu {
+       right: -260px;
+       width: 260px;
     }
 
-    #logo-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-} */
+    #carrinhoElement>div {
+        width: 210px;
+     }
+     
+     #carrinhoElement img {
+        max-width: 80px;
+     }
+ 
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 840px) {
 
+    .menu {
+       display: block;
+       /* Exibir o menu */
+    }
+ 
+    .close-btn {
+       display: block;
+       /* Exibir o botão fechar */
+    }
+ 
+    .menu-toggle {
+       display: block;
+       /* Exibir o ícone do menu */
+    }
+ 
+    .barraBusca {
+       display: none;
+    }
+ 
+    .navegar {
+       display: none;
+    }
+ 
+    .pnavegar {
+       display: none;
+    }
+ 
+    .col-2 {
+       display: none;
+    }
+ 
+    .col-1 {
+       margin-bottom: 20px;
+    }
+
+    #carrinhoElement>div {
+        width: 210px;
+     }
+     
+     #carrinhoElement img {
+        max-width: 80px;
+     }
+
+     .banner {
+        width: 500px;
+     }
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 610px) {
+
+    .menu {
+       display: block;
+       /* Exibir o menu */
+    }
+ 
+    .close-btn {
+       display: block;
+       /* Exibir o botão fechar */
+    }
+ 
+    .menu-toggle {
+       display: block;
+       /* Exibir o ícone do menu */
+    }
+ 
+    .barraBusca {
+       display: none;
+    }
+ 
+    .navegar {
+       display: none;
+    }
+ 
+    .pnavegar {
+       display: none;
+    }
+ 
+    .col-2 {
+       display: none;
+    }
+ 
+    .col-1 {
+       margin-bottom: 20px;
+    }
+
+    #carrinhoElement>div {
+        width: 210px;
+     }
+     
+     #carrinhoElement img {
+        max-width: 80px;
+     }
+
+     .tituloCards {
+        position: relative;
+        right: 6px;
+     }
+
+     .banner {
+        width: 420px;
+     }
+ }
+ 
+ 
+ /* Estilos para telas menores usando Media Queries */
+ @media screen and (max-width: 768px) {
+    .card {
+       width: 160px;
+       height: 300px;
+       margin-right: 25px;
+    }
+ 
+    .card .cardImg img {
+       width: 100px;
+       height: 150px;
+    }
+ 
+    .cardBotao button {
+       width: 90px;
+       height: 30px;
+       font-size: 15px;
+    }
+ 
+    .menu {
+       display: block;
+       /* Exibir o menu */
+    }
+ 
+    .close-btn {
+       display: block;
+       /* Exibir o botão fechar */
+    }
+ 
+    .menu-toggle {
+       display: block;
+       /* Exibir o ícone do menu */
+    }
+ 
+    .barraBusca {
+       display: none;
+    }
+ 
+    .navegar {
+       display: none;
+    }
+ 
+    .pnavegar {
+       display: none;
+    }
+ 
+    .col-2 {
+       display: none;
+    }
+ 
+    .col-1 {
+       margin-bottom: 20px;
+    }
+ 
+    #carrinhoElement>div {
+       width: 210px;
+    }
+    
+    #carrinhoElement img {
+       max-width: 80px;
+    }
+
+    .tituloCards {
+        position: relative;
+        right: 6px;
+     }
+ }

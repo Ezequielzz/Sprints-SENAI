@@ -173,3 +173,86 @@ body::-moz-scrollbar-thumb {
 .enviarCadastro input:hover {
    background: #41dfd9;
 }
+
+
+@media screen and (max-width: 1280px) {
+
+  .cadastro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    background: #eeeeee;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  
+  .cadastro .imgCadastro {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cadastro .imgCadastro img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 20px 0 0 20px; 
+  }
+  
+  .cadastro .formulario,
+  .cadastro .formulario2 {
+    flex: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  
+  .cadastro .formulario input,
+  .cadastro .formulario2 input {
+    width: 160px; 
+    height: 30px;
+    margin-top: 7px;
+    border: solid 2px #000000;
+    border-radius: 17px;
+  }
+  
+  .cadastro .formulario label,
+  .cadastro .formulario2 label {
+    font-family: 'Lilita One', sans-serif;
+  }
+  
+  .cadastro .formulario input:not(:last-child),
+  .cadastro .formulario2 input:not(:last-child) {
+    margin-bottom: 10px; 
+  }
+  
+  .cadastro .formulario3 {
+    position: relative;
+    top: 0; 
+    right: 0;
+  }
+  
+  .enviarCadastro input {
+    width: 150px;
+    height: 45px;
+    border-radius: 27px;
+    border: none;
+    background: #3ac9c5;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.30s;
+    margin-top: 10px;
+  }
+  
+  .enviarCadastro input:hover {
+    background: #41dfd9;
+  }
+
+}

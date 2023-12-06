@@ -24,6 +24,25 @@
     <!----------------- NAVBAR ------------------>
     <div class="row">
         <div class="col-1">
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <img src="../img/menuHamburger.png" alt="Menu">
+            </div>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="../login/login.html">Login</a></li>
+                    <li><a href="../cadastro/cadastro.html">Cadastro</a></li>
+                    <li><a href="../agenda.html">Serviço Pet</a></li>
+                    <li><a href="../animais/gato.html">Gatos</a></li>
+                    <li><a href="../animais/cachorro.html">Cachorros</a></li>
+                    <li><a href="../animais/passaro.html">Pássaros</a></li>
+                    <li><a href="#">Clube Griffe</a></li>
+                </ul>
+                <button class="close-btn" onclick="fecharMenu()">
+                    <img src="../img/fechar.png" alt="Fechar">
+                </button>
+            </nav>
+            
             <div class="navIcon">
                 <a href="../home/home.html">
                     <img src="../img/petgriffeIcon2.png" alt="Icone Petgriffe">
@@ -37,11 +56,21 @@
                 <a href="../login/login.html" class="navegar">Login</a>
                 <p class="pnavegar">e</p>
                 <a href="../cadastro/cadastro.html" class="navegar">Cadastro</a>
-                <div class="carrinhoIcon">
-                    <a href="">
+
+                <div class="carrinho">
+                    <div class="carrinho-toggle" onclick="toggleCarrinho()">
                         <img src="../img/carrinhoIcon.png" alt="">
-                    </a>
+                    </div>
+                    <div class="carrinho-menu" id="carrinhoMenu">
+                        <div id="carrinhoElement">
+                            <!-- Elemento do carrinho de compras -->
+                        </div>
+                        <button class="close-btn" onclick="fecharCarrinho()">
+                            <img src="../img/fechar.png" alt="">
+                        </button>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="col-2">

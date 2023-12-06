@@ -106,6 +106,31 @@ function atualizarCarrinho() {
 
 // -------------------------------------------------------------------
 
+// Código para o Funcionamento do MenuHamburger
+
+let menuAberto = false;
+
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+
+    if (!menuAberto) {
+        menu.style.left = "0"; // Exibe o menu
+        menuAberto = true;
+    } else {
+        menu.style.left = "-250px"; // Esconde o menu
+        menuAberto = false;
+    }
+}
+
+function fecharMenu() {
+    const menu = document.getElementById("menu");
+
+    menu.style.left = "-250px"; // Esconde o menu
+    menuAberto = false;
+}
+
+// -------------------------------------------------------------------
+
 // Codigo para o Fundionamento de Cada Carrossel de Card
 
 var container1 = document.getElementById("container1");
