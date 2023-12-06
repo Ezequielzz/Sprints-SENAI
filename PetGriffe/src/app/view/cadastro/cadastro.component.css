@@ -31,8 +31,29 @@ form {
   justify-content: center;
   position: relative;
   height: 0px;
-  font-size: 15pt;
+  font-size: 20pt;
   color: #ab0d0d;
+  animation: animacao .9s;
+  margin-top: 10px;
+}
+
+@keyframes animacao {
+  0%{
+    color: #ab0d0daa;
+  }
+  25%{
+    color: rgb(255, 0, 0);
+  }
+  50%{
+   color: #ab0d0daa;
+  }
+  75%{
+   color: rgb(255, 0, 0);
+  }
+  100%{
+    /* quotes: none; */
+    color: #ab0d0daa;
+  }
 }
 
 .cadastro {
