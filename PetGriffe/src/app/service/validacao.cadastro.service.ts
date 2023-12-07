@@ -45,7 +45,7 @@ export class ValidacaoService {
     }
 
     private validarCep(cep: string): boolean {
-        //expressão para validar o ceo
+        //expressão para validar o cep
 
         const regexCep = /^[0-9]{5}-[0-9]{3}$/;
         return regexCep.test(cep);

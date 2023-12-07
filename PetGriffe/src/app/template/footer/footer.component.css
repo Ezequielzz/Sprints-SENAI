@@ -1,21 +1,15 @@
-body {
-    margin: 0;
-    top: 0;
-}
-
-/*estilização para o rodapé*/
+/* Estilo para o Rodapé */
 footer {
-    background-color:rgba(0, 0, 0, 0.515);
+    background-color: rgba(0, 0, 0);
     width: 100%;
     bottom: 0;
-    height: 30vh;
     position: relative;
+    height: 38vh;
     display: flex;
     align-items: center;
-    z-index: 2;
 }
 
-@media screen and (max-width:1029px) {
+@media screen and (max-width: 1029px) {
     .estilizacao-a {
         color: #ffffff;
         text-decoration: none;
@@ -26,34 +20,25 @@ footer {
     footer {
         height: 20vh;
         transition: 0.5s;
-
     }
 }
 
-@media screen and (max-width:870px) {
+@media screen and (max-width: 870px) {
     .estilizacao-a {
         color: #ffffff;
         text-decoration: none;
         font-size: 8pt;
         transition: 0.5s;
         padding-left: 10px;
-
     }
 
     .informacoes-adicionais .redes-sociais img {
         padding-left: 10px;
     }
 
-    #instagram {
-        height: 15px;
-    }
-
-    #twitwer {
+    #instagram, #twitwer, #tiktok {
         height: 20px;
-    }
-
-    #tiktok {
-        height: 20px;
+        width: 20px;
     }
 
     .informacoes-footer {
@@ -61,95 +46,49 @@ footer {
     }
 }
 
-/*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
-footer p {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-
-/*linha horizontal do footer*/
+/* Estilo para a Linha Horizontal do Rodapé */
 hr {
     display: flex;
     justify-content: center;
     width: 90%;
 }
 
-/*estilização para links*/
+/* Estilo para os Links */
 .estilizacao-a {
     color: #ffffff;
     text-decoration: none;
 }
-/*classe principal do footer*/
+
+/* Estilo para a Seção Principal do Rodapé */
 .informacoes-adicionais {
     width: 100%;
 }
-/*estilizando logo Petgriffe, no footer*/
+
+/* Estilo para o Logo no Rodapé */
 #logo-footer {
     display: flex;
     margin: auto;
     height: 100px;
 }
 
-.informacoes-footer li,
-ul {
-    list-style: none;
-}
-/* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+/* Estilo para as Informações do Rodapé como Vagas, Termos de Serviço, etc. */
 .informacoes-footer {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     padding-left: 5px;
 }
-/*class principal de tiktok, instagram e twiter*/
+
+/* Estilo para as Redes Sociais no Rodapé */
 .redes-sociais {
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;
 }
-/*estilizando o tamanho delas*/
-#instagram {
+
+/* Estilo para o Tamanho das Redes Sociais */
+#instagram, #twiter, #tiktok {
     height: 25px;
 }
 
-#twiter {
-    height: 30px;
-}
-
-#tiktok {
-    height: 27px;
-}
-
-@media screen and (max-width:1300px) {
-    footer {
-        height: 30vh;
-        transition: 0.5s;
-    }
-}
-
-@media screen and (max-height:400px) {
-    .informacoes-adicionais #logo-footer {
-        height: 30px;
-    }
-}
-
-@media screen and (max-width:560px) {
-    .estilizacao-a {
-        font-size: 8pt;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #logo-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
+/* Adicione mais estilos conforme necessário */

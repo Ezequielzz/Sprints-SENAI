@@ -8,7 +8,7 @@ import { LoginComponent } from './view/login/login.component';
 import { PassarosComponent } from './view/passaros/passaros.component';
 import { CachorrosComponent } from './view/cachorros/cachorros.component';
 import { GatosComponent } from './view/gatos/gatos.component';
-import { ServicosPetComponent } from './view/servicos-pet/servicos-pet.component';
+import { AgendamentoComponent } from './view/agendamento/agendamento.component';
 import { FamiliaGriffeComponent } from './view/familia-griffe/familia-griffe.component';
 import { HomeComponent } from './view/home/home.component';
 
@@ -20,7 +20,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'cachorros', component: CachorrosComponent},
   {path: 'gatos', component: GatosComponent},
-  {path: 'servicos-pet', component: ServicosPetComponent},
+  {path: 'agendamento', component: AgendamentoComponent},
   {path: 'familia-griffe', component: FamiliaGriffeComponent},
   {path: 'passaros', component: PassarosComponent},
   {path: '', component: HomeComponent},
