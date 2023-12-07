@@ -37,36 +37,160 @@ body::-moz-scrollbar-thumb {
   transition: 1s;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 14vh;
-  margin-bottom: 60px;
-  background-color: #3ac9c5;
+body {
+  background-color: #ffffff;
+  margin: 0;
 }
 
-.navIcon {
-  height: 80px;
+body::-webkit-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+/* -----------------------  NAVBAR ----------------------- */
+
+.col-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3ac9c5;
+  margin-bottom: 25px;
+}
+
+.navIcon img {
   width: 95px;
 }
 
-.link {
+.carrinho img {
+  width: 80px;
+  height: 70px;
+}
+
+.menu-toggle img {
+  width: 60px;
+  height: 60px;
+}
+
+.navegar2 {
   font-family: "Bevan", serif;
   font-size: 15px;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  margin: 0 35px;
-  margin-bottom: 30px;
-  transition: 0.30s;
+  margin: 0 15px;
+  transition: 0.3s;
 }
 
-.link:hover {
-  color: #FCB212;
+.navegar:hover,
+.navegar2:hover {
+  color: #fcb212;
 }
 
+.menu a {
+ font-family: "Bevan", serif;
+ font-size: 15px;
+ text-decoration: none;
+ transition: 0.3s;
+}
 
+.menu a:hover {
+ color: #fcb212;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
+
+/* Estilos para o ícone do menu */
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+/* Estilos para o menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  /* Esconde o menu inicialmente */
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: left 0.40s ease;
+  /* Adiciona uma transição suave */
+}
+
+/* Estilos para o botão de fechar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.close-btn img {
+  width: 15px;
+  height: 15px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 10px 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
 
 
 .cadastro {
@@ -174,85 +298,120 @@ body::-moz-scrollbar-thumb {
    background: #41dfd9;
 }
 
-
 @media screen and (max-width: 1280px) {
 
-  .cadastro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    width: 90%;
-    max-width: 1200px;
-    height: auto;
-    background: #eeeeee;
-    border-radius: 20px;
-    margin: 0 auto;
+  .menu {
+     display: block;
+     /* Exibir o menu */
   }
-  
-  .cadastro .imgCadastro {
-    display: flex;
-    align-items: center;
+
+  .close-btn {
+     display: block;
+     /* Exibir o botão fechar */
   }
-  
-  .cadastro .imgCadastro img {
-    width: 100%;
-    max-width: 750px;
-    border-radius: 20px 0 0 20px; 
+
+  .menu-toggle {
+     display: block;
+     /* Exibir o ícone do menu */
   }
-  
-  .cadastro .formulario,
-  .cadastro .formulario2 {
-    flex: 1;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 20px;
+
+  .col-1 {
+     margin-bottom: 20px;
   }
-  
-  .cadastro .formulario input,
-  .cadastro .formulario2 input {
-    width: 160px; 
-    height: 30px;
-    margin-top: 7px;
-    border: solid 2px #000000;
-    border-radius: 17px;
+
+  .navegacao2 {
+    display: none;
+   }
+
+   
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+  .menu {
+     display: block;
+     /* Exibir o menu */
   }
-  
-  .cadastro .formulario label,
-  .cadastro .formulario2 label {
-    font-family: 'Lilita One', sans-serif;
+
+  .close-btn {
+     display: block;
+     /* Exibir o botão fechar */
   }
-  
-  .cadastro .formulario input:not(:last-child),
-  .cadastro .formulario2 input:not(:last-child) {
-    margin-bottom: 10px; 
+
+  .menu-toggle {
+     display: block;
+     /* Exibir o ícone do menu */
   }
-  
-  .cadastro .formulario3 {
-    position: relative;
-    top: 0; 
-    right: 0;
+
+  .col-1 {
+     margin-bottom: 20px;
   }
-  
-  .enviarCadastro input {
-    width: 150px;
-    height: 45px;
-    border-radius: 27px;
-    border: none;
-    background: #3ac9c5;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 17px;
-    cursor: pointer;
-    transition: 0.30s;
-    margin-top: 10px;
+
+  .navegacao2 {
+    display: none;
+   }
+
+   
+
+}
+
+
+
+@media screen and (max-width: 610px) {
+
+  .menu {
+     display: block;
+     /* Exibir o menu */
   }
-  
-  .enviarCadastro input:hover {
-    background: #41dfd9;
+
+  .close-btn {
+     display: block;
+     /* Exibir o botão fechar */
   }
+
+  .menu-toggle {
+     display: block;
+     /* Exibir o ícone do menu */
+  }
+
+  .col-1 {
+     margin-bottom: 20px;
+  }
+
+  .navegacao2 {
+    display: none;
+   }
+}
+
+
+/* Estilos para telas menores usando Media Queries */
+@media screen and (max-width: 768px) {
+
+  .menu {
+     display: block;
+     /* Exibir o menu */
+  }
+
+  .close-btn {
+     display: block;
+     /* Exibir o botão fechar */
+  }
+
+  .menu-toggle {
+     display: block;
+     /* Exibir o ícone do menu */
+  }
+
+  .col-1 {
+     margin-bottom: 20px;
+  }
+
+  .navegacao2 {
+    display: none;
+   }
+
+   
 
 }

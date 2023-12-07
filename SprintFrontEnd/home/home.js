@@ -29,6 +29,7 @@ function toggleCarrinho() {
     carrinhoMenu.classList.add("active");
     body.classList.add("no-scroll");
     carrinhoAberto = true;
+    body.style.overflow = "hidden"; // Trava o scroll da página
   }
 
   // Verificar se a altura do carrinho excede a altura da janela visível
@@ -42,11 +43,12 @@ function toggleCarrinho() {
 
 function fecharCarrinho() {
   const carrinhoMenu = document.getElementById("carrinhoMenu");
-  const body = document.querySelector("body");
+  const body = document.body;
 
   carrinhoMenu.classList.remove("active");
   body.classList.remove("no-scroll");
   carrinhoAberto = false;
+  body.style.overflow = "auto"; // Libera o scroll da página
 }
 
 let carrinhoDeCompras = [];
@@ -111,23 +113,29 @@ function atualizarCarrinho() {
 let menuAberto = false;
 
 function toggleMenu() {
-    const menu = document.getElementById("menu");
+  const menu = document.getElementById("menu");
+  const body = document.body;
 
-    if (!menuAberto) {
-        menu.style.left = "0"; // Exibe o menu
-        menuAberto = true;
-    } else {
-        menu.style.left = "-250px"; // Esconde o menu
-        menuAberto = false;
-    }
+  if (!menuAberto) {
+      menu.style.left = "0"; // Exibe o menu
+      menuAberto = true;
+      body.style.overflow = "hidden"; // Trava o scroll da página
+  } else {
+      menu.style.left = "-250px"; // Esconde o menu
+      menuAberto = false;
+      body.style.overflow = "auto"; // Libera o scroll da página
+  }
 }
 
 function fecharMenu() {
-    const menu = document.getElementById("menu");
+  const menu = document.getElementById("menu");
+  const body = document.body;
 
-    menu.style.left = "-250px"; // Esconde o menu
-    menuAberto = false;
+  menu.style.left = "-250px"; // Esconde o menu
+  menuAberto = false;
+  body.style.overflow = "auto"; // Libera o scroll da página
 }
+
 
 // -------------------------------------------------------------------
 

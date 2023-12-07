@@ -132,6 +132,17 @@ body::-webkit-scrollbar {
     border-top-right-radius: 19px;
 }
 
+.menu a {
+    font-family: "Bevan", serif;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+ }
+ 
+ .menu a:hover {
+    color: #fcb212;
+ }
+
 /* -----------------------  XXXXXX ----------------------- */
 
 /* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */

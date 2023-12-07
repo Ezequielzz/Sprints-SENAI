@@ -44,12 +44,6 @@ body::-moz-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     background: #3ac9c5;
- }
- 
- .col-2 {
-    display: flex;
-    justify-content: center;
-    background: #3ac9c5;
     margin-bottom: 25px;
  }
  
@@ -80,98 +74,21 @@ body::-moz-scrollbar-thumb {
  .navegar2:hover {
     color: #fcb212;
  }
+
+ .menu a {
+   font-family: "Bevan", serif;
+   font-size: 15px;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.menu a:hover {
+   color: #fcb212;
+}
+
  /* -----------------------  XXXXXX ----------------------- */
 
  /* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
-
-/* Estilos para o ícone do carrinho */
-.carrinho-toggle {
-    cursor: pointer;
- }
- 
- /* Estilos para o menu do carrinho */
- .carrinho-menu {
-    position: fixed;
-    top: 0;
-    right: -400px;
-    width: 400px;
-    height: 100%;
-    background-color: #fff;
-    transition: right 0.3s ease-in-out;
-    z-index: 1099;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: 0.45s;
- }
- 
- .carrinho-menu.active {
-    right: 0;
-    /* Move para a posição visível */
- }
- 
- /* Estilos para o botão de fechar */
- .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: #000;
- }
- 
- .close-btn img {
-    width: 15px;
-    height: 15px;
- }
- 
- .no-scroll {
-    overflow: hidden;
- }
- 
- #carrinhoElement {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 45px;
-    gap: 20px;
- }
- 
- #carrinhoElement>div {
-    border: 2px solid #3ac9c5;
-    border-radius: 8px;
-    padding: 10px;
-    margin-left: 20px;
-    width: 270px;
-    display: flex;
- }
- 
- #carrinhoElement img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
- }
- 
- /* Adicione esses estilos ao seu arquivo CSS */
- 
- .textoCarrinho {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 110px);
-    /* Ajuste conforme necessário */
- }
- 
- .nomeProduto {
-    font-family: "Bevan", serif;
-    font-size: 12px;
- }
- 
- .precoProduto {
-    margin-top: auto;
-    text-align: left;
-    font-family: "Bevan", serif;
-    font-size: 14px;
- }
- 
  
  /* Estilos para o ícone do menu */
  .menu-toggle {
@@ -194,6 +111,23 @@ body::-moz-scrollbar-thumb {
     /* Adiciona uma transição suave */
  }
  
+ /* Estilos para o botão de fechar */
+.close-btn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   background: none;
+   border: none;
+   font-size: 20px;
+   color: #000;
+}
+
+.close-btn img {
+   width: 15px;
+   height: 15px;
+}
+
  .menu ul {
     list-style: none;
     padding: 20px 0;
@@ -268,7 +202,7 @@ body::-moz-scrollbar-thumb {
 .opcoesAgenda {
     display: flex;
     flex-direction: column;
-    width: 590px;
+    width: 620px;
     height: 650px;
     background: #eeeeee;
 }
@@ -338,6 +272,7 @@ body::-moz-scrollbar-thumb {
     .agendamento .opcoesAgenda {
         width: 100%;
         border-top-right-radius: 0;
+        border-bottom-left-radius: 25px;
     }
 
     .opcoesAgenda {
@@ -373,45 +308,27 @@ body::-moz-scrollbar-thumb {
         /* Exibir o ícone do menu */
      }
   
-     .col-2 {
-        display: none;
-     }
-  
      .col-1 {
         margin-bottom: 20px;
+     }
+
+     .navegacao2 {
+      display: none;
      }
 }
  
  
  @media screen and (max-width: 840px) {
 
-    .menu {
-       display: block;
-       /* Exibir o menu */
+   .agendamento .opcoesAgenda {
+      width: 100%;
+   }
+
+   .opcoesAgenda .telefoneInfos input,
+    .opcoesAgenda .emailInfos input,
+    .opcoesAgenda .observacoesInfos textarea {
+        width: 370px;
     }
- 
-    .close-btn {
-       display: block;
-       /* Exibir o botão fechar */
-    }
- 
-    .menu-toggle {
-       display: block;
-       /* Exibir o ícone do menu */
-    }
- 
-    .col-2 {
-       display: none;
-    }
- 
-    .col-1 {
-       margin-bottom: 20px;
-    }
- }
- 
- 
- 
- @media screen and (max-width: 610px) {
 
     .menu {
        display: block;
@@ -428,18 +345,54 @@ body::-moz-scrollbar-thumb {
        /* Exibir o ícone do menu */
     }
  
-    .col-2 {
-       display: none;
+    .col-1 {
+       margin-bottom: 20px;
+    }
+
+    .navegacao2 {
+      display: none;
+     }
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 610px) {
+
+   .agendamento .opcoesAgenda {
+      width: 100%;
+   }
+
+    .menu {
+       display: block;
+       /* Exibir o menu */
+    }
+ 
+    .close-btn {
+       display: block;
+       /* Exibir o botão fechar */
+    }
+ 
+    .menu-toggle {
+       display: block;
+       /* Exibir o ícone do menu */
     }
  
     .col-1 {
        margin-bottom: 20px;
     }
+
+    .navegacao2 {
+      display: none;
+     }
  }
  
  
  /* Estilos para telas menores usando Media Queries */
  @media screen and (max-width: 768px) {
+
+   .agendamento .opcoesAgenda {
+      width: 100%;
+   }
  
     .menu {
        display: block;
@@ -456,11 +409,11 @@ body::-moz-scrollbar-thumb {
        /* Exibir o ícone do menu */
     }
  
-    .col-2 {
-       display: none;
-    }
- 
     .col-1 {
        margin-bottom: 20px;
     }
+
+    .navegacao2 {
+      display: none;
+     }
  }

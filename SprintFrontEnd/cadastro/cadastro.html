@@ -20,18 +20,46 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <a href="../home/home.html"><img class="navIcon" src="../img/petgriffeIcon2.png" alt="Icone PetGriffe"></a>
-        <nav class="nav">
-            <div class="linkMenu">
-                <a href="../agenda.html" class="link">Serviço Pet</a>
-                <a href="../animais/gato.html" class="link">Gatos</a>
-                <a href="../animais/cachorro.html" class="link">Cachorros</a>
-                <a href="../animais/passaro.html" class="link">Pássaros</a>
-                <a href="" class="link">Família Griffe</a>
+    <!----------------- NAVBAR ------------------>
+    <div class="row">
+        <div class="col-1">
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <img src="../img/menuHamburger.png" alt="Menu">
             </div>
-        </nav>
-    </header>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="../home/home.html">Tela Inicial</a></li>
+                    <li><a href="../login/login.html">Login</a></li>
+                    <li><a href="../cadastro/cadastro.html">Cadastro</a></li>
+                    <li><a href="../agenda.html">Serviço Pet</a></li>
+                    <li><a href="../animais/gato.html">Gatos</a></li>
+                    <li><a href="../animais/cachorro.html">Cachorros</a></li>
+                    <li><a href="../animais/passaro.html">Pássaros</a></li>
+                    <li><a href="../#">Clube Griffe</a></li>
+                </ul>
+                <button class="close-btn" onclick="fecharMenu()">
+                    <img src="../img/fechar.png" alt="Fechar">
+                </button>
+            </nav>
+            
+            <div class="navIcon">
+                <a href="../home/home.html">
+                    <img src="../img/petgriffeIcon2.png" alt="Icone Petgriffe">
+                </a>
+            </div>
+            <div class="navegacao2">
+                <a href="../agenda.html" class="navegar2">Serviço Pet</a>
+                <a href="../animais/gato.html" class="navegar2">Gatos</a>
+                <a href="../animais/cachorro.html" class="navegar2">Cachorros</a>
+                <a href="../animais/passaro.html" class="navegar2">Pássaros</a>
+                <a href="" class="navegar2">Clube Griffe</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------->
 
     <div class="cadastro">
         <div class="imgCadastro">
@@ -66,5 +94,7 @@
     
 
 </body>
+
+<script src="cadastro.js"></script>
 
 </html>

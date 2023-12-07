@@ -37,34 +37,161 @@ body::-moz-scrollbar-thumb {
   transition: 1s;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 14vh;
-  margin-bottom: 60px;
-  background-color: #3ac9c5;
+body {
+  background-color: #ffffff;
+  margin: 0;
 }
 
-.navIcon {
-  height: 80px;
+body::-webkit-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+/* -----------------------  NAVBAR ----------------------- */
+
+.col-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3ac9c5;
+  margin-bottom: 25px;
+}
+
+.navIcon img {
   width: 95px;
 }
 
-.link {
+.carrinho img {
+  width: 80px;
+  height: 70px;
+}
+
+.menu-toggle img {
+  width: 60px;
+  height: 60px;
+}
+
+.navegar2 {
   font-family: "Bevan", serif;
   font-size: 15px;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  margin: 0 35px;
-  margin-bottom: 30px;
+  margin: 0 15px;
   transition: 0.3s;
 }
 
-.link:hover {
+.navegar:hover,
+.navegar2:hover {
   color: #fcb212;
 }
+
+.menu a {
+ font-family: "Bevan", serif;
+ font-size: 15px;
+ text-decoration: none;
+ transition: 0.3s;
+}
+
+.menu a:hover {
+ color: #fcb212;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
+
+/* Estilos para o ícone do menu */
+.menu-toggle {
+  cursor: pointer;
+  display: none;
+}
+
+/* Estilos para o menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  /* Esconde o menu inicialmente */
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: left 0.40s ease;
+  /* Adiciona uma transição suave */
+}
+
+/* Estilos para o botão de fechar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #000;
+}
+
+.close-btn img {
+  width: 15px;
+  height: 15px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.menu ul li {
+  padding: 10px 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
 
 .login {
   display: flex;
@@ -195,6 +322,29 @@ body::-moz-scrollbar-thumb {
     height: 50px;
     margin-top: 20px;
   }
+
+  .menu {
+    display: block;
+    /* Exibir o menu */
+ }
+
+ .close-btn {
+    display: block;
+    /* Exibir o botão fechar */
+ }
+
+ .menu-toggle {
+    display: block;
+    /* Exibir o ícone do menu */
+ }
+
+ .col-1 {
+    margin-bottom: 20px;
+ }
+
+ .navegacao2 {
+   display: none;
+  }
 }
 
 
@@ -225,6 +375,7 @@ body::-moz-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
     padding: 20px; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui padding na largura total */
     margin: 0;
@@ -251,6 +402,29 @@ body::-moz-scrollbar-thumb {
     width: 170px;
     height: 50px;
     margin-top: 20px;
+  }
+
+  .menu {
+    display: block;
+    /* Exibir o menu */
+ }
+
+ .close-btn {
+    display: block;
+    /* Exibir o botão fechar */
+ }
+
+ .menu-toggle {
+    display: block;
+    /* Exibir o ícone do menu */
+ }
+
+ .col-1 {
+    margin-bottom: 20px;
+ }
+
+ .navegacao2 {
+   display: none;
   }
 }
 
@@ -310,4 +484,28 @@ body::-moz-scrollbar-thumb {
     height: 50px;
     margin-top: 20px;
   }
+
+  .menu {
+    display: block;
+    /* Exibir o menu */
+ }
+
+ .close-btn {
+    display: block;
+    /* Exibir o botão fechar */
+ }
+
+ .menu-toggle {
+    display: block;
+    /* Exibir o ícone do menu */
+ }
+
+ .col-1 {
+    margin-bottom: 20px;
+ }
+
+ .navegacao2 {
+   display: none;
+  }
+
 }
