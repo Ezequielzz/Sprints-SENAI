@@ -33,26 +33,44 @@ form {
   height: 0px;
   font-size: 20pt;
   color: #ab0d0d;
-  animation: animacao .9s;
+  animation: animacao 1s;
   margin-top: 10px;
 }
 
 @keyframes animacao {
   0%{
     color: #ab0d0daa;
+    transform: rotateY(5deg);
+  }
+  15%{
+    color: #ff0000aa;
+transform: rotateY(10deg);
+
   }
   25%{
     color: rgb(255, 0, 0);
+    transform: rotateY(5deg);
+  }
+  35%{
+    color: #ab0d0daa;
+    transform: rotateY(10deg);
   }
   50%{
-   color: #ab0d0daa;
+   color: #ff0000aa;
+   transform: rotateY(5deg);
   }
   75%{
    color: rgb(255, 0, 0);
+   transform: rotateY(10deg);
+  }
+  85%{
+    color: #ab0d0daa;
+    transform: rotateY(5deg);
   }
   100%{
     /* quotes: none; */
     color: #ab0d0daa;
+    transform: rotateY(10deg);
   }
 }
 

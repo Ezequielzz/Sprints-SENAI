@@ -5,7 +5,7 @@ body {
 
 /*estilização para o rodapé*/
 footer {
-    background-color:rgba(0, 0, 0, 0.515);
+    background-color:#000000;
     width: 100%;
     bottom: 0;
     height: 30vh;
