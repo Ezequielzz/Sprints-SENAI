@@ -993,7 +993,7 @@ ul {
 
 @media screen and (max-height: 1200px) {
    #container1 {
-      height: 60vh;
+      height: 80vh;
    }
 
    #slider-container1 {
