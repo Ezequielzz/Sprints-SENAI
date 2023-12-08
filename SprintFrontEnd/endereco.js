@@ -11,11 +11,21 @@ cep.addEventListener('focusout', async () => {
         const cepValido = /^[0-9]{8}$/;
 
         if (!apenasNumeros.test(cep.value) || !cepValido.test(cep.value)) {
-            throw { cep_error: 'CEP Invalido' };
+            throw { cep_error: 'CEP Inválido!' };
+            
         }
 
-        const response = await fetch('viacep.com.br/ws/${cep.value}/json/')
+        const response = await fetch(`https://viacep.com.br/ws/${cep.value}/json/`)
 
+        if (!response.ok) {
+            throw await response.json();
+        }
+
+        const responseCep = await response.json();
+
+        endereco.value = responseCep.logradouro;
+        bairro.value = responseCep.bairro;
+        cidade.value = responseCep.localidade;
 
 
     } catch (error) {
@@ -29,5 +39,5 @@ cep.addEventListener('focusout', async () => {
         console.log(error);
     }
 
-    
+
 })

@@ -455,6 +455,7 @@ body {
     width: 20px;
     border-left: 8px solid #01bbb9;
     border-top: 8px solid #01bbb9;
+    cursor: pointer;
     transition: 0.30s;
 }
 
@@ -548,6 +549,7 @@ body {
     width: 20px;
     border-left: 8px solid #01bbb9;
     border-top: 8px solid #01bbb9;
+    cursor: pointer;
     transition: 0.30s;
 }
 
@@ -641,6 +643,7 @@ body {
     width: 20px;
     border-left: 8px solid #01bbb9;
     border-top: 8px solid #01bbb9;
+    cursor: pointer;
     transition: 0.30s;
 }
 
@@ -734,6 +737,7 @@ body {
     width: 20px;
     border-left: 8px solid #01bbb9;
     border-top: 8px solid #01bbb9;
+    cursor: pointer;
     transition: 0.30s;
 }
 
@@ -804,128 +808,163 @@ body {
 
 /* -----------------------  XXXXXX ----------------------- */
 
-
 /*estilização para o rodapé*/
 footer {
-    background-color:rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0);
     width: 100%;
     bottom: 0;
     position: relative;
     height: 38vh;
     display: flex;
     align-items: center;
-
-}
-
-@media screen and (max-width:1029px) {
-    .estilizacao-a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 10pt;
-        transition: 0.5s;
-    }
-
-    footer {
-        height: 20vh;
-        transition: 0.5s;
-
-    }
-
-}
-
-@media screen and (max-width:870px) {
-    .estilizacao-a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 8pt;
-        transition: 0.5s;
-        padding-left: 10px;
-
-    }
-
-    .informacoes-adicionais .redes-sociais img {
-        padding-left: 10px;
-    }
-
-    #instagram {
-        height: 20px;
-        width: 20px;
-    }
-
-    #twitwer {
-        height: 20px;
-        width: 20px;
-    }
-
-    #tiktok {
-        height: 20px;
-        width: 20px;
-    }
-
-    .informacoes-footer {
-        margin-right: 3%;
-    }
-}
-
-/*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
-footer p {
+ }
+ 
+ .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ /*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+ footer p {
     display: flex;
     justify-content: center;
     margin-top: 3%;
-}
-
-/*linha horizontal do footer*/
-hr {
+ }
+ 
+ /*linha horizontal do footer*/
+ hr {
     display: flex;
     justify-content: center;
     width: 90%;
-}
-
-/*estilização para links*/
-.estilizacao-a {
+ }
+ 
+ /*estilização para links*/
+ .estilizacao-a {
     color: #ffffff;
     text-decoration: none;
-}
-/*classe principal do footer*/
-.informacoes-adicionais {
+ }
+ 
+ /*classe principal do footer*/
+ .informacoes-adicionais {
     width: 100%;
-}
-/*estilizando logo Petgriffe, no footer*/
-#logo-footer {
+ }
+ 
+ /*estilizando logo Petgriffe, no footer*/
+ #logo-footer {
     display: flex;
     margin: auto;
     height: 100px;
-}
-
-.informacoes-footer li,
-ul {
+ }
+ 
+ .informacoes-footer li,
+ ul {
     list-style: none;
-}
-/* estilizando as informações do footer como, vagas, termos de serviço etc...*/
-.informacoes-footer {
+ }
+ 
+ /* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+ .informacoes-footer {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     padding-left: 5px;
-}
-/*class principal de tiktok, instagram e twiter*/
-.redes-sociais {
+ }
+ 
+ /*class principal de tiktok, instagram e twiter*/
+ .redes-sociais {
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;
-}
-/*estilizando o tamanho delas*/
-#instagram {
-    height: 25px;
-}
-
-#twiter {
-    height: 30px;
-}
-
-#tiktok {
+ }
+ 
+ /*estilizando o tamanho delas*/
+ #instagram {
     height: 27px;
-}
+ }
+ 
+ #twiter {
+    height: 30px;
+ }
+ 
+ #tiktok {
+    height: 27px;
+ }
+
+
+
+
+
+@media screen and (max-height: 866px) {
+    #container1 {
+       height: 99vh;
+    }
+ 
+    #slider-container1 {
+       height: 475px;
+    }
+ 
+    #slider1 {
+       height: 460px;
+    }
+ 
+    #container2 {
+       height: 100vh;
+    }
+ 
+    #slider-container2 {
+       height: 475px;
+    }
+ 
+    #container3 {
+       height: 100vh;
+    }
+ 
+    #slider-container3 {
+       height: 475px;
+    }
+
+    #container4 {
+        height: 100vh;
+     }
+  
+     #slider-container4 {
+        height: 490px;
+     }
+ }
+ 
+ @media screen and (max-height: 485px) {
+    #container1 {
+       height: 116vh;
+    }
+ 
+    #slider-container1 {
+       height: 490px;
+    }
+ 
+    #container2 {
+       height: 116vh;
+    }
+ 
+    #slider-container2 {
+       height: 490px;
+    }
+ 
+    #container3 {
+       height: 116vh;
+    }
+ 
+    #slider-container3 {
+       height: 490px;
+    }
+
+    #container4 {
+        height: 116vh;
+     }
+  
+     #slider-container4 {
+        height: 490px;
+     }
+ }
 
 
 
@@ -985,42 +1024,6 @@ ul {
  
  
  @media screen and (max-width: 840px) {
-
-    .menu {
-       display: block;
-       /* Exibir o menu */
-    }
- 
-    .close-btn {
-       display: block;
-       /* Exibir o botão fechar */
-    }
- 
-    .menu-toggle {
-       display: block;
-       /* Exibir o ícone do menu */
-    }
- 
-    .barraBusca {
-       display: none;
-    }
- 
-    .navegar {
-       display: none;
-    }
- 
-    .pnavegar {
-       display: none;
-    }
- 
-    .col-2 {
-       display: none;
-    }
- 
-    .col-1 {
-       margin-bottom: 20px;
-    }
-
     #carrinhoElement>div {
         width: 210px;
      }
@@ -1037,42 +1040,6 @@ ul {
  
  
  @media screen and (max-width: 610px) {
-
-    .menu {
-       display: block;
-       /* Exibir o menu */
-    }
- 
-    .close-btn {
-       display: block;
-       /* Exibir o botão fechar */
-    }
- 
-    .menu-toggle {
-       display: block;
-       /* Exibir o ícone do menu */
-    }
- 
-    .barraBusca {
-       display: none;
-    }
- 
-    .navegar {
-       display: none;
-    }
- 
-    .pnavegar {
-       display: none;
-    }
- 
-    .col-2 {
-       display: none;
-    }
- 
-    .col-1 {
-       margin-bottom: 20px;
-    }
-
     #carrinhoElement>div {
         width: 210px;
      }
@@ -1081,9 +1048,9 @@ ul {
         max-width: 80px;
      }
 
-     .tituloCards {
+     .tituloCards{
         position: relative;
-        right: 6px;
+        left: -6px;
      }
 
      .banner {
@@ -1111,37 +1078,6 @@ ul {
        font-size: 15px;
     }
  
-    .menu {
-       display: block;
-       /* Exibir o menu */
-    }
- 
-    .close-btn {
-       display: block;
-       /* Exibir o botão fechar */
-    }
- 
-    .menu-toggle {
-       display: block;
-       /* Exibir o ícone do menu */
-    }
- 
-    .barraBusca {
-       display: none;
-    }
- 
-    .navegar {
-       display: none;
-    }
- 
-    .pnavegar {
-       display: none;
-    }
- 
-    .col-2 {
-       display: none;
-    }
- 
     .col-1 {
        margin-bottom: 20px;
     }
@@ -1153,9 +1089,50 @@ ul {
     #carrinhoElement img {
        max-width: 80px;
     }
-
-    .tituloCards {
-        position: relative;
-        right: 6px;
+  
+     footer {
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        padding: 20px;
+      }
+  
+      footer p {
+        font-weight: 700;
+        font-size: 11px;
+      }
+  
+      hr {
+        background-color: #fff;
+        width: 90%;
      }
+    
+      /* Ajustes para o logo no footer */
+      #logo-footer {
+        height: 80px;
+      }
+    
+      /* Ajustes para redes sociais */
+      .redes-sociais {
+        margin-right: 0;
+        margin-top: 10px;
+        justify-content: center;
+      }
+    
+      #instagram,
+      #twiter,
+      #tiktok {
+        margin: 0 5px
+      }
+    
+      /* Ajustes para as informações do footer */
+      .informacoes-footer {
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      .informacoes-footer a {
+        font-weight: 700;
+        font-size: 11px;
+      }
  }
