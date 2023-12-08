@@ -24,6 +24,8 @@ import { CardsGatosComponent } from './view/gatos/cards-gatos/cards-gatos.compon
 import { CardHomeComponent } from './view/home/card-home/card-home.component';
 import { CarouselComponent } from './view/home/carousel/carousel.component';
 import { HomeComponent } from './view/home/home.component';
+import { ComprasComponent } from './view/compras/compras.component';
+import { BarraPesquisaComponent } from './view/barra-pesquisa/barra-pesquisa.component';
 // import {carsl}
 
 @NgModule({
@@ -45,6 +47,8 @@ import { HomeComponent } from './view/home/home.component';
     CardHomeComponent,
     CarouselComponent,
     HomeComponent,
+    ComprasComponent,
+    BarraPesquisaComponent,
   ],
   imports: [
     BrowserModule,

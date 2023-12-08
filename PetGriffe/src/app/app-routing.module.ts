@@ -11,6 +11,7 @@ import { GatosComponent } from './view/gatos/gatos.component';
 import { AgendamentoComponent } from './view/agendamento/agendamento.component';
 import { FamiliaGriffeComponent } from './view/familia-griffe/familia-griffe.component';
 import { HomeComponent } from './view/home/home.component';
+import { ComprasComponent } from './view/compras/compras.component';
 
 const routes: Routes = [
   {path: 'header', component: HeaderComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'familia-griffe', component: FamiliaGriffeComponent},
   {path: 'passaros', component: PassarosComponent},
   {path: '', component: HomeComponent},
+  {path: 'compras', component: ComprasComponent},
   
 ];
 

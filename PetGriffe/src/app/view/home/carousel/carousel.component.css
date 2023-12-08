@@ -1,176 +1,1442 @@
+body {
+   background-color: #ffffff;
+   margin: 0;
+}
+
+body::-webkit-scrollbar {
+   width: 7px;
+   transition: 1s;
+}
+
+body::-webkit-scrollbar-track {
+   background: rgb(255, 255, 255);
+   border-radius: 50px;
+   transition: 1s;
+}
+
+body::-webkit-scrollbar-thumb {
+   background-color: #3ac9c5;
+   border-radius: 16px;
+   transition: 1s;
+}
+
+#carrinhoMenu::-webkit-scrollbar {
+   width: 7px;
+   transition: 1s;
+}
+
+#carrinhoMenu::-webkit-scrollbar-track {
+   background: rgb(255, 255, 255);
+   border-radius: 50px;
+   transition: 1s;
+}
+
+#carrinhoMenu::-webkit-scrollbar-thumb {
+   background-color: #3ac9c5;
+   border-radius: 16px;
+   transition: 1s;
+}
+
+body::-moz-scrollbar {
+   width: 7px;
+   transition: 1s;
+}
+
+body::-moz-scrollbar-track {
+   background: rgb(255, 255, 255);
+   border-radius: 50px;
+   transition: 1s;
+}
+
+body::-moz-scrollbar-thumb {
+   background-color: #3ac9c5;
+   border-radius: 16px;
+   transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar {
+   width: 7px;
+   transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar-track {
+   background: rgb(255, 255, 255);
+   border-radius: 50px;
+   transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar-thumb {
+   background-color: #3ac9c5;
+   border-radius: 16px;
+   transition: 1s;
+}
+
+/* -----------------------  NAVBAR ----------------------- */
+
+.col-1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #3ac9c5;
+}
+
+.col-2 {
+   display: flex;
+   justify-content: center;
+   background: #3ac9c5;
+   margin-bottom: 25px;
+}
+
+.navIcon img {
+   width: 95px;
+}
+
+.navegacao {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navegar {
+   font-family: "Bevan", serif;
+   font-size: 15px;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   margin: 0 5px;
+   transition: 0.3s;
+}
+
+.pnavegar {
+   font-family: "Bevan", serif;
+   font-size: 15px;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   margin: 0 5px;
+}
+
+.carrinho img {
+   width: 80px;
+   height: 70px;
+}
+
+.menu-toggle img {
+   width: 60px;
+   height: 60px;
+}
+
+.navegar2 {
+   font-family: "Bevan", serif;
+   font-size: 15px;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   margin: 0 15px;
+   transition: 0.3s;
+}
+
+.navegar:hover,
+.navegar2:hover {
+   color: #fcb212;
+}
+
+.barraBusca {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin-left: 140px;
+   width: 550px;
+}
+
+.barra {
+   height: 35px;
+   width: 500px;
+   border: none;
+   border-top: #b6b5b5 solid 2px;
+   border-bottom: #b6b5b5 solid 2px;
+   border-left: #b6b5b5 solid 2px;
+   border-bottom-left-radius: 19px;
+   border-top-left-radius: 19px;
+}
+
+.lupa {
+   background: #ffffff;
+   border-top: #b6b5b5 solid 2px;
+   border-bottom: #b6b5b5 solid 2px;
+   border-right: #b6b5b5 solid 2px;
+   border-bottom-right-radius: 19px;
+   border-top-right-radius: 19px;
+}
+
+.menu a {
+   font-family: "Bevan", serif;
+   font-size: 15px;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.menu a:hover {
+   color: #fcb212;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
+
+/* Estilos para o ícone do carrinho */
+.carrinho-toggle {
+   cursor: pointer;
+}
+
+/* Estilos para o menu do carrinho */
+.carrinho-menu {
+   position: fixed;
+   top: 0;
+   right: -400px;
+   width: 400px;
+   height: 100%;
+   background-color: #fff;
+   transition: right 0.3s ease-in-out;
+   z-index: 1099;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   transition: 0.45s;
+}
+
+.carrinho-menu.active {
+   right: 0;
+   /* Move para a posição visível */
+}
+
+/* Estilos para o botão de fechar */
+.close-btn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   background: none;
+   border: none;
+   font-size: 20px;
+   color: #000;
+}
+
+.close-btn img {
+   width: 15px;
+   height: 15px;
+}
+
+.no-scroll {
+   overflow: hidden;
+}
+
+#carrinhoElement {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 45px;
+   gap: 20px;
+}
+
+#carrinhoElement>div {
+   border: 2px solid #3ac9c5;
+   border-radius: 8px;
+   padding: 10px;
+   margin-left: 20px;
+   width: 270px;
+   display: flex;
+}
+
+#carrinhoElement img {
+   max-width: 100px;
+   height: auto;
+   margin-right: 10px;
+}
+
+/* Adicione esses estilos ao seu arquivo CSS */
+
+.textoCarrinho {
+   display: flex;
+   flex-direction: column;
+   width: calc(100% - 110px);
+   /* Ajuste conforme necessário */
+}
+
+.nomeProduto {
+   font-family: "Bevan", serif;
+   font-size: 12px;
+}
+
+.precoProduto {
+   margin-top: auto;
+   text-align: left;
+   font-family: "Bevan", serif;
+   font-size: 14px;
+}
+
+
+/* Estilos para o ícone do menu */
+.menu-toggle {
+   cursor: pointer;
+   display: none;
+}
+
+/* Estilos para o menu */
+.menu {
+   position: fixed;
+   top: 0;
+   left: -250px;
+   /* Esconde o menu inicialmente */
+   width: 250px;
+   height: 100%;
+   background-color: #ffffff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   z-index: 999;
+   transition: left 0.40s ease;
+   /* Adiciona uma transição suave */
+}
+
+.menu ul {
+   list-style: none;
+   padding: 20px 0;
+   margin: 0;
+}
+
+.menu ul li {
+   padding: 10px 20px;
+}
+
+.menu ul li a {
+   text-decoration: none;
+   color: #333333;
+   font-size: 18px;
+}
+
+.close-btn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
 /* ----------------------- CARROSSEL ----------------------- */
 
 .carrossel {
-   margin-top: 30px;
-    margin: 20px auto;
-    width: 1010px;
-    height: 530px;
-    overflow: hidden;
-    border-radius: 10px;
- }
- 
- .imagens {
-    display: flex;
-    width: 400%;
-    height: 530px;
- }
- 
- .imagens input {
-    display: none;
- }
- 
- .imagem {
-    width: 25%;
-    position: relative;
-    transition: 1s;
- }
- 
- .imagem img {
-    width: 1010px;
-    height: auto;
- }
- 
- .manualNav {
-    position: absolute;
-    width: 1010px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
- }
- 
- .manual-btn {
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
- }
- 
- .manual-btn:not(:last-child) {
-    margin-right: 20px;
- }
- 
- .manual-btn:hover {
-    background: #ffffff;
- }
- 
- #radio1:checked~.first {
-    margin-left: 0;
- }
- 
- #radio2:checked~.first {
-    margin-left: -25%;
- }
- 
- #radio3:checked~.first {
-    margin-left: -50%;
- }
- 
- #radio4:checked~.first {
-    margin-left: -75%;
- }
- 
- .autoNav div {
-    border: 2px solid #3ac9c5;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
- }
- 
- .autoNav {
-    position: absolute;
-    width: 1010px;
-    margin-top: 490px;
-    display: flex;
-    justify-content: center;
- }
- 
- .autoNav div:not(:last-child) {
-    margin-right: 20px;
- }
- 
- #radio1:checked~.autoNav .auto-btn1 {
-    background: #fff;
- }
- 
- #radio2:checked~.autoNav .auto-btn2 {
-    background: #fff;
- }
- 
- #radio3:checked~.autoNav .auto-btn3 {
-    background: #fff;
- }
- 
- #radio4:checked~.autoNav .auto-btn4 {
-    background: #fff;
- }
- 
- .botoes {
-    position: absolute;
-    width: 1010px;
-    margin-top: 250px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
- }
- 
- .botoes img {
-    width: 30px;
-    height: 30px;
- }
- 
- /* -----------------------  XXXXXX ----------------------- */
- 
- /* ----------------------- CATEGORIAS ----------------------- */
- 
- .categorias {
-    margin-top: 55px;
-    display: flex;
-    justify-content: center;
- }
- 
- .cardC:not(:last-child) {
-    margin-right: 45px;
- }
- 
- .cardC {
-    width: 245px;
-    height: 340px;
-    border: solid 2px #fcb212;
-    background-color: #01bbb9;
-    border-radius: 10px;
- }
- 
- .cardC {
-    transition: all 0.55s ease-in;
-    transition: all 0.45s ease-out;
- }
- 
- .cardC:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
- }
- 
- .cardC .cardCImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- 
- .cardC .cardCImg img {
-    width: 100%;
-    height: 265px;
-    border-top-right-radius: 7.5px;
-    border-top-left-radius: 7.5px;
- }
- 
- .cardCBody h2 {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    font-family: "Lilita One", sans-serif;
-    font-size: 25px;
- }
- 
+   margin-top: px;
+   margin: 20px auto;
+   width: 1010px;
+   height: 530px;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.imagens {
+   display: flex;
+   width: 400%;
+   height: 530px;
+}
+
+.imagens input {
+   display: none;
+}
+
+.imagem {
+   width: 25%;
+   position: relative;
+   transition: 1s;
+}
+
+.imagem img {
+   width: 1010px;
+   height: auto;
+}
+
+.manualNav {
+   position: absolute;
+   width: 1010px;
+   margin-top: -40px;
+   display: flex;
+   justify-content: center;
+}
+
+.manual-btn {
+   border: 2px solid #ffffff;
+   padding: 5px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+   margin-right: 20px;
+}
+
+.manual-btn:hover {
+   background: #ffffff;
+}
+
+#radio1:checked~.first {
+   margin-left: 0;
+}
+
+#radio2:checked~.first {
+   margin-left: -25%;
+}
+
+#radio3:checked~.first {
+   margin-left: -50%;
+}
+
+#radio4:checked~.first {
+   margin-left: -75%;
+}
+
+.autoNav div {
+   border: 2px solid #3ac9c5;
+   padding: 5px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.autoNav {
+   position: absolute;
+   width: 1010px;
+   margin-top: 490px;
+   display: flex;
+   justify-content: center;
+}
+
+.autoNav div:not(:last-child) {
+   margin-right: 20px;
+}
+
+#radio1:checked~.autoNav .auto-btn1 {
+   background: #fff;
+}
+
+#radio2:checked~.autoNav .auto-btn2 {
+   background: #fff;
+}
+
+#radio3:checked~.autoNav .auto-btn3 {
+   background: #fff;
+}
+
+#radio4:checked~.autoNav .auto-btn4 {
+   background: #fff;
+}
+
+.botoes {
+   position: absolute;
+   width: 1010px;
+   margin-top: 250px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.botoes img {
+   width: 30px;
+   height: 30px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CATEGORIAS ----------------------- */
+
+.categorias {
+   margin-top: 55px;
+   display: flex;
+   justify-content: center;
+}
+
+.cardC:not(:last-child) {
+   margin-right: 45px;
+}
+
+.cardC {
+   width: 245px;
+   height: 340px;
+   border: solid 2px #fcb212;
+   background-color: #01bbb9;
+   border-radius: 10px;
+}
+
+.cardC {
+   transition: all 0.55s ease-in;
+   transition: all 0.45s ease-out;
+}
+
+.cardC:hover {
+   -webkit-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.cardC .cardCImg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cardC .cardCImg img {
+   width: 100%;
+   height: 265px;
+   border-top-right-radius: 7.5px;
+   border-top-left-radius: 7.5px;
+}
+
+.cardCBody h2 {
+   display: flex;
+   justify-content: center;
+   color: #fff;
+   font-family: "Lilita One", sans-serif;
+   font-size: 25px;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- CARDS ----------------------- */
+
+.tituloCards {
+   display: flex;
+   justify-content: center;
+   position: relative;
+   top: 100px;
+
+   font-family: "Bevan", serif;
+}
+
+.card {
+   width: 170px;
+   height: 350px;
+   border: solid 2px #01bbb9;
+   background-color: #ffffff;
+   border-radius: 10px;
+}
+
+.card:not(:last-child) {
+   margin-right: 75px;
+}
+
+.card .cardImg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card .cardImg img {
+   width: 120px;
+   height: 200px;
+   border-top-right-radius: 7.5px;
+   border-top-left-radius: 7.5px;
+}
+
+.card .cardBody .cardTitulo,
+.cardPreco {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card .cardBody .cardTitulo p {
+   font-family: "Lilita One", sans-serif;
+}
+
+.card .cardBody .cardPreco p {
+   font-family: "Lilita One", sans-serif;
+}
+
+.cardPreco {
+   transition: 0, 30s;
+}
+
+.card .cardBody .cardBotao {
+   display: flex;
+   justify-content: center;
+}
+
+.cardBotao button {
+   border: solid 1px #027674;
+   border-radius: 10px;
+   width: 100px;
+   height: 30px;
+   font-size: 17px;
+   font-weight: 600;
+   background: #01bbb9;
+   color: #fff;
+   cursor: pointer;
+   transition: 0.32s;
+}
+
+.cardBotao button:hover {
+   background: #fcb212;
+   border: solid 1px #ab790d;
+}
+
+/* ----------------------- XXXXXX ----------------------- */
+
+/* ---------------------- CARROSSÉIS CARDS ---------------------- */
+
+/* CSS para o carrossel 1 */
+
+#container1 {
+   height: 70vh;
+   width: 99vw;
+   margin: 0;
+   padding: 0;
+   display: grid;
+   place-items: center;
+   overflow: hidden;
+}
+
+#slider-container1 {
+   height: 510px;
+   width: 85vw;
+   max-width: 1400px;
+   position: relative;
+   overflow: hidden;
+   padding: 20px;
+}
+
+#slider-container1 .btn {
+   position: absolute;
+   top: calc(50% - 30px);
+   height: 20px;
+   width: 20px;
+   border-left: 8px solid #01bbb9;
+   border-top: 8px solid #01bbb9;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+#slider-container1 .btn:hover {
+   transform: scale(1.2);
+}
+
+#slider-container1 .btn.inactive {
+   border-color: #027674;
+}
+
+#slider-container1 .btn:first-of-type {
+   transform: rotate(-45deg);
+   left: 10px;
+}
+
+#slider-container1 .btn:last-of-type {
+   transform: rotate(135deg);
+   right: 10px;
+}
+
+#slider-container1 #slider1 {
+   display: flex;
+   width: 1000%;
+   height: 100%;
+   transition: all 0.5s;
+}
+
+#slider-container1 #slider1 .slide {
+   height: 90%;
+   margin: auto 10px;
+   display: grid;
+   place-items: center;
+}
+
+#slider-container1 #slider1 .slide span {
+   font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+   #slider-container1 #slider1 .slide {
+      width: calc(2.5% - 20px);
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+   #slider-container1 #slider1 .slide {
+      width: calc(3.3333333% - 20px);
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   #slider-container1 #slider1 .slide {
+      width: calc(5% - 20px);
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   #slider-container1 #slider1 .slide {
+      width: calc(10% - 20px);
+   }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CSS para o segundo carrossel */
+
+#container2 {
+   height: 70vh;
+   width: 99vw;
+   margin: 0;
+   padding: 0;
+   display: grid;
+   place-items: center;
+   overflow: hidden;
+}
+
+#slider-container2 {
+   height: 510px;
+   width: 85vw;
+   max-width: 1400px;
+   position: relative;
+   overflow: hidden;
+   padding: 20px;
+}
+
+#slider-container2 .btn {
+   position: absolute;
+   top: calc(50% - 30px);
+   height: 20px;
+   width: 20px;
+   border-left: 8px solid #01bbb9;
+   border-top: 8px solid #01bbb9;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+#slider-container2 .btn:hover {
+   transform: scale(1.2);
+}
+
+#slider-container2 .btn.inactive {
+   border-color: #027674;
+}
+
+#slider-container2 .btn:first-of-type {
+   transform: rotate(-45deg);
+   left: 10px;
+}
+
+#slider-container2 .btn:last-of-type {
+   transform: rotate(135deg);
+   right: 10px;
+}
+
+#slider-container2 #slider2 {
+   display: flex;
+   width: 1000%;
+   height: 100%;
+   transition: all 0.5s;
+}
+
+#slider-container2 #slider2 .slide {
+   height: 90%;
+   margin: auto 10px;
+   display: grid;
+   place-items: center;
+}
+
+#slider-container2 #slider2 .slide span {
+   font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+   #slider-container2 #slider2 .slide {
+      width: calc(2.5% - 20px);
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+   #slider-container2 #slider2 .slide {
+      width: calc(3.3333333% - 20px);
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   #slider-container2 #slider2 .slide {
+      width: calc(5% - 20px);
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   #slider-container2 #slider2 .slide {
+      width: calc(10% - 20px);
+   }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* CSS para o carrossel 3 */
+
+#container3 {
+   height: 70vh;
+   width: 99vw;
+   margin: 0;
+   padding: 0;
+   display: grid;
+   place-items: center;
+   overflow: hidden;
+}
+
+#slider-container3 {
+   height: 510px;
+   width: 85vw;
+   max-width: 1400px;
+   position: relative;
+   overflow: hidden;
+   padding: 20px;
+}
+
+#slider-container3 .btn {
+   position: absolute;
+   top: calc(50% - 30px);
+   height: 20px;
+   width: 20px;
+   border-left: 8px solid #01bbb9;
+   border-top: 8px solid #01bbb9;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+#slider-container3 .btn:hover {
+   transform: scale(1.2);
+}
+
+#slider-container3 .btn.inactive {
+   border-color: #027674;
+}
+
+#slider-container3 .btn:first-of-type {
+   transform: rotate(-45deg);
+   left: 10px;
+}
+
+#slider-container3 .btn:last-of-type {
+   transform: rotate(135deg);
+   right: 10px;
+}
+
+#slider-container3 #slider3 {
+   display: flex;
+   width: 1000%;
+   height: 100%;
+   transition: all 0.5s;
+}
+
+#slider-container3 #slider3 .slide {
+   height: 90%;
+   margin: auto 10px;
+   display: grid;
+   place-items: center;
+}
+
+#slider-container3 #slider3 .slide span {
+   font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+   #slider-container3 #slider3 .slide {
+      width: calc(2.5% - 20px);
+   }
+}
+
+@media only screen and (max-width: 1100px) {
+   #slider-container3 #slider3 .slide {
+      width: calc(3.3333333% - 20px);
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   #slider-container3 #slider3 .slide {
+      width: calc(5% - 20px);
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   #slider-container3 #slider3 .slide {
+      width: calc(10% - 20px);
+   }
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+
+/*estilização para o rodapé*/
+footer {
+   background-color: rgba(0, 0, 0);
+   width: 100%;
+   bottom: 0;
+   position: relative;
+   height: 38vh;
+   display: flex;
+   align-items: center;
+}
+
+.redes-sociais {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@media screen and (max-width: 1029px) {
+   .estilizacao-a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 10pt;
+      transition: 0.5s;
+   }
+
+   footer {
+      height: 20vh;
+      transition: 0.5s;
+   }
+}
+
+@media screen and (max-width: 870px) {
+   .estilizacao-a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 8pt;
+      transition: 0.5s;
+      padding-left: 10px;
+   }
+
+   .informacoes-adicionais .redes-sociais img {
+      padding-left: 10px;
+   }
+
+   #instagram {
+      height: 20px;
+      width: 20px;
+   }
+
+   #twitwer {
+      height: 20px;
+      width: 20px;
+   }
+
+   #tiktok {
+      height: 20px;
+      width: 20px;
+   }
+
+   .informacoes-footer {
+      margin-right: 3%;
+   }
+}
+
+/*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+footer p {
+   display: flex;
+   justify-content: center;
+   margin-top: 3%;
+}
+
+/*linha horizontal do footer*/
+hr {
+   display: flex;
+   justify-content: center;
+   width: 90%;
+}
+
+/*estilização para links*/
+.estilizacao-a {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+/*classe principal do footer*/
+.informacoes-adicionais {
+   width: 100%;
+}
+
+/*estilizando logo Petgriffe, no footer*/
+#logo-footer {
+   display: flex;
+   margin: auto;
+   height: 100px;
+}
+
+.informacoes-footer li,
+ul {
+   list-style: none;
+}
+
+/* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+.informacoes-footer {
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   padding-left: 5px;
+}
+
+/*class principal de tiktok, instagram e twiter*/
+.redes-sociais {
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 5%;
+}
+
+/*estilizando o tamanho delas*/
+#instagram {
+   height: 25px;
+}
+
+#twiter {
+   height: 30px;
+}
+
+#tiktok {
+   height: 27px;
+}
+
+
+/* ----------------------- RESPONSIVIDAE ----------------------- */
+
+@media screen and (max-height: 1200px) {
+   #container1 {
+      height: 80vh;
+   }
+
+   #slider-container1 {
+      height: 550px;
+   }
+
+   #container2 {
+      height: 60vh;
+   }
+
+   #slider-container2 {
+      height: 550px;
+   }
+
+   #container3 {
+      height: 60vh;
+   }
+
+   #slider-container3 {
+      height: 550px;
+   }
+}
+
+@media screen and (max-height: 866px) {
+   #container1 {
+      height: 78vh;
+   }
+
+   #slider-container1 {
+      height: 475px;
+   }
+
+   #container2 {
+      height: 78vh;
+   }
+
+   #slider-container2 {
+      height: 475px;
+   }
+
+   #container3 {
+      height: 78vh;
+   }
+
+   #slider-container3 {
+      height: 475px;
+   }
+}
+
+@media screen and (max-height: 485px) {
+   #container1 {
+      height: 96vh;
+   }
+
+   #slider-container1 {
+      height: 490px;
+   }
+
+   #container2 {
+      height: 96vh;
+   }
+
+   #slider-container2 {
+      height: 490px;
+   }
+
+   #container3 {
+      height: 96vh;
+   }
+
+   #slider-container3 {
+      height: 490px;
+   }
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+   .carrossel {
+      width: 835px;
+      height: 430px;
+      border-radius: 8px;
+   }
+
+   .imagens {
+      width: 400%;
+      height: 330px;
+   }
+
+   .imagem {
+      width: 25%;
+   }
+
+   .imagem img {
+      width: 835px;
+      height: auto;
+   }
+
+   .manualNav {
+      width: 835px;
+      margin-top: 60px;
+   }
+
+   .autoNav {
+      width: 835px;
+      margin-top: 390px;
+   }
+
+   .botoes {
+      width: 835px;
+      margin-top: 207px;
+   }
+
+
+   .cardC {
+      width: 225px;
+      height: 300px;
+   }
+
+   .cardC .cardCImg img {
+      height: 225px;
+   }
+
+   .cardCBody h2 {
+      font-size: 20px;
+   }
+
+   .menu {
+      display: block;
+      /* Exibir o menu */
+   }
+
+   .close-btn {
+      display: block;
+      /* Exibir o botão fechar */
+   }
+
+   .menu-toggle {
+      display: block;
+      /* Exibir o ícone do menu */
+   }
+
+   .barraBusca {
+      display: none;
+   }
+
+   .navegar {
+      display: none;
+   }
+
+   .pnavegar {
+      display: none;
+   }
+
+   .col-2 {
+      display: none;
+   }
+
+   .col-1 {
+      margin-bottom: 20px;
+   }
+
+   .carrinho-menu {
+      right: -260px;
+      width: 260px;
+   }
+
+   #carrinhoElement>div {
+      width: 210px;
+   }
+   
+   #carrinhoElement img {
+      max-width: 80px;
+   }
+
+}
+
+
+
+@media screen and (max-width: 840px) {
+   .carrossel {
+      width: 600px;
+      height: 330px;
+      border-radius: 8px;
+   }
+
+   .imagens {
+      width: 400%;
+      height: 330px;
+   }
+
+   .imagem {
+      width: 25%;
+   }
+
+   .imagem img {
+      width: 600px;
+      height: auto;
+   }
+
+   .manualNav {
+      width: 600px;
+      margin-top: -30px;
+   }
+
+   .autoNav {
+      width: 600px;
+      margin-top: 300px;
+   }
+
+   .botoes {
+      width: 600px;
+      margin-top: 150px;
+   }
+
+
+   .cardC {
+      width: 155px;
+      height: 220px;
+   }
+
+   .cardC .cardCImg img {
+      height: 155px;
+   }
+
+   .cardCBody h2 {
+      font-size: 16px;
+   }
+
+   .menu {
+      display: block;
+      /* Exibir o menu */
+   }
+
+   .close-btn {
+      display: block;
+      /* Exibir o botão fechar */
+   }
+
+   .menu-toggle {
+      display: block;
+      /* Exibir o ícone do menu */
+   }
+
+   .barraBusca {
+      display: none;
+   }
+
+   .navegar {
+      display: none;
+   }
+
+   .pnavegar {
+      display: none;
+   }
+
+   .col-2 {
+      display: none;
+   }
+
+   .col-1 {
+      margin-bottom: 20px;
+   }
+
+   #carrinhoElement>div {
+      width: 210px;
+   }
+   
+   #carrinhoElement img {
+      max-width: 80px;
+   }
+}
+
+
+
+@media screen and (max-width: 610px) {
+   .carrossel {
+      width: 425px;
+      height: 240px;
+      border-radius: 8px;
+   }
+
+   .imagens {
+      width: 400%;
+      height: 270px;
+   }
+
+   .imagem {
+      width: 25%;
+   }
+
+   .imagem img {
+      width: 425px;
+      height: 240px;
+   }
+
+   .manualNav {
+      width: 425px;
+      margin-top: -55px;
+   }
+
+   .autoNav {
+      width: 425px;
+      margin-top: 215px;
+   }
+
+   .botoes {
+      width: 425px;
+      margin-top: 125px;
+   }
+
+
+   .cardC {
+      width: 110px;
+      height: 160px;
+   }
+
+   .cardC .cardCImg img {
+      height: 120px;
+   }
+
+   .cardCBody h2 {
+      font-size: 16px;
+   }
+
+   .menu {
+      display: block;
+      /* Exibir o menu */
+   }
+
+   .close-btn {
+      display: block;
+      /* Exibir o botão fechar */
+   }
+
+   .menu-toggle {
+      display: block;
+      /* Exibir o ícone do menu */
+   }
+
+   .barraBusca {
+      display: none;
+   }
+
+   .navegar {
+      display: none;
+   }
+
+   .pnavegar {
+      display: none;
+   }
+
+   .col-2 {
+      display: none;
+   }
+
+   .col-1 {
+      margin-bottom: 20px;
+   }
+
+   #carrinhoElement>div {
+      width: 210px;
+   }
+   
+   #carrinhoElement img {
+      max-width: 80px;
+   }
+
+   .tituloCards {
+      position: relative;
+      right: 6px;
+   }
+}
+
+
+/* Estilos para telas menores usando Media Queries */
+@media screen and (max-width: 768px) {
+   .card {
+      width: 160px;
+      height: 300px;
+      margin-right: 25px;
+   }
+
+   .card .cardImg img {
+      width: 100px;
+      height: 150px;
+   }
+
+   .cardBotao button {
+      width: 90px;
+      height: 30px;
+      font-size: 15px;
+   }
+
+   .menu {
+      display: block;
+      /* Exibir o menu */
+   }
+
+   .close-btn {
+      display: block;
+      /* Exibir o botão fechar */
+   }
+
+   .menu-toggle {
+      display: block;
+      /* Exibir o ícone do menu */
+   }
+
+   .barraBusca {
+      display: none;
+   }
+
+   .navegar {
+      display: none;
+   }
+
+   .pnavegar {
+      display: none;
+   }
+
+   .col-2 {
+      display: none;
+   }
+
+   .col-1 {
+      margin-bottom: 20px;
+   }
+
+   #carrinhoElement>div {
+      width: 210px;
+   }
+   
+   #carrinhoElement img {
+      max-width: 80px;
+   }
+
+   .tituloCards {
+      position: relative;
+      right: 6px;
+   }
+}
+
+/* -----------------------  XXXXXX ----------------------- */

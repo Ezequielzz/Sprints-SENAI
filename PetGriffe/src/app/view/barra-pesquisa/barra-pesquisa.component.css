@@ -1,0 +1,29 @@
+.barraBusca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 140px;
+    width: 550px;
+}
+
+.barra {
+    height: 35px;   
+    width: 500px;
+    border: none;
+    border-top: #b6b5b5 solid 2px;
+    border-bottom: #b6b5b5 solid 2px;
+    border-left: #b6b5b5 solid 2px;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    outline: 0;
+}
+
+.lupa {
+    background: #ffffff;
+    border-top: #b6b5b5 solid 2px;
+    border-bottom: #b6b5b5 solid 2px;
+    border-right: #b6b5b5 solid 2px;
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 19px;
+}
