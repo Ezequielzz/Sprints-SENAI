@@ -43,22 +43,20 @@ export class CadastroComponent {
     //validar os dados antes de enviar
     this.validarFormulario(dadosForm);
 
-    //se houver erros de validação, não envia o formulário
+    //se houver erros de validação, não envia o formulário, e exibe a mesnagem de erro
     if (this.validacaoMensagem) {
       return;
     }
 
     //caso não haja erros
-   
     // Passando os dados do formulário para o serviço
     this.cadastroService.cadastrarUsuario('cadastro', dadosForm).subscribe(
       (response) => {
         console.log('Resposta do serviço:', response);
-        // alert("Obrigado por se cadastrar, agora você pode fazer seu login!");
         this.router.navigate(['/login']);
       }, (erro) => {
         console.error('Erro no serviço:', erro);
-        console.error("Erro ao finalizar o cadastro", erro)
+        console.error("Erro ao finalizar o cadastro Validar" , erro);
       }
     );
   }

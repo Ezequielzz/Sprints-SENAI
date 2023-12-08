@@ -1,6 +1,5 @@
-/* Estilo para o Rodapé */
+/*estilização para o rodapé*/
 footer {
-    background-color:#000000;
     background-color: rgba(0, 0, 0);
     width: 100%;
     bottom: 0;
@@ -8,83 +7,78 @@ footer {
     height: 38vh;
     display: flex;
     align-items: center;
-}
-
-/* Estilo para a Linha Horizontal do Rodapé */
-hr {
+ }
+ 
+ .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ /*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+ footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+ }
+ 
+ /*linha horizontal do footer*/
+ hr {
     display: flex;
     justify-content: center;
     width: 90%;
-}
-
-/* Estilo para os Links */
-.estilizacao-a {
+ }
+ 
+ /*estilização para links*/
+ .estilizacao-a {
     color: #ffffff;
     text-decoration: none;
-    transition: 1s;
-}
-.estilizacao-a:hover{
-    color: goldenrod;
-}
-#direitos-autorais{
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    transition: 1s;
-}
-/* Estilo para a Seção Principal do Rodapé */
-.informacoes-adicionais {
+ }
+ 
+ /*classe principal do footer*/
+ .informacoes-adicionais {
     width: 100%;
-}
-
-/* Estilo para o Logo no Rodapé */
-#logo-footer {
+ }
+ 
+ /*estilizando logo Petgriffe, no footer*/
+ #logo-footer {
     display: flex;
     margin: auto;
     height: 100px;
-}
-
-/* Estilo para as Informações do Rodapé como Vagas, Termos de Serviço, etc. */
-.informacoes-footer {
+ }
+ 
+ .informacoes-footer li,
+ ul {
+    list-style: none;
+ }
+ 
+ /* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+ .informacoes-footer {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     padding-left: 5px;
-}
-
-/* Estilo para as Redes Sociais no Rodapé */
-.redes-sociais {
+ }
+ 
+ /*class principal de tiktok, instagram e twiter*/
+ .redes-sociais {
     display: flex;
     justify-content: flex-end;
     margin-right: 5%;
-}
-
-/* Estilo para o Tamanho das Redes Sociais */
-#instagram, #twiter, #tiktok, #email {
+ }
+ 
+ /*estilizando o tamanho delas*/
+ #instagram {
     height: 25px;
-}
-
-@media screen and (max-width:1200px){
-    .estilizacao-a{
-        font-size: 10pt;
-        flex-direction: column;
-    }
-    #direitos-autorais{
-        font-size: 10pt;
-
-    }
-}
-@media screen and (max-Width:600px){
-    .estilizacao-a{
-        flex-direction: column;
-        font-size: 8pt;
-    }
-    #direitos-autorais{
-
-        font-size: 8pt;
-
-    }
-    #logo-footer{
-        height: 50px;
-    }
-}
+ }
+ 
+ #twiter {
+    height: 30px;
+ }
+ 
+ #tiktok {
+    height: 27px;
+ }
+ 
+ 
+ /* ----------------------- RESPONSIVIDAE ----------------------- */

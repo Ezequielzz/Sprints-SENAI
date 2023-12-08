@@ -1,18 +1,21 @@
-
-
+<div *ngIf="mensagemValidacaoLogin" class="mensagemValidacaoLogin">
+    {{mensagemValidacaoLogin}}
+</div>
 <div class="login">
     <div class="imglogin">
         <img src="assets/image/imagem-login.png" alt="">
     </div>
-    <div class="formulario">
-        <label for="lnome">Nome de Usuário</label>
-        <input type="text" id="lnome" name="nome" placeholder="Insira seu username">
+    <div class="formulario" >
+        <form (ngSubmit)="submitForm()">
+        <label for="lemail-lg">Email</label>
+        <input type="email" id="lemail-lg" name="email" placeholder="Insira seu email" [(ngModel)]="email" [required]="email">
 
         <label for="lsenha">Senha</label>
-        <input type="text" id="lsenha" name="senha" placeholder="Insira sua senha">
+        <input type="password" id="lsenha" name="senha" placeholder="Insira sua senha" [(ngModel)]="senha">
 
         <div class="enviarlogin">
             <input type="submit" id="lenviar" name="enviar">
         </div>
+    </form>
     </div>
 </div>

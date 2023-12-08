@@ -95,7 +95,7 @@ body::-moz-scrollbar-thumb {
 }
 
 .navIcon img {
-  width: 95px;
+  width: 50px;
 }
 
 .navegacao {
@@ -151,7 +151,7 @@ body::-moz-scrollbar-thumb {
 }
 
 .barra {
-  height: 35px;
+  height: 37px;
   width: 500px;
   border: none;
   border-top: #b6b5b5 solid 2px;
@@ -197,6 +197,7 @@ body::-moz-scrollbar-thumb {
   display: flex;
   justify-content: center;
   margin-top: auto;
+  margin-left: 9%;
   width: 100%;
 
 }

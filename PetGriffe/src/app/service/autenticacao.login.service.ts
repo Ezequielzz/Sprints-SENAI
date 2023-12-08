@@ -12,6 +12,7 @@ export class AutenticacaoService{
 
     realizarLogin(dadosForm: {email: string; senha: string; }): Observable<any>{
         const url = `${this.baseUrl}/login`;
+        console.log(`URL da requisição para login ${url}`);
         return this.http.post(url, dadosForm);
     }
 }
