@@ -1,7 +1,8 @@
 /* ----------------------- CARROSSEL ----------------------- */
 
 .carrossel {
-    margin: 0 auto;
+   margin-top: 30px;
+    margin: 20px auto;
     width: 1010px;
     height: 530px;
     overflow: hidden;

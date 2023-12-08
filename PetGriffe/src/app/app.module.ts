@@ -13,7 +13,7 @@ import { CadastroComponent } from './view/cadastro/cadastro.component';
 import { GatosComponent } from './view/gatos/gatos.component';
 import { CachorrosComponent } from './view/cachorros/cachorros.component';
 import { FamiliaGriffeComponent } from './view/familia-griffe/familia-griffe.component';
-import { ServicosPetComponent } from './view/servicos-pet/servicos-pet.component';
+import { AgendamentoComponent } from './view/agendamento/agendamento.component';
 import { PassarosComponent } from './view/passaros/passaros.component';
 import { LoginComponent } from './view/login/login.component';
 import { RouterModule } from '@angular/router';
@@ -36,7 +36,7 @@ import { HomeComponent } from './view/home/home.component';
     GatosComponent,
     CachorrosComponent,
     FamiliaGriffeComponent,
-    ServicosPetComponent,
+    AgendamentoComponent,
     PassarosComponent,
     LoginComponent,
     CardsComponent,

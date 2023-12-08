@@ -9,7 +9,7 @@
       </div>
 
       <ul class="navegacao-responsiva">
-        <li><a href="#">Serviços Pet</a></li>
+        <li><a href="/agendamento">Agendar</a></li>
         <li><a href="/gatos">gatos</a></li>
         <li><a href="/cachorros">Cachorros</a></li>
         <li><a href="/passaros">Pássaros</a></li>
@@ -19,52 +19,38 @@
       </ul>
     </div>
 
-    <!----------------- NAVBAR ------------------>
-    <div class="row">
-      <div class="col-1">
-        <div class="navIcon">
-          <a href="/home">
-            <img src="assets/image/logo.png" alt="Icone Petgriffe" />
-          </a>
-        </div>
-        <div class="barraBusca">
-          <input type="text" placeholder="Buscar..." class="barra" />
-          <img
-            src="assets/image/lupa.png"
-            alt=""
-            class="lupa"
-            style="width: 40px; height: 37px"
-          />
-        </div>
-        <div class="navegacao">
-          <a href="/login" class="navegar">Login</a>
-          <p class="pnavegar">e</p>
-          <a href="/cadastro" class="navegar">Cadastro</a>
+<div class="navbar">
 
-          <div class="carrinho">
-            <div class="carrinho-toggle" onclick="toggleCarrinho()">
-              <img src="assets/image/carrinho-compras.png" alt="" />
-            </div>
-            <div class="carrinho-menu" id="carrinhoMenu">
-              <div id="carrinhoElement">
-                <!-- Elemento do carrinho de compras -->
-              </div>
-              <button class="close-btn" onclick="fecharCarrinho()">
-                <img src="assets/image/fechar.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
+  <div class="icone-logo">
+    <a href="/home">
+      <img src="assets/image/logo.png" alt="Icone Petgriffe" />
+    </a>
+  </div>
+
+  <div class="navegacao-links">
+    <a href="/agendamento" class="navegar2">Agendar</a>
+    <a href="/gatos" class="navegar2">Gatos</a>
+    <a href="/cachorros" class="navegar2">Cachorros</a>
+    <a href="/passaros" class="navegar2">Pássaros</a>
+    <a href="" class="navegar2">Clube Griffe</a>
+  </div>
+  
+  <div class="navegacao">
+    <a href="/login" class="navegar">Login</a>
+    <p class="pnavegar">e</p>
+    <a href="/cadastro" class="navegar">Cadastro</a>
+
+    <div class="carrinho">
+      <div class="carrinho-toggle">
+        <img src="assets/image/carrinho-compras.png" alt="" />
       </div>
-      <div class="col-2">
-        <div class="navegacao2">
-          <a href="../agenda.html" class="navegar2">Serviço Pet</a>
-          <a href="/gatos" class="navegar2">Gatos</a>
-          <a href="/cachorros" class="navegar2">Cachorros</a>
-          <a href="/passaros" class="navegar2">Pássaros</a>
-          <a href="" class="navegar2">Clube Griffe</a>
+      <div class="carrinho-menu" id="carrinhoMenu">
+        <div id="carrinhoElement">
+          <!-- Elemento do carrinho de compras -->
         </div>
-      </div>
+  </div>
     </div>
   </div>
+  
+  
 </div>
