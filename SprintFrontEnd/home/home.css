@@ -149,7 +149,7 @@ body::-moz-scrollbar-thumb {
 
 .barra {
    height: 35px;
-   width: 500px;
+   width: 460px;
    border: none;
    border-top: #b6b5b5 solid 2px;
    border-bottom: #b6b5b5 solid 2px;
@@ -876,53 +876,6 @@ footer {
    justify-content: center;
 }
 
-@media screen and (max-width: 1029px) {
-   .estilizacao-a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 10pt;
-      transition: 0.5s;
-   }
-
-   footer {
-      height: 20vh;
-      transition: 0.5s;
-   }
-}
-
-@media screen and (max-width: 870px) {
-   .estilizacao-a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 8pt;
-      transition: 0.5s;
-      padding-left: 10px;
-   }
-
-   .informacoes-adicionais .redes-sociais img {
-      padding-left: 10px;
-   }
-
-   #instagram {
-      height: 20px;
-      width: 20px;
-   }
-
-   #twitwer {
-      height: 20px;
-      width: 20px;
-   }
-
-   #tiktok {
-      height: 20px;
-      width: 20px;
-   }
-
-   .informacoes-footer {
-      margin-right: 3%;
-   }
-}
-
 /*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
 footer p {
    display: flex;
@@ -1436,6 +1389,53 @@ ul {
       position: relative;
       right: 6px;
    }
+
+   footer {
+      height: auto;
+      width: auto;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    footer p {
+      font-weight: 700;
+      font-size: 11px;
+    }
+
+    hr {
+      background-color: #fff;
+      width: 90%;
+   }
+  
+    /* Ajustes para o logo no footer */
+    #logo-footer {
+      height: 80px;
+    }
+  
+    /* Ajustes para redes sociais */
+    .redes-sociais {
+      margin-right: 0;
+      margin-top: 10px;
+      justify-content: center;
+    }
+  
+    #instagram,
+    #twiter,
+    #tiktok {
+      margin: 0 5px
+    }
+  
+    /* Ajustes para as informações do footer */
+    .informacoes-footer {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .informacoes-footer a {
+      font-weight: 700;
+      font-size: 11px;
+    }
+
 }
 
 /* -----------------------  XXXXXX ----------------------- */
