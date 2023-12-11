@@ -6,13 +6,16 @@ providedIn: 'root'
 })
 
 export class validarLoginService{
-    validarLogin(dadosLogin: any): {sucesso: boolean; mensage?: string}{
+    validarLogin(dadosLogin: any): {sucesso: boolean; mensagem?: string}{
        
         const {email, senha} = dadosLogin;
 
-        //Validandi
+        //Validando
         if (!this.validarEmailLogin(email)) {
-            return {sucesso: false, mensage: "Preencha com o seu 'Email' de cadstro, certifique-se de que esteja cadastrado para realizar o seu 'Login'.OBS: O campo nao deve estar vazio"}
+            return {sucesso: false, mensagem: "Preencha com o seu 'Email' de cadstro, certifique-se de que esteja cadastrado para realizar o seu 'Login'.OBS: O campo nao deve estar vazio"}
+        }
+        if (senha == '' || senha < 5) {
+            return {sucesso:false, mensagem: "Senha incorreta ou inexistente."}
         }
 
 

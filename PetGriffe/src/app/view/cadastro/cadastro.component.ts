@@ -23,7 +23,7 @@ export class CadastroComponent {
     const resultadoValidacao = this.validarService.validarCadastro(dados);
 
     if (!resultadoValidacao.sucesso) {
-      this.validacaoMensagem = resultadoValidacao.mensagem || 'Erro de validação.';
+      this.validacaoMensagem = resultadoValidacao.mensagem || 'Erro de validação, campos preenchidos incorretamente.';
     } else {
       this.validacaoMensagem = '';//limpa a mensagem
     }

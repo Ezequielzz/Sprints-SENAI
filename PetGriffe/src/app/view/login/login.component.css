@@ -118,7 +118,12 @@
     background: #41dfd9;
   }
   
-  
+  .mensagemValidacaoLogin{
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
+    color: #ab0d0daa;;
+  }
   
   /* RESPONSIVIDADE */
   @media screen and (max-width: 1280px) {

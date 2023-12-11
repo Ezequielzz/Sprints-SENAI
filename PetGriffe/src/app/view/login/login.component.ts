@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AutenticacaoService } from 'src/app/service/autenticacao.login.service';
-import { ValidacaoService } from 'src/app/service/validacao.cadastro.service';
+import { validarLoginService } from 'src/app/service/validacao.login.service';
 
 @Component({
   selector: 'app-login',
@@ -13,10 +13,10 @@ email: string = '';
 senha: string = '';
 mensagemValidacaoLogin: string = '';
 
-constructor(private router: Router, private autentService: AutenticacaoService, private validarLogin: ValidacaoService){}
+constructor(private router: Router, private autentService: AutenticacaoService, private validarLogin: validarLoginService){}
 
 validarLoginForm(dados: any): void{
-const resultadoValidacao = this.validarLogin.validarCadastro(dados);
+const resultadoValidacao = this.validarLogin.validarLogin(dados);
 
 //Verificando se foi ou não validado
 
@@ -42,7 +42,7 @@ submitForm(){
 
     //Se houver erros impede o envio
     if (this.mensagemValidacaoLogin) {
-      return;
+      return;//impede o envio dos dados
     }
 
   this.autentService.realizarLogin(dadosForm).subscribe(
@@ -52,6 +52,11 @@ submitForm(){
 
       //redirecinando após o login
       this.router.navigate(['/']);
+
+      if (document.readyState === 'complete') {
+        console.log('Página carregada com sucesso(login realizado).')
+        window.alert(`Login realizado como ${this.email}`);
+      }
       
     },
     (error) => {
