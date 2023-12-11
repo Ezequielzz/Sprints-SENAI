@@ -11,16 +11,13 @@ const LoginUsuario = bancoDados.sequelize.define("loginUsuario", {
     }
 });
 
-//super usuario terá acesso a tudo
-async function sincronizarTabela(){
+
 try {
     await LoginUsuario.sync();
 } catch (error) {
     console.error(error);
 }
-}
 
 //Chama a função assíncrona para sincronizar a tabela
-sincronizarTabela();
 
 export default LoginUsuario ;

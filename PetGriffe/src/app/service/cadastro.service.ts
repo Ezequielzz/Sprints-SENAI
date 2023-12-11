@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, catchError } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -16,6 +16,11 @@ export class CadastroService {
 
     const url = `${this.baseUrl}/${rota}`;
     console.log('URL da requisição:', url); //Linha para verificar a URL
-    return this.http.post(url, dadosForm);
+    return this.http.post(url, dadosForm).pipe(
+      catchError(error => {
+        console.error('Erro na solicitação', error);
+        throw error;
+      })
+    )
   }
 }

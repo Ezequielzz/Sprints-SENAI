@@ -18,7 +18,7 @@ console.log("Tudo certo, tabelas criadas com sucesso, cuidado para não recria-l
 } catch (error) {
     
     //se houver erros
-    console.error("Ops", error);
+    console.error("Ops, erro ao criar as tabelas", error);
 }
 }   
 

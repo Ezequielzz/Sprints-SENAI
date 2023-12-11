@@ -12,7 +12,7 @@ export class validarLoginService{
 
         //Validando
         if (!this.validarEmailLogin(email)) {
-            return {sucesso: false, mensagem: "Preencha com o seu 'Email' de cadstro, certifique-se de que esteja cadastrado para realizar o seu 'Login'.OBS: O campo nao deve estar vazio"}
+            return {sucesso: false, mensagem: "Preencha com o seu 'Email' de cadstro, certifique-se de que esteja cadastrado para realizar o seu 'Login'.OBS: O campo não deve estar vazio"}
         }
         if (senha == '' || senha < 5) {
             return {sucesso:false, mensagem: "Senha incorreta ou inexistente."}

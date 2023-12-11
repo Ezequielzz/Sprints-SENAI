@@ -52,11 +52,11 @@ export class CadastroComponent {
     // Passando os dados do formulário para o serviço
     this.cadastroService.cadastrarUsuario('cadastro', dadosForm).subscribe(
       (response) => {
+        
         console.log('Resposta do serviço:', response);
         this.router.navigate(['/login']);
       }, (erro) => {
         console.error('Erro no serviço:', erro);
-        console.error("Erro ao finalizar o cadastro Validar" , erro);
       }
     );
   }
