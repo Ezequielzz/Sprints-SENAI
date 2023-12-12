@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PetGriffe:build:production"
+              "buildTarget": "PetGriffe:build:production"
             },
             "development": {
-              "browserTarget": "PetGriffe:build:development"
+              "buildTarget": "PetGriffe:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PetGriffe:build"
+            "buildTarget": "PetGriffe:build"
           }
         },
         "test": {
