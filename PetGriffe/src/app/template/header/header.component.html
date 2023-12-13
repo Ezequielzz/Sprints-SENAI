@@ -27,10 +27,12 @@
       <img src="assets/image/logo.png" alt="Icone Petgriffe" style="height: 120px;" />
     </a>
   </div>
-  <div class="barraBusca">
-    <input type="text" placeholder="Buscar..." class="barra">
-    <img src="assets/image/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;">
+ <!-- header.component.html -->
+<div class="barraBusca">
+  <input type="text" placeholder="Buscar..." class="barra" [(ngModel)]="termoPesquisa">
+  <img src="assets/image/lupa.png" alt="" class="lupa" style="width: 40px; height: 37px;" (click)="realizarPesquisa()">
 </div>
+
   <div class="navegacao-links">
     <a href="/agendamento" class="navegar2">Agendar</a>
     <a href="/gatos" class="navegar2">Gatos</a>

@@ -61,7 +61,7 @@ submitForm(){
     },
     (error) => {
       console.error("Hove um erro ao realizar o login:", error);
-      alert("Oops, tente novamente mais tarde!")
+      alert("Oops, tente novamente mais tarde, estamos em manutenção!")
     }
   )
 }

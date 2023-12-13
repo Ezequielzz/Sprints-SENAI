@@ -169,6 +169,7 @@ body::-moz-scrollbar-thumb {
   border-right: #b6b5b5 solid 2px;
   border-bottom-right-radius: 19px;
   border-top-right-radius: 19px;
+  cursor: pointer;
 }
 
 /* -----------------------  XXXXXX ----------------------- */
