@@ -1,3 +1,5 @@
+// -------------------------------------------------------------------
+
 // Código para o Funcionamento do Carrinho de Compras
 
 let carrinhoAberto = false; // Variável para controlar se o carrinho está aberto ou fechado
@@ -10,6 +12,7 @@ function toggleCarrinho() {
     carrinhoMenu.classList.add("active");
     body.classList.add("no-scroll");
     carrinhoAberto = true;
+    body.style.overflow = "hidden"; // Trava o scroll da página
   }
 
   // Verificar se a altura do carrinho excede a altura da janela visível
@@ -23,11 +26,12 @@ function toggleCarrinho() {
 
 function fecharCarrinho() {
   const carrinhoMenu = document.getElementById("carrinhoMenu");
-  const body = document.querySelector("body");
+  const body = document.body;
 
   carrinhoMenu.classList.remove("active");
   body.classList.remove("no-scroll");
   carrinhoAberto = false;
+  body.style.overflow = "auto"; // Libera o scroll da página
 }
 
 let carrinhoDeCompras = [];
@@ -54,36 +58,105 @@ function adicionarAoCarrinho(produtoInfo) {
 }
 
 function atualizarCarrinho() {
-    const carrinhoElement = document.getElementById("carrinhoElement");
-    carrinhoElement.innerHTML = "";
-  
-    carrinhoDeCompras.forEach((produto) => {
-      const itemCarrinho = document.createElement("div");
-      itemCarrinho.classList.add("itemCarrinho"); // Adiciona uma classe ao contêiner do item
-  
-      const imagem = document.createElement("img");
-      imagem.src = produto.imagem;
-      imagem.alt = produto.nome;
-      itemCarrinho.appendChild(imagem);
-  
-      const texto = document.createElement("div");
-      texto.classList.add("textoCarrinho"); // Adiciona uma classe ao contêiner do texto
-  
-      const nomeProduto = document.createElement("p");
-      nomeProduto.classList.add("nomeProduto"); // Adiciona uma classe ao nome do produto
-      nomeProduto.innerText = produto.nome;
-      texto.appendChild(nomeProduto);
-  
-      const precoProduto = document.createElement("p");
-      precoProduto.classList.add("precoProduto"); // Adiciona uma classe ao preço do produto
-      precoProduto.innerText = produto.preco;
-      texto.appendChild(precoProduto);
-  
-      itemCarrinho.appendChild(texto);
-      carrinhoElement.appendChild(itemCarrinho);
-    });
+  const carrinhoElement = document.getElementById("carrinhoElement");
+  carrinhoElement.innerHTML = "";
+
+  carrinhoDeCompras.forEach((produto) => {
+    const itemCarrinho = document.createElement("div");
+    itemCarrinho.classList.add("itemCarrinho"); // Adiciona uma classe ao contêiner do item
+
+    const imagem = document.createElement("img");
+    imagem.src = produto.imagem;
+    imagem.alt = produto.nome;
+    itemCarrinho.appendChild(imagem);
+
+    const texto = document.createElement("div");
+    texto.classList.add("textoCarrinho"); // Adiciona uma classe ao contêiner do texto
+
+    const nomeProduto = document.createElement("p");
+    nomeProduto.classList.add("nomeProduto"); // Adiciona uma classe ao nome do produto
+    nomeProduto.innerText = produto.nome;
+    texto.appendChild(nomeProduto);
+
+    const precoProduto = document.createElement("p");
+    precoProduto.classList.add("precoProduto"); // Adiciona uma classe ao preço do produto
+    precoProduto.innerText = produto.preco;
+    texto.appendChild(precoProduto);
+
+    itemCarrinho.appendChild(texto);
+    carrinhoElement.appendChild(itemCarrinho);
+
+  });
+
+  const botaoFinalizarCompra = document.createElement("button");
+  botaoFinalizarCompra.innerText = "Avançar Compra";
+  botaoFinalizarCompra.classList.add("cAbrirPopup");
+  botaoFinalizarCompra.addEventListener("click", () => {
+    meuPopup.style.display = 'block'; // Abre o popup ao clicar no botão "Finalizar Compra" no carrinho
+  });
+  carrinhoElement.appendChild(botaoFinalizarCompra);
+}
+
+function finalizarCompra(event) {
+  event.preventDefault(); // Impede o comportamento padrão do botão
+
+  if (carrinhoDeCompras.length > 0) { // Verifica se há itens no carrinho (length > 0)
+    alert('Compra finalizada!');
+    carrinhoDeCompras = [];
+    atualizarCarrinho();
+    fecharCarrinho();
+  } else {
+    alert('Seu carrinho está vazio! Adicione produtos para finalizar a compra.');
   }
-  
+}
+
+// -------------------------------------------------------------------
+
+// Código para o Funcionamento do CEP
+
+const cep = document.querySelector('#cep');
+const endereco = document.querySelector('#endereco');
+const bairro = document.querySelector('#bairro');
+const cidade = document.querySelector('#cidade');
+const mensagem = document.querySelector('#mensagem');
+
+cep.addEventListener('focusout', async () => {
+
+  try {
+    const apenasNumeros = /^[0-9]+$/;
+    const cepValido = /^[0-9]{8}$/;
+
+    if (!apenasNumeros.test(cep.value) || !cepValido.test(cep.value)) {
+      throw { cep_error: 'CEP Inválido!' };
+
+    }
+
+    const response = await fetch(`https://viacep.com.br/ws/${cep.value}/json/`)
+
+    if (!response.ok) {
+      throw await response.json();
+    }
+
+    const responseCep = await response.json();
+
+    endereco.value = responseCep.logradouro;
+    bairro.value = responseCep.bairro;
+    cidade.value = responseCep.localidade;
+
+
+  } catch (error) {
+
+    if (error?.cep_error) {
+      mensagem.textContent = error.cep_error;
+      setTimeout(() => {
+        mensagem.textContent = '';
+      }, 5000);
+    }
+    console.log(error);
+  }
+
+
+})
 
 // -------------------------------------------------------------------
 

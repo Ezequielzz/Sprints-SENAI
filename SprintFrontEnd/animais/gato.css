@@ -178,10 +178,10 @@ body {
 
 /* -----------------------  XXXXXX ----------------------- */
 
- /* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
- 
- /* Estilos para o ícone do carrinho */
- .carrinho-toggle {
+  /* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
+
+/* Estilos para o ícone do carrinho */
+.carrinho-toggle {
     cursor: pointer;
  }
  
@@ -247,13 +247,10 @@ body {
     margin-right: 10px;
  }
  
- /* Adicione esses estilos ao seu arquivo CSS */
- 
  .textoCarrinho {
     display: flex;
     flex-direction: column;
     width: calc(100% - 110px);
-    /* Ajuste conforme necessário */
  }
  
  .nomeProduto {
@@ -267,6 +264,27 @@ body {
     font-family: "Bevan", serif;
     font-size: 14px;
  }
+ 
+ .cAbrirPopup {
+    display: block;
+    width: 60%;
+    padding: 13px;
+    margin: 20px auto;
+    /* Isso vai centralizar o botão */
+    background-color: #3ac9c5;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.30s;
+ }
+ 
+ .cAbrirPopup:hover {
+    background-color: #31eee8;
+ }
+ 
  
  
  /* Estilos para o ícone do menu */
@@ -315,9 +333,117 @@ body {
  
  /* -----------------------  XXXXXX ----------------------- */
 
+ /* Estilos para o layout desejado */
+.container {
+    width: 600px;
+    margin: 0 auto;
+ }
+ 
+ .container h2 {
+    font-weight: 800;
+    font-family: Arial, sans-serif;
+ }
+ 
+ .container h3 {
+    color: rgb(163, 163, 163);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+ }
+ 
+ #mensagem {
+    color: red;
+ }
+ 
+ .container form input {
+    border-radius: 20px;
+    
+ }
+ 
+ .container form .enviar {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ .enviar button {
+    width: 185px;
+    height: 45px;
+    background-color: #3ac9c5;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    transition: 0.30s;
+    cursor: pointer;
+ }
+ 
+ .enviar button:hover {
+    background-color: #31eee8;
+ }
+ 
+ .cep-input {
+    width: 100%;
+    margin-bottom: 15px;
+ }
+ 
+ .endereco-info {
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .rua-bairro,
+ .cidade-numero {
+    width: 48%;
+ }
+ 
+ .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+ }
+ 
+ .cep {
+    width: 100%;
+ }
+ 
+ /* Seus estilos existentes permanecem os mesmos */
+ 
+ .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+ }
+ 
+ #fecharPopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+ }
+ 
+ #fecharPopup img {
+    width: 15px;
+    height: 15px;
+ }
+ 
+ #fecharPopup:hover {
+    color: #f00;
+ }
+
 /* ----------------------- BANNER ----------------------- */
 
-.container {
+.containerCat {
     display: flex;
     justify-content: center;
 }

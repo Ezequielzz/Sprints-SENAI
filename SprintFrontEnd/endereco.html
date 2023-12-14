@@ -1,37 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="endereco.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="tituloEndereco">
-            <h2>Cadastre seu endereço</h2>
-            <h3>Preencha os campos corretamente para enviarmos seu produto</h3>
+    <button id="abrirPopup">Abrir Popup</button>
+
+    <div class="popup" id="meuPopup">
+        <div class="container">
+            <div class="tituloEndereco">
+                <h2>Cadastre seu endereço</h2>
+                <button id="fecharPopup">
+                    <img src="img/fechar.png" alt="">
+                </button>
+                <h3>Preencha os campos corretamente para enviarmos seu produto</h3>
+            </div>
+            <span id="mensagem"></span>
+            <form action="">
+                <div class="cep-input">
+                    <input type="text" id="cep" placeholder="CEP..." class="input cep">
+                </div>
+                <div class="endereco-info">
+                    <div class="rua-bairro">
+                        <input type="text" id="endereco" placeholder="Rua..." class="input">
+                        <input type="text" id="bairro" placeholder="Bairro..." class="input">
+                    </div>
+                    <div class="cidade-numero">
+                        <input type="text" id="cidade" placeholder="Cidade..." class="input">
+                        <input type="text" id="numero" placeholder="Número..." class="input">
+                    </div>
+                </div>
+                <div class="enviar">
+                    <button onclick="finalizarCompra(event)" class="finalizar-compra-btn">Finalizar Compra</button>
+                </div>
+            </form>
         </div>
-        <span id="mensagem"></span>
-        <form action="">
-            <div class="cep-input">
-                <input type="text" id="cep" placeholder="CEP..." class="input cep">
-            </div>
-            <div class="endereco-info">
-                <div class="rua-bairro">
-                    <input type="text" id="endereco" placeholder="Rua..." class="input">
-                    <input type="text" id="bairro" placeholder="Bairro..." class="input">
-                </div>
-                <div class="cidade-numero">
-                    <input type="text" id="cidade" placeholder="Cidade..." class="input">
-                    <input type="text" id="numero" placeholder="Número..." class="input">
-                </div>
-            </div>
-            <div class="enviar">
-                <input type="submit" value="Cadastrar">
-            </div>
-        </form>
     </div>
+
+    <script src="endereco.js"></script>
+    <script>
+        const abrirPopup = document.getElementById('abrirPopup');
+        const meuPopup = document.getElementById('meuPopup');
+        const fecharPopup = document.getElementById('fecharPopup');
+
+        abrirPopup.addEventListener('click', () => {
+            meuPopup.style.display = 'block';
+        });
+
+        fecharPopup.addEventListener('click', () => {
+            meuPopup.style.display = 'none';
+        });
+
+        function finalizarCompra(event) {
+            event.preventDefault(); // Impede o comportamento padrão do botão
+
+            if (carrinhoDeCompras.length > 0) { // Verifica se há itens no carrinho (length > 0)
+                alert('Compra finalizada!');
+                carrinhoDeCompras = [];
+                atualizarCarrinho();
+                fecharCarrinho();
+
+                // Feche o popup após finalizar a compra
+                meuPopup.style.display = 'none';
+
+            } else {
+                alert('Seu carrinho está vazio! Adicione produtos para finalizar a compra.');
+            }
+
+        }
+
+    </script>
 </body>
 <script src="endereco.js"></script>
+
 </html>
