@@ -1,444 +1,653 @@
 body {
-    background-color: #ffffff;
-    margin: 0;
- }
- 
- body::-webkit-scrollbar {
-    width: 7px;
-    transition: 1s;
- }
- 
- body::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-    border-radius: 50px;
-    transition: 1s;
- }
- 
- body::-webkit-scrollbar-thumb {
-    background-color: #3ac9c5;
-    border-radius: 16px;
-    transition: 1s;
- }
- 
- #carrinhoMenu::-webkit-scrollbar {
-    width: 7px;
-    transition: 1s;
- }
- 
- #carrinhoMenu::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
-    border-radius: 50px;
-    transition: 1s;
- }
- 
- #carrinhoMenu::-webkit-scrollbar-thumb {
-    background-color: #3ac9c5;
-    border-radius: 16px;
-    transition: 1s;
- }
- 
- body::-moz-scrollbar {
-    width: 7px;
-    transition: 1s;
- }
- 
- body::-moz-scrollbar-track {
-    background: rgb(255, 255, 255);
-    border-radius: 50px;
-    transition: 1s;
- }
- 
- body::-moz-scrollbar-thumb {
-    background-color: #3ac9c5;
-    border-radius: 16px;
-    transition: 1s;
- }
- 
- #carrinhoMenu::-moz-scrollbar {
-    width: 7px;
-    transition: 1s;
- }
- 
- #carrinhoMenu::-moz-scrollbar-track {
-    background: rgb(255, 255, 255);
-    border-radius: 50px;
-    transition: 1s;
- }
- 
- #carrinhoMenu::-moz-scrollbar-thumb {
-    background-color: #3ac9c5;
-    border-radius: 16px;
-    transition: 1s;
- }
+  background-color: #ffffff;
+  margin: 0;
+}
+
+/* ----------------------- SCROLLBAR ----------------------- */
+
+body::-webkit-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-webkit-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-webkit-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+body::-moz-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar {
+  width: 7px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+#carrinhoMenu::-moz-scrollbar-thumb {
+  background-color: #3ac9c5;
+  border-radius: 16px;
+  transition: 1s;
+}
+
+/* ----------------------- XXXX ----------------------- */
 
 /* -----------------------  NAVBAR ----------------------- */
 
 .col-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #3ac9c5;
- }
- 
- .col-2 {
-    display: flex;
-    justify-content: center;
-    background: #3ac9c5;
-    margin-bottom: 25px;
- }
- 
- .navIcon img {
-    width: 95px;
- }
- 
- .navegacao {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }
- 
- .navegar {
-    font-family: "Bevan", serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 0 5px;
-    transition: 0.3s;
- }
- 
- .pnavegar {
-    font-family: "Bevan", serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 0 5px;
- }
- 
- .carrinho img {
-    width: 80px;
-    height: 70px;
- }
- 
- .menu-toggle img {
-    width: 60px;
-    height: 60px;
- }
- 
- .navegar2 {
-    font-family: "Bevan", serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 0 15px;
-    transition: 0.3s;
- }
- 
- .navegar:hover,
- .navegar2:hover {
-    color: #fcb212;
- }
- 
- .barraBusca {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 140px;
-    width: 550px;
- }
- 
- .barra {
-    height: 35px;
-    width: 500px;
-    border: none;
-    border-top: #b6b5b5 solid 2px;
-    border-bottom: #b6b5b5 solid 2px;
-    border-left: #b6b5b5 solid 2px;
-    border-bottom-left-radius: 19px;
-    border-top-left-radius: 19px;
- }
- 
- .lupa {
-    background: #ffffff;
-    border-top: #b6b5b5 solid 2px;
-    border-bottom: #b6b5b5 solid 2px;
-    border-right: #b6b5b5 solid 2px;
-    border-bottom-right-radius: 19px;
-    border-top-right-radius: 19px;
- }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3ac9c5;
+}
 
- .menu a {
-    font-family: "Bevan", serif;
-    font-size: 15px;
-    text-decoration: none;
-    transition: 0.3s;
- }
- 
- .menu a:hover {
-    color: #fcb212;
- }
- 
- /* -----------------------  XXXXXX ----------------------- */
- 
-    /* Estilos para o layout desejado */
+.col-2 {
+  display: flex;
+  justify-content: center;
+  background: #3ac9c5;
+  margin-bottom: 25px;
+}
+
+.navIcon img {
+  width: 95px;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegar {
+  font-family: "Bevan", serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.pnavegar {
+  font-family: "Bevan", serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 5px;
+}
+
+.carrinho img {
+  width: 80px;
+  height: 70px;
+}
+
+.menu-toggle img {
+  width: 60px;
+  height: 60px;
+}
+
+.navegar2 {
+  font-family: "Bevan", serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.navegar:hover,
+.navegar2:hover {
+  color: #fcb212;
+}
+
+.barraBusca {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 140px;
+  width: 550px;
+}
+
+.barra {
+  height: 35px;
+  width: 500px;
+  border: none;
+  border-top: #b6b5b5 solid 2px;
+  border-bottom: #b6b5b5 solid 2px;
+  border-left: #b6b5b5 solid 2px;
+  border-bottom-left-radius: 19px;
+  border-top-left-radius: 19px;
+}
+
+.lupa {
+  background: #ffffff;
+  border-top: #b6b5b5 solid 2px;
+  border-bottom: #b6b5b5 solid 2px;
+  border-right: #b6b5b5 solid 2px;
+  border-bottom-right-radius: 19px;
+  border-top-right-radius: 19px;
+}
+
+.menu a {
+  font-family: "Bevan", serif;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #fcb212;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* ----------------------- POPUPS----------------------- */
+
 .container {
-   width: 600px;
-   margin: 0 auto;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .container h2 {
-   font-weight: 800;
-   font-family: Arial, sans-serif;
+  font-weight: 800;
+  font-family: Arial, sans-serif;
 }
 
 .container h3 {
-   color: rgb(163, 163, 163);
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   font-size: 14px;
+  color: rgb(163, 163, 163);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
 }
 
 #mensagem {
-   color: red;
+  color: red;
 }
 
 .container form input {
-   border-radius: 20px;
-   
+  border-radius: 20px;
 }
 
 .container form .enviar {
-   display: flex;
-   justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .enviar button {
-   width: 185px;
-   height: 45px;
-   background-color: #3ac9c5;
-   border: none;
-   border-radius: 20px;
-   color: #fff;
-   font-weight: 700;
-   font-size: 17px;
-   transition: 0.30s;
-   cursor: pointer;
+  width: 185px;
+  height: 45px;
+  background-color: #3ac9c5;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .enviar button:hover {
-   background-color: #31eee8;
+  background-color: #31eee8;
 }
 
 .cep-input {
-   width: 100%;
-   margin-bottom: 15px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .endereco-info {
-   display: flex;
-   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .rua-bairro,
 .cidade-numero {
-   width: 48%;
+  width: 48%;
 }
 
 .input {
-   width: 100%;
-   padding: 10px;
-   margin-bottom: 10px;
-   box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .cep {
-   width: 100%;
+  width: 100%;
 }
 
-/* Seus estilos existentes permanecem os mesmos */
-
 .popup {
-   display: none;
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   background-color: #fff;
-   padding: 20px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-   z-index: 9999;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 }
 
 #fecharPopup {
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   background: none;
-   border: none;
-   cursor: pointer;
-   font-size: 18px;
-   color: #555;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
 }
 
 #fecharPopup img {
-   width: 15px;
-   height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 #fecharPopup:hover {
-   color: #f00;
+  color: #f00;
 }
 
- /* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-weight: 800;
+  font-family: Arial, sans-serif;
+}
+
+.container h3 {
+  color: rgb(163, 163, 163);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+#mensagem {
+  color: red;
+}
+
+.container form input {
+  border-radius: 20px;
+}
+
+.container form .enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.enviar button {
+  width: 185px;
+  height: 45px;
+  background-color: #3ac9c5;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.enviar button:hover {
+  background-color: #31eee8;
+}
+
+.cep-input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.endereco-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rua-bairro,
+.cidade-numero {
+  width: 48%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.cep {
+  width: 100%;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-weight: 800;
+  font-family: Arial, sans-serif;
+}
+
+.container h3 {
+  color: rgb(163, 163, 163);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.tituloCartao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container form input {
+  border-radius: 20px;
+}
+
+.container form .enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.enviar button {
+  width: 185px;
+  height: 45px;
+  background-color: #3ac9c5;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.enviar button:hover {
+  background-color: #31eee8;
+}
+
+.codigo-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+#codigoSeguranca,
+#dataExpiracao {
+  width: 48%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#numeroCartao {
+  width: 100%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+#fecharPopup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+}
+
+#fecharPopup img {
+  width: 15px;
+  height: 15px;
+}
+
+#fecharCartaoPopup img {
+  width: 15px;
+  height: 15px;
+}
+
+.tituloCartao button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.enviar-cartao {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.enviar-cartao button {
+  width: 185px;
+  height: 45px;
+  background-color: #3ac9c5;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.enviar-cartao button:hover {
+  background-color: #31eee8;
+}
+
+/* -----------------------  XXXXXX ----------------------- */
+
+/* -----------------------  CARRINHO E MENUHAMBURGER ----------------------- */
 
 /* Estilos para o ícone do carrinho */
 .carrinho-toggle {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 /* Estilos para o menu do carrinho */
 .carrinho-menu {
-   position: fixed;
-   top: 0;
-   right: -400px;
-   width: 400px;
-   height: 100%;
-   background-color: #fff;
-   transition: right 0.3s ease-in-out;
-   z-index: 1099;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-   transition: 0.45s;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 1099;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.45s;
 }
 
 .carrinho-menu.active {
-   right: 0;
-   /* Move para a posição visível */
+  right: 0;
+  /* Move para a posição visível */
 }
 
 /* Estilos para o botão de fechar */
 .close-btn {
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   cursor: pointer;
-   background: none;
-   border: none;
-   font-size: 20px;
-   color: #000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #000;
 }
 
 .close-btn img {
-   width: 15px;
-   height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .no-scroll {
-   overflow: hidden;
+  overflow: hidden;
 }
 
 #carrinhoElement {
-   display: flex;
-   flex-wrap: wrap;
-   margin-top: 45px;
-   gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  gap: 20px;
 }
 
-#carrinhoElement>div {
-   border: 2px solid #3ac9c5;
-   border-radius: 8px;
-   padding: 10px;
-   margin-left: 20px;
-   width: 270px;
-   display: flex;
+#carrinhoElement > div {
+  border: 2px solid #3ac9c5;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 20px;
+  width: 270px;
+  display: flex;
 }
 
 #carrinhoElement img {
-   max-width: 100px;
-   height: auto;
-   margin-right: 10px;
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .textoCarrinho {
-   display: flex;
-   flex-direction: column;
-   width: calc(100% - 110px);
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 110px);
 }
 
 .nomeProduto {
-   font-family: "Bevan", serif;
-   font-size: 12px;
+  font-family: "Bevan", serif;
+  font-size: 12px;
 }
 
 .precoProduto {
-   margin-top: auto;
-   text-align: left;
-   font-family: "Bevan", serif;
-   font-size: 14px;
+  margin-top: auto;
+  text-align: left;
+  font-family: "Bevan", serif;
+  font-size: 14px;
 }
 
 .cAbrirPopup {
-   display: block;
-   width: 60%;
-   padding: 13px;
-   margin: 20px auto;
-   /* Isso vai centralizar o botão */
-   background-color: #3ac9c5;
-   color: #fff;
-   font-weight: 700;
-   border: none;
-   border-radius: 20px;
-   font-size: 16px;
-   cursor: pointer;
-   transition: 0.30s;
+  display: block;
+  width: 60%;
+  padding: 13px;
+  margin: 20px auto;
+  /* Isso vai centralizar o botão */
+  background-color: #3ac9c5;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .cAbrirPopup:hover {
-   background-color: #31eee8;
+  background-color: #31eee8;
 }
-
-
 
 /* Estilos para o ícone do menu */
 .menu-toggle {
-   cursor: pointer;
-   display: none;
+  cursor: pointer;
+  display: none;
 }
 
 /* Estilos para o menu */
 .menu {
-   position: fixed;
-   top: 0;
-   left: -250px;
-   /* Esconde o menu inicialmente */
-   width: 250px;
-   height: 100%;
-   background-color: #ffffff;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   z-index: 999;
-   transition: left 0.40s ease;
-   /* Adiciona uma transição suave */
+  position: fixed;
+  top: 0;
+  left: -250px;
+  /* Esconde o menu inicialmente */
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: left 0.4s ease;
+  /* Adiciona uma transição suave */
 }
 
 .menu ul {
-   list-style: none;
-   padding: 20px 0;
-   margin: 0;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
 }
 
 .menu ul li {
-   padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .menu ul li a {
-   text-decoration: none;
-   color: #333333;
-   font-size: 18px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
 }
 
 .close-btn {
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 /* -----------------------  XXXXXX ----------------------- */
@@ -446,203 +655,228 @@ body {
 /* ----------------------- BANNER ----------------------- */
 
 .containerDog {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #3ac9c5;
-    color: white;
-    font-family: 'Bevan', serif;
-    width: 700px;
-    height: 170px;
-    border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3ac9c5;
+  color: white;
+  font-family: "Bevan", serif;
+  width: 700px;
+  height: 170px;
+  border-radius: 25px;
 }
 
 /* ----------------------- XXXXXX ----------------------- */
 
-
 /* ----------------------- CARDS ----------------------- */
 
 .tituloCards {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 100px;
-    font-family: 'Bevan', serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  font-family: "Bevan", serif;
 }
 
-.racoesEpetiscos, .brinquedos, .acessorios, .conforto {
-    margin-top: 115px;
-    display: flex;
-    justify-content: center;
+.racoesEpetiscos,
+.brinquedos,
+.acessorios,
+.conforto {
+  margin-top: 115px;
+  display: flex;
+  justify-content: center;
 }
 
 .conforto {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .card {
-    width: 190px;
-    height: 350px;
-    border: solid 2px #d4d4d4;
-    background-color: #ffffff;
-    border-radius: 10px;
+  width: 190px;
+  height: 350px;
+  border: solid 2px #d4d4d4;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .card:not(:last-child) {
-    margin-right: 75px;
+  margin-right: 75px;
 }
 
 .card .cardImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .cardImg img {
-    width: 120px;
-    height: 200px;
-    margin-top: 2px;
-    border-top-right-radius: 7.5px;
-    border-top-left-radius: 7.5px;
+  width: 120px;
+  height: 200px;
+  margin-top: 2px;
+  border-top-right-radius: 7.5px;
+  border-top-left-radius: 7.5px;
 }
 
-.card .cardBody .cardTitulo, .cardPreco {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card .cardBody .cardTitulo,
+.cardPreco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card .cardBody .cardTitulo p{
-    font-family: 'Lilita One', sans-serif;
+.card .cardBody .cardTitulo p {
+  font-family: "Lilita One", sans-serif;
 }
 
-.card .cardBody .cardPreco p{
-    font-family: 'Lilita One', sans-serif;
+.card .cardBody .cardPreco p {
+  font-family: "Lilita One", sans-serif;
 }
 
 .card .cardBody .cardBotao {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cardBotao button {
-    border: solid 1px #027674; 
-    border-radius: 10px;
-    width: 100px;
-    height: 30px;
-    font-size: 17px;
-    font-weight: 600;
-    background: #01bbb9;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.32s; 
+  border: solid 1px #027674;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  font-size: 17px;
+  font-weight: 600;
+  background: #01bbb9;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.32s;
 }
 
 .cardBotao button:hover {
-    background: #FCB212;
-    border: solid 1px #ab790d;
+  background: #fcb212;
+  border: solid 1px #ab790d;
 }
 
 /* -----------------------  XXXXXX ----------------------- */
 
-
-/* CSS dos Carrosséis de Cards */
+/* ---------------------- CARROSSÉIS CARDS ---------------------- */
 
 /* CSS para o carrossel 1 */
 
 #container1 {
-    height: 64vh;
-    width: 99vw;
-    margin: 0;
-    padding: 0;
-    display: grid ;
-    place-items: center;
-    overflow: hidden;
+  height: 70vh; /* Define a altura do contêiner como 70% da altura da viewport */
+  width: 99vw; /* Define a largura do contêiner como 99% da largura da viewport */
+  margin: 0; /* Remove as margens */
+  padding: 0; /* Remove o preenchimento */
+  display: flex; /* Usa um modelo de layout flexível */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  display: grid; /* Usa um modelo de layout de grid */
+  place-items: center; /* Centraliza o conteúdo vertical e horizontalmente */
+  overflow: hidden; /* Esconde o conteúdo que estoura o contêiner */
 }
 
+/* Estilos para o contêiner do slider */
 #slider-container1 {
-    height: 352px;
-    width: 85vw;
-    max-width: 1400px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
+  height: 510px; /* Define a altura do contêiner do slider */
+  width: 85vw; /* Define a largura do contêiner do slider como 85% da largura da viewport */
+  max-width: 1400px; /* Define a largura máxima do contêiner do slider como 1400px */
+  position: relative; /* Define a posição como relativa para posicionar os botões */
+  overflow: hidden; /* Esconde o conteúdo que estoura o contêiner */
+  padding: 20px; /* Adiciona um espaçamento interno ao contêiner */
 }
 
 #slider-container1 .btn {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 20px;
-    width: 20px;
-    border-left: 8px solid #01bbb9;
-    border-top: 8px solid #01bbb9;
-    cursor: pointer;
-    transition: 0.30s;
+  /* Estilos para os botões de navegação */
+  position: absolute; /* Posição absoluta para sobrepor elementos */
+  top: calc(
+    50% - 30px
+  ); /* Posicionamento vertical a 50% da altura menos metade da altura do botão */
+  height: 20px; /* Altura do botão */
+  width: 20px; /* Largura do botão */
+  border-left: 8px solid #01bbb9; /* Estilo da borda esquerda */
+  border-top: 8px solid #01bbb9; /* Estilo da borda superior */
+  transition: 0.3s; /* Efeito de transição */
+  cursor: pointer; /* Cursor do mouse como ponteiro */
 }
 
 #slider-container1 .btn:hover {
-    transform: scale(1.2);
+  /* Efeito ao passar o mouse sobre os botões */
+  transform: scale(1.2); /* Aumenta o tamanho do botão em 20% */
 }
 
 #slider-container1 .btn.inactive {
-    border-color: #027674;
+  /* Estilos para botões inativos */
+  border-color: #027674; /* Cor da borda dos botões inativos */
 }
 
 #slider-container1 .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px;
+  /* Estilos para o primeiro botão (seta esquerda) */
+  transform: rotate(
+    -45deg
+  ); /* Rotação para simular uma seta apontando para a esquerda */
+  left: 10px; /* Posicionamento à esquerda */
 }
 
 #slider-container1 .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
+  /* Estilos para o último botão (seta direita) */
+  transform: rotate(
+    135deg
+  ); /* Rotação para simular uma seta apontando para a direita */
+  right: 10px; /* Posicionamento à direita */
 }
 
 #slider-container1 #slider1 {
-    display: flex;
-    width: 1000%;
-    height: 100%; 
-    transition: all .5s;
+  /* Estilos para o contêiner dos slides */
+  display: flex; /* Usa um modelo de layout flexível */
+  width: 1000%; /* Largura do contêiner dos slides */
+  height: 100%; /* Altura do contêiner dos slides */
+  transition: all 0.5s; /* Efeito de transição para todos os estilos */
 }
 
 #slider-container1 #slider1 .slide {
-    height: 90%;
-    margin: auto 10px;
-    display: grid;
-    place-items: center;
+  /* Estilos para cada slide */
+  height: 90%; /* Altura do slide */
+  margin: auto 10px; /* Margem automática para centralizar horizontalmente */
+  display: grid; /* Usa um modelo de layout de grid */
+  place-items: center; /* Centraliza o conteúdo vertical e horizontalmente */
 }
 
 #slider-container1 #slider1 .slide span {
-    font-size: 150px;
+  /* Estilos para elementos span dentro dos slides */
+  font-size: 150px; /* Tamanho da fonte para o texto dentro dos slides */
 }
 
+/* Media queries para diferentes larguras de tela */
+
 @media only screen and (min-width: 1100px) {
-    #slider-container1 #slider1 .slide {
-        width: calc(2.5% - 20px);
-    }
+  /* Estilos para telas maiores que 1100px */
+  #slider-container1 #slider1 .slide {
+    width: calc(2.5% - 20px); /* Largura dos slides para telas maiores */
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    #slider-container1 #slider1 .slide {
-        width: calc(3.3333333% - 20px);
-    }
+  /* Estilos para telas menores ou iguais a 1100px */
+  #slider-container1 #slider1 .slide {
+    width: calc(3.3333333% - 20px); /* Largura dos slides para telas menores */
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    #slider-container1 #slider1 .slide {
-        width: calc(5% - 20px);
-    }
+  /* Estilos para telas menores ou iguais a 900px */
+  #slider-container1 #slider1 .slide {
+    width: calc(5% - 20px); /* Largura dos slides para telas menores */
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    #slider-container1 #slider1 .slide {
-        width: calc(10% - 20px);
-    }
+  /* Estilos para telas menores ou iguais a 550px */
+  #slider-container1 #slider1 .slide {
+    width: calc(10% - 20px); /* Largura dos slides para telas menores */
+  }
 }
 
 /* ----------------------------------------------------------------- */
@@ -650,93 +884,93 @@ body {
 /* CSS para o segundo carrossel */
 
 #container2 {
-    height: 64vh;
-    width: 99vw;
-    margin: 0;
-    padding: 0;
-    display: grid ;
-    place-items: center;
-    overflow: hidden;
+  height: 64vh;
+  width: 99vw;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
 #slider-container2 {
-    height: 352px;
-    width: 85vw;
-    max-width: 1400px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
+  height: 352px;
+  width: 85vw;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
 }
 
 #slider-container2 .btn {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 20px;
-    width: 20px;
-    border-left: 8px solid #01bbb9;
-    border-top: 8px solid #01bbb9;
-    cursor: pointer;
-    transition: 0.30s;
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 20px;
+  width: 20px;
+  border-left: 8px solid #01bbb9;
+  border-top: 8px solid #01bbb9;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #slider-container2 .btn:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #slider-container2 .btn.inactive {
-    border-color: #027674;
+  border-color: #027674;
 }
 
 #slider-container2 .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px;
+  transform: rotate(-45deg);
+  left: 10px;
 }
 
 #slider-container2 .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
+  transform: rotate(135deg);
+  right: 10px;
 }
 
 #slider-container2 #slider2 {
-    display: flex;
-    width: 1000%;
-    height: 100%; 
-    transition: all .5s;
+  display: flex;
+  width: 1000%;
+  height: 100%;
+  transition: all 0.5s;
 }
 
 #slider-container2 #slider2 .slide {
-    height: 90%;
-    margin: auto 10px;
-    display: grid;
-    place-items: center;
+  height: 90%;
+  margin: auto 10px;
+  display: grid;
+  place-items: center;
 }
 
 #slider-container2 #slider2 .slide span {
-    font-size: 150px;
+  font-size: 150px;
 }
 
 @media only screen and (min-width: 1100px) {
-    #slider-container2 #slider2 .slide {
-        width: calc(2.5% - 20px);
-    }
+  #slider-container2 #slider2 .slide {
+    width: calc(2.5% - 20px);
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    #slider-container2 #slider2 .slide {
-        width: calc(3.3333333% - 20px);
-    }
+  #slider-container2 #slider2 .slide {
+    width: calc(3.3333333% - 20px);
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    #slider-container2 #slider2 .slide {
-        width: calc(5% - 20px);
-    }
+  #slider-container2 #slider2 .slide {
+    width: calc(5% - 20px);
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    #slider-container2 #slider2 .slide {
-        width: calc(10% - 20px);
-    }
+  #slider-container2 #slider2 .slide {
+    width: calc(10% - 20px);
+  }
 }
 
 /* ----------------------------------------------------------------- */
@@ -744,93 +978,93 @@ body {
 /* CSS para o carrossel 3 */
 
 #container3 {
-    height: 64vh;
-    width: 99vw;
-    margin: 0;
-    padding: 0;
-    display: grid ;
-    place-items: center;
-    overflow: hidden;
+  height: 64vh;
+  width: 99vw;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
 #slider-container3 {
-    height: 352px;
-    width: 84vw;
-    max-width: 1400px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
+  height: 352px;
+  width: 84vw;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
 }
 
 #slider-container3 .btn {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 20px;
-    width: 20px;
-    border-left: 8px solid #01bbb9;
-    border-top: 8px solid #01bbb9;
-    cursor: pointer;
-    transition: 0.30s;
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 20px;
+  width: 20px;
+  border-left: 8px solid #01bbb9;
+  border-top: 8px solid #01bbb9;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #slider-container3 .btn:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #slider-container3 .btn.inactive {
-    border-color: #027674;
+  border-color: #027674;
 }
 
 #slider-container3 .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px;
+  transform: rotate(-45deg);
+  left: 10px;
 }
 
 #slider-container3 .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
+  transform: rotate(135deg);
+  right: 10px;
 }
 
 #slider-container3 #slider3 {
-    display: flex;
-    width: 1000%;
-    height: 100%; 
-    transition: all .5s;
+  display: flex;
+  width: 1000%;
+  height: 100%;
+  transition: all 0.5s;
 }
 
 #slider-container3 #slider3 .slide {
-    height: 90%;
-    margin: auto 10px;
-    display: grid;
-    place-items: center;
+  height: 90%;
+  margin: auto 10px;
+  display: grid;
+  place-items: center;
 }
 
 #slider-container3 #slider3 .slide span {
-    font-size: 150px;
+  font-size: 150px;
 }
 
 @media only screen and (min-width: 1100px) {
-    #slider-container3 #slider3 .slide {
-        width: calc(2.5% - 20px);
-    }
+  #slider-container3 #slider3 .slide {
+    width: calc(2.5% - 20px);
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    #slider-container3 #slider3 .slide {
-        width: calc(3.3333333% - 20px);
-    }
+  #slider-container3 #slider3 .slide {
+    width: calc(3.3333333% - 20px);
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    #slider-container3 #slider3 .slide {
-        width: calc(5% - 20px);
-    }
+  #slider-container3 #slider3 .slide {
+    width: calc(5% - 20px);
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    #slider-container3 #slider3 .slide {
-        width: calc(10% - 20px);
-    }
+  #slider-container3 #slider3 .slide {
+    width: calc(10% - 20px);
+  }
 }
 
 /* ----------------------------------------------------------------- */
@@ -838,427 +1072,428 @@ body {
 /* CSS para o carrossel 4 */
 
 #container4 {
-    height: 64vh;
-    width: 99vw;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+  height: 64vh;
+  width: 99vw;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
 #slider-container4 {
-    height: 352px;
-    width: 85vw;
-    max-width: 1400px;
-    position: relative;
-    overflow: hidden;
-    padding: 20px;
+  height: 352px;
+  width: 85vw;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
 }
 
 #slider-container4 .btn {
-    position: absolute;
-    top: calc(50% - 30px);
-    height: 20px;
-    width: 20px;
-    border-left: 8px solid #01bbb9;
-    border-top: 8px solid #01bbb9;
-    cursor: pointer;
-    transition: 0.30s;
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 20px;
+  width: 20px;
+  border-left: 8px solid #01bbb9;
+  border-top: 8px solid #01bbb9;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 #slider-container4 .btn:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #slider-container4 .btn.inactive {
-    border-color: #027674;
+  border-color: #027674;
 }
 
 #slider-container4 .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px;
+  transform: rotate(-45deg);
+  left: 10px;
 }
 
 #slider-container4 .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
+  transform: rotate(135deg);
+  right: 10px;
 }
 
 #slider-container4 #slider4 {
-    display: flex;
-    width: 1000%;
-    height: 100%;
-    transition: all .5s;
+  display: flex;
+  width: 1000%;
+  height: 100%;
+  transition: all 0.5s;
 }
 
 #slider-container4 #slider4 .slide {
-    height: 90%;
-    margin: auto 10px;
-    display: grid;
-    place-items: center;
+  height: 90%;
+  margin: auto 10px;
+  display: grid;
+  place-items: center;
 }
 
 #slider-container4 #slider4 .slide span {
-    font-size: 150px;
+  font-size: 150px;
 }
 
 @media only screen and (min-width: 1100px) {
-    #slider-container4 #slider4 .slide {
-        width: calc(2.5% - 20px);
-    }
+  #slider-container4 #slider4 .slide {
+    width: calc(2.5% - 20px);
+  }
 }
 
 @media only screen and (max-width: 1100px) {
-    #slider-container4 #slider4 .slide {
-        width: calc(3.3333333% - 20px);
-    }
+  #slider-container4 #slider4 .slide {
+    width: calc(3.3333333% - 20px);
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    #slider-container4 #slider4 .slide {
-        width: calc(5% - 20px);
-    }
+  #slider-container4 #slider4 .slide {
+    width: calc(5% - 20px);
+  }
 }
 
 @media only screen and (max-width: 550px) {
-    #slider-container4 #slider4 .slide {
-        width: calc(10% - 20px);
-    }
+  #slider-container4 #slider4 .slide {
+    width: calc(10% - 20px);
+  }
 }
-
-
-
-
-
 
 /* -----------------------  XXXXXX ----------------------- */
 
+/* ----------------------- FOOTER ----------------------- */
+
 /*estilização para o rodapé*/
 footer {
-    background-color: rgba(0, 0, 0);
-    width: 100%;
-    bottom: 0;
-    position: relative;
-    height: 38vh;
-    display: flex;
-    align-items: center;
- }
- 
- .redes-sociais {
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- 
- /*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
- footer p {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
- }
- 
- /*linha horizontal do footer*/
- hr {
-    display: flex;
-    justify-content: center;
-    width: 90%;
- }
- 
- /*estilização para links*/
- .estilizacao-a {
-    color: #ffffff;
-    text-decoration: none;
- }
- 
- /*classe principal do footer*/
- .informacoes-adicionais {
-    width: 100%;
- }
- 
- /*estilizando logo Petgriffe, no footer*/
- #logo-footer {
-    display: flex;
-    margin: auto;
-    height: 100px;
- }
- 
- .informacoes-footer li,
- ul {
-    list-style: none;
- }
- 
- /* estilizando as informações do footer como, vagas, termos de serviço etc...*/
- .informacoes-footer {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding-left: 5px;
- }
- 
- /*class principal de tiktok, instagram e twiter*/
- .redes-sociais {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5%;
- }
- 
- /*estilizando o tamanho delas*/
- #instagram {
-    height: 27px;
- }
- 
- #twiter {
-    height: 30px;
- }
- 
- #tiktok {
-    height: 27px;
- }
+  background-color: rgba(0, 0, 0);
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  height: 38vh;
+  display: flex;
+  align-items: center;
+}
 
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/*estilização para © 2021, TESTE Ltd, Todos os direitos reservados.*/
+footer p {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
 
+/*linha horizontal do footer*/
+hr {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
 
+/*estilização para links*/
+.estilizacao-a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*classe principal do footer*/
+.informacoes-adicionais {
+  width: 100%;
+}
+
+/*estilizando logo Petgriffe, no footer*/
+#logo-footer {
+  display: flex;
+  margin: auto;
+  height: 100px;
+}
+
+.informacoes-footer li,
+ul {
+  list-style: none;
+}
+
+/* estilizando as informações do footer como, vagas, termos de serviço etc...*/
+.informacoes-footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-left: 5px;
+}
+
+/*class principal de tiktok, instagram e twiter*/
+.redes-sociais {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+/*estilizando o tamanho delas*/
+#instagram {
+  height: 27px;
+}
+
+#twiter {
+  height: 30px;
+}
+
+#tiktok {
+  height: 27px;
+}
+
+/* ----------------------- RESPONSIVIDAE ----------------------- */
 
 @media screen and (max-height: 866px) {
-    #container1 {
-       height: 99vh;
-    }
- 
-    #slider-container1 {
-       height: 475px;
-    }
- 
-    #slider1 {
-       height: 460px;
-    }
- 
-    #container2 {
-       height: 100vh;
-    }
- 
-    #slider-container2 {
-       height: 475px;
-    }
- 
-    #container3 {
-       height: 100vh;
-    }
- 
-    #slider-container3 {
-       height: 475px;
-    }
+  #container1 {
+    height: 99vh;
+  }
 
-    #container4 {
-        height: 100vh;
-     }
-  
-     #slider-container4 {
-        height: 490px;
-     }
- }
- 
- @media screen and (max-height: 485px) {
-    #container1 {
-       height: 116vh;
-    }
- 
-    #slider-container1 {
-       height: 490px;
-    }
- 
-    #container2 {
-       height: 116vh;
-    }
- 
-    #slider-container2 {
-       height: 490px;
-    }
- 
-    #container3 {
-       height: 116vh;
-    }
- 
-    #slider-container3 {
-       height: 490px;
-    }
+  #slider-container1 {
+    height: 475px;
+  }
 
-    #container4 {
-        height: 116vh;
-     }
-  
-     #slider-container4 {
-        height: 490px;
-     }
- }
+  #slider1 {
+    height: 460px;
+  }
 
+  #container2 {
+    height: 100vh;
+  }
 
+  #slider-container2 {
+    height: 475px;
+  }
 
+  #container3 {
+    height: 100vh;
+  }
+
+  #slider-container3 {
+    height: 475px;
+  }
+
+  #container4 {
+    height: 100vh;
+  }
+
+  #slider-container4 {
+    height: 490px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+
+@media screen and (max-height: 485px) {
+  #container1 {
+    height: 116vh;
+  }
+
+  #slider-container1 {
+    height: 490px;
+  }
+
+  #container2 {
+    height: 116vh;
+  }
+
+  #slider-container2 {
+    height: 490px;
+  }
+
+  #container3 {
+    height: 116vh;
+  }
+
+  #slider-container3 {
+    height: 490px;
+  }
+
+  #container4 {
+    height: 116vh;
+  }
+
+  #slider-container4 {
+    height: 490px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
 
 @media screen and (max-width: 1280px) {
- 
-    .menu {
-       display: block;
-       /* Exibir o menu */
-    }
- 
-    .close-btn {
-       display: block;
-       /* Exibir o botão fechar */
-    }
- 
-    .menu-toggle {
-       display: block;
-       /* Exibir o ícone do menu */
-    }
- 
-    .barraBusca {
-       display: none;
-    }
- 
-    .navegar {
-       display: none;
-    }
- 
-    .pnavegar {
-       display: none;
-    }
- 
-    .col-2 {
-       display: none;
-    }
- 
-    .col-1 {
-       margin-bottom: 20px;
-    }
- 
-    .carrinho-menu {
-       right: -260px;
-       width: 260px;
-    }
+  .menu {
+    display: block;
+    /* Exibir o menu */
+  }
 
-    #carrinhoElement>div {
-        width: 210px;
-     }
-     
-     #carrinhoElement img {
-        max-width: 80px;
-     }
- 
- }
- 
- 
- 
- @media screen and (max-width: 840px) {
-    #carrinhoElement>div {
-        width: 210px;
-     }
-     
-     #carrinhoElement img {
-        max-width: 80px;
-     }
+  .close-btn {
+    display: block;
+    /* Exibir o botão fechar */
+  }
 
-     .banner {
-        width: 500px;
-     }
- }
- 
- 
- 
- @media screen and (max-width: 610px) {
-    #carrinhoElement>div {
-        width: 210px;
-     }
-     
-     #carrinhoElement img {
-        max-width: 80px;
-     }
+  .menu-toggle {
+    display: block;
+    /* Exibir o ícone do menu */
+  }
 
-     .tituloCards{
-        position: relative;
-        left: -6px;
-     }
+  .barraBusca {
+    display: none;
+  }
 
-     .banner {
-        width: 420px;
-     }
- }
- 
- 
- /* Estilos para telas menores usando Media Queries */
- @media screen and (max-width: 768px) {
-    .card {
-       width: 160px;
-       height: 300px;
-       margin-right: 25px;
-    }
- 
-    .card .cardImg img {
-       width: 100px;
-       height: 150px;
-    }
- 
-    .cardBotao button {
-       width: 90px;
-       height: 30px;
-       font-size: 15px;
-    }
- 
-    .col-1 {
-       margin-bottom: 20px;
-    }
- 
-    #carrinhoElement>div {
-       width: 210px;
-    }
-    
-    #carrinhoElement img {
-       max-width: 80px;
-    }
-  
-     footer {
-        height: auto;
-        width: auto;
-        flex-direction: column;
-        padding: 20px;
-      }
-  
-      footer p {
-        font-weight: 700;
-        font-size: 11px;
-      }
-  
-      hr {
-        background-color: #fff;
-        width: 90%;
-     }
-    
-      /* Ajustes para o logo no footer */
-      #logo-footer {
-        height: 80px;
-      }
-    
-      /* Ajustes para redes sociais */
-      .redes-sociais {
-        margin-right: 0;
-        margin-top: 10px;
-        justify-content: center;
-      }
-    
-      #instagram,
-      #twiter,
-      #tiktok {
-        margin: 0 5px
-      }
-    
-      /* Ajustes para as informações do footer */
-      .informacoes-footer {
-        flex-direction: row;
-        align-items: center;
-      }
-  
-      .informacoes-footer a {
-        font-weight: 700;
-        font-size: 11px;
-      }
- }
+  .navegar {
+    display: none;
+  }
+
+  .pnavegar {
+    display: none;
+  }
+
+  .col-2 {
+    display: none;
+  }
+
+  .col-1 {
+    margin-bottom: 20px;
+  }
+
+  .carrinho-menu {
+    right: -260px;
+    width: 260px;
+  }
+
+  #carrinhoElement > div {
+    width: 210px;
+  }
+
+  #carrinhoElement img {
+    max-width: 80px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+
+@media screen and (max-width: 840px) {
+  #carrinhoElement > div {
+    width: 210px;
+  }
+
+  #carrinhoElement img {
+    max-width: 80px;
+  }
+
+  .banner {
+    width: 500px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+
+@media screen and (max-width: 610px) {
+  #carrinhoElement > div {
+    width: 210px;
+  }
+
+  #carrinhoElement img {
+    max-width: 80px;
+  }
+
+  .tituloCards {
+    position: relative;
+    left: -6px;
+  }
+
+  .banner {
+    width: 420px;
+  }
+
+  .container {
+    width: 400px;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Estilos para telas menores usando Media Queries */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 160px;
+    height: 300px;
+    margin-right: 25px;
+  }
+
+  .card .cardImg img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .cardBotao button {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .col-1 {
+    margin-bottom: 20px;
+  }
+
+  #carrinhoElement > div {
+    width: 210px;
+  }
+
+  #carrinhoElement img {
+    max-width: 80px;
+  }
+
+  footer {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  footer p {
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  hr {
+    background-color: #fff;
+    width: 90%;
+  }
+
+  /* Ajustes para o logo no footer */
+  #logo-footer {
+    height: 80px;
+  }
+
+  /* Ajustes para redes sociais */
+  .redes-sociais {
+    margin-right: 0;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  #instagram,
+  #twiter,
+  #tiktok {
+    margin: 0 5px;
+  }
+
+  /* Ajustes para as informações do footer */
+  .informacoes-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .informacoes-footer a {
+    font-weight: 700;
+    font-size: 11px;
+  }
+}
+
+/* ----------------------------------------------------------------- */

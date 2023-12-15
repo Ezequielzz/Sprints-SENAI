@@ -2,22 +2,27 @@
 
 // Código para o Funcionamento do Carrinho de Compras
 
+// Código para o Funcionamento do Carrinho de Compras
+
 let carrinhoAberto = false; // Variável para controlar se o carrinho está aberto ou fechado
 
 function toggleCarrinho() {
+  // Obtém referências ao carrinho e ao corpo da página
   const carrinhoMenu = document.getElementById("carrinhoMenu");
   const body = document.querySelector("body");
 
   if (!carrinhoAberto) {
+    // Se o carrinho não estiver aberto, abre o carrinho e desabilita o scroll da página
     carrinhoMenu.classList.add("active");
     body.classList.add("no-scroll");
     carrinhoAberto = true;
     body.style.overflow = "hidden"; // Trava o scroll da página
   }
 
-  // Verificar se a altura do carrinho excede a altura da janela visível
+  // Verifica se a altura do conteúdo do carrinho excede a altura da janela visível
   const carrinhoContent = document.getElementById("carrinhoElement");
   if (carrinhoContent.scrollHeight > window.innerHeight) {
+    // Se o conteúdo do carrinho for maior que a janela, habilita o scroll no carrinho
     carrinhoMenu.style.overflowY = "scroll"; // Habilita o scroll no carrinho
     body.style.overflow = "hidden"; // Esconde o scroll da página
     body.style.overflow = ""; // Restaura o scroll da página
@@ -25,9 +30,11 @@ function toggleCarrinho() {
 }
 
 function fecharCarrinho() {
+  // Obtém referências ao carrinho e ao corpo da página
   const carrinhoMenu = document.getElementById("carrinhoMenu");
   const body = document.body;
 
+  // Fecha o carrinho e restaura o scroll da página
   carrinhoMenu.classList.remove("active");
   body.classList.remove("no-scroll");
   carrinhoAberto = false;
@@ -159,6 +166,7 @@ cep.addEventListener('focusout', async () => {
 })
 
 // -------------------------------------------------------------------
+
 // Código para o Funcionamento do MenuHamburger
 
 let menuAberto = false;
