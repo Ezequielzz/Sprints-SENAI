@@ -1,15 +1,22 @@
-**COMENTÁRIOS NO CÓDIGO MUITO EXPLICATIVOS SE ENCONTRAM NOS ARQUIVOS DA HOME**
-**COMENTÁRIOS NO CÓDIGO MUITO EXPLICATIVOS SE ENCONTRAM NOS ARQUIVOS DA HOME**
-**COMENTÁRIOS NO CÓDIGO MUITO EXPLICATIVOS SE ENCONTRAM NOS ARQUIVOS DA HOME**
+**COMENTÁRIOS NO CÓDIGO EXPLICATIVOS SE ENCONTRAM NOS ARQUIVOS DA HOME**
+**COMENTÁRIOS NO CÓDIGO EXPLICATIVOS SE ENCONTRAM NOS ARQUIVOS DA HOME**
+**COMENTÁRIOS NO CÓDIGO EXPLICATIVOS SE ENCONTRAM NOS ARQUIVOS DA HOME**
+
+**CÓDIGO COM FRAMEWORK ANGULAR SE ENCONTRA NA BRANCH TESTE-ALBERTO**
+**CÓDIGO COM FRAMEWORK ANGULAR SE ENCONTRA NA BRANCH TESTE-ALBERTO**
+**CÓDIGO COM FRAMEWORK ANGULAR SE ENCONTRA NA BRANCH TESTE-ALBERTO**
 
 **LINK DO FIGMA PARA COMPARAÇÃO DE TELAS**
 https://www.figma.com/file/ecreZwFxynr47nNfnbdwZx/PetGriffe?type=design&node-id=0%3A1&mode=design&t=EwYKy4nsjAP3dPQz-1
+
+**LINK DO TEMPLATE DO CARROSSEL DE CARDS**
+https://codepen.io/hershkirsh/pen/BXBprB
 
 ----- HOME -----
 
 #### HTML
 
-Seções Principais:
+### Seções Principais:
 Navbar: Contém a navegação do site, incluindo links para login, cadastro, serviços pet e diferentes seções para animais.
 
 Pop-ups: Dois pop-ups são usados, um para cadastrar o endereço e outro para informações do cartão de crédito.
@@ -22,16 +29,16 @@ Seção de Cards de Produtos: Exibe produtos (rações e petiscos) em um slider 
 
 Footer: Contém informações adicionais, links para política de privacidade, termos de serviço, redes sociais e informações de direitos autorais.
 
-Arquivos Externos:
+### Arquivos Externos:
 home.css: Arquivo de estilo para a página inicial.
 home.js: Arquivo JavaScript que manipula os elementos da página, incluindo a funcionalidade dos pop-ups, carrossel de imagens, interações do carrinho de compras etc.
 
-Funcionalidades Específicas:
+### Funcionalidades Específicas:
 Pop-ups: Utilizam JavaScript para exibir e ocultar os pop-ups, permitindo o preenchimento de informações de endereço e dados do cartão.
 Carrossel de Imagens: Usa JavaScript para permitir a navegação entre imagens clicando nos botões de seta.
 Cards de Produtos: Utiliza um slider horizontal para exibir vários produtos em um espaço limitado, com botões para mover entre eles.
 
-Considerações Finais:
+### Considerações Finais:
 Este documento HTML forma a estrutura básica de uma página web para o site PetGriffe. Ele utiliza HTML para estruturar o conteúdo, CSS para estilização e JavaScript para interatividade. Cada seção tem sua função específica, e os arquivos externos são referenciados para implementar estilos e funcionalidades adicionais.
 
 #### JAVASCRIPT
@@ -62,7 +69,7 @@ Este documento HTML forma a estrutura básica de uma página web para o site Pet
 
 1. **Funcionalidade para múltiplos carrosséis de cards**: Implementa a funcionalidade de um carrossel de cards genérico que pode ser replicado para vários elementos da página. Ele detecta a largura do contêiner e ajusta a exibição dos slides conforme a largura, permitindo navegar entre os cards.
 
----
+---------------------------------------------------------------------------------------------
 
 ----- CACHORRO -----
 
@@ -107,7 +114,7 @@ Existem funções para mover o carrossel para a esquerda (slideLeft1()) e para a
 
 1. **Funcionalidade para múltiplos carrosséis de cards**: Implementa a funcionalidade de um carrossel de cards genérico que pode ser replicado para vários elementos da página. Ele detecta a largura do contêiner e ajusta a exibição dos slides conforme a largura, permitindo navegar entre os cards.
 
----
+---------------------------------------------------------------------------------------------
 
 ----- GATO -----
 
@@ -122,7 +129,7 @@ Quando o botão "Avançar Etapa" é clicado no primeiro pop-up, o código escond
 No segundo pop-up, o botão "Finalizar Compra" verifica se há itens no carrinho antes de concluir a compra. Se o carrinho estiver vazio, exibe um alerta; caso contrário, simula uma compra (exibindo um alerta de "Compra finalizada"), esvazia o carrinho e fecha os pop-ups.
 
 **Seção de Banner e Cards de Produtos**
-Há uma seção de banner "Cachorro" definida com um título.
+Há uma seção de banner "Gato" definida com um título.
 A seção de cards de produtos é composta por vários carrosséis (slider) que exibe produtos para gatos.
 Cada card de produto contém uma imagem, título, preço e botão "Comprar". O carrossel possui botões para navegar entre os produtos (esquerda/direita).
 
@@ -152,7 +159,7 @@ Existem funções para mover o carrossel para a esquerda (slideLeft1()) e para a
 
 1. **Funcionalidade para múltiplos carrosséis de cards**: Implementa a funcionalidade de um carrossel de cards genérico que pode ser replicado para vários elementos da página. Ele detecta a largura do contêiner e ajusta a exibição dos slides conforme a largura, permitindo navegar entre os cards.
 
----
+---------------------------------------------------------------------------------------------
 
 ----- PÁSSARO -----
 
@@ -167,7 +174,7 @@ Quando o botão "Avançar Etapa" é clicado no primeiro pop-up, o código escond
 No segundo pop-up, o botão "Finalizar Compra" verifica se há itens no carrinho antes de concluir a compra. Se o carrinho estiver vazio, exibe um alerta; caso contrário, simula uma compra (exibindo um alerta de "Compra finalizada"), esvazia o carrinho e fecha os pop-ups.
 
 **Seção de Banner e Cards de Produtos**
-Há uma seção de banner "Cachorro" definida com um título.
+Há uma seção de banner "Pássaro" definida com um título.
 A seção de cards de produtos é composta por vários carrosséis (slider) que exibe produtos para pássaros.
 Cada card de produto contém uma imagem, título, preço e botão "Comprar". O carrossel possui botões para navegar entre os produtos (esquerda/direita).
 
@@ -197,7 +204,7 @@ Existem funções para mover o carrossel para a esquerda (slideLeft1()) e para a
 
 1. **Funcionalidade para múltiplos carrosséis de cards**: Implementa a funcionalidade de um carrossel de cards genérico que pode ser replicado para vários elementos da página. Ele detecta a largura do contêiner e ajusta a exibição dos slides conforme a largura, permitindo navegar entre os cards.
 
----
+---------------------------------------------------------------------------------------------
 
 ---- FORMULÁRIOS ----
 
@@ -237,7 +244,7 @@ input type="submit": Botão para enviar os dados do formulário.
 Campos de seleção e preenchimento para escolher o tipo de agendamento, horário, data, número de telefone, email e observações.
 Botão "Enviar" para submeter o formulário.
 
------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 
 **CRONOGRAMA**
 
@@ -329,7 +336,7 @@ Fonte: Uma fonte simples sem serifs ou muitos ornamentos.
 Estilo e Atmosfera:
 Um lugar simples, acolhedor e tranquilo que remeta a felicidade.
 
--------------------------------------------------------
+---------------------------------------------------------------------------------------------
 
 Documentar projetos é fundamental por várias razões:
 
